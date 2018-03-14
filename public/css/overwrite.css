@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'symantic-bold'; /*a name to be used later*/
+    src: url('../fonts/Breymont-Bold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'symantic-light'; /*a name to be used later*/
+    src: url('../fonts/Breymont-Light.ttf'); /*URL to font*/
+}
+
+.text-logo.symantic{
+    font-family: "symantic-bold";
+    letter-spacing: 5px;
+    font-size:1.3em;
+    display:block;
+    line-height: 22px;
+}
+.text-logo.creative{
+    font-family: "symantic-light";
+    letter-spacing: 11px;
+    font-size: 0.9em;
+    display: block;
+    line-height: 15px;
+}
+
+.syman-logo-svg{
+    max-width:35px;
+    margin-right:10px;
+}
+
+.syman-logo-svg.footer{
+    color:#212121;
+    max-width:35px;
+    margin-right:10px;
+}
+.text-logo.symantic_footer{
+    font-family: "symantic-bold";
+    letter-spacing: 5px;
+    font-size:1.5em;
+    display:block;
+    line-height: 22px;
+}
+.text-logo.creative_footer{
+    font-family: "symantic-light";
+    letter-spacing: 11px;
+    font-size: 0.9em;
+    display: block;
+    line-height: 15px;
+}
+
+.navbar-inverse .navbar-nav .open > .nav-link, .navbar-inverse .navbar-nav .active > .nav-link, .navbar-inverse .navbar-nav .nav-link.open, .navbar-inverse .navbar-nav .nav-link.active, .navbar-inverse .navbar-nav .dropdown.show .nav-link {
+    background-color: initial;
+    border-bottom: 1px solid #31BFB3;
+}
+
+.grey-fade-over {
+    background-color: rgba(55, 58, 62, 0.52);
+}
+
+.symscroll{
+    font-family: "symantic-bold";
+    letter-spacing: 5px;
+}
+
+.cbp-af-header.cbp-af-header-shrink.black-menu-background-1st-trans {
+    background-color: #363a3e;
+}
+.background-dark {
+    background-color: #373a3e;
+}
