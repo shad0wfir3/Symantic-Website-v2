@@ -18,3 +18,14 @@ Route::get('/', function () {
 
 Route::get('/','PagesController@index')->name('home');
 Route::get('about-us','PagesController@about')->name('about');
+
+Route::prefix('services')->group(function(){
+    Route::get('branding','PagesController@branding')->name('branding');
+    Route::get('design','PagesController@design')->name('design');
+    Route::get('e-commerce','PagesController@e_commerce')->name('e-commerce');
+    Route::get('website-development','PagesController@development')->name('development');
+    Route::get('operations-solutions','PagesController@operations')->name('operations');
+    Route::get('strategic-marketing','PagesController@strategic')->name('strategic');
+});
+
+

@@ -1,12 +1,12 @@
 @extends('layouts.site')
 @section('slider')
-    <div class="section full-height over-hide background-dark">
+    <div class="section full-height over-hide">
         <div class="hero-slider-wrap">
             <div class="customNavigation hero-sinc-1-2">
                 <a class="prev-hero-sync-1"><i class="fa fa-long-arrow-left"></i></a>
                 <a class="next-hero-sync-1"><i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <div id="hero-sync1" class="owl-carousel parallax-fade-top">
+            <div id="hero-sync1" class="owl-carousel">
                 <div class="item full-height background-image-cover" style="background-image:url({{ asset('img/slide1.jpg') }})">
                     <div class="grey-fade-over"></div>
                     <div class="hero-center-wrap move-top-2 z-bigger">
@@ -82,7 +82,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h4>BRANDING. MARKETING. ADVERTISING.</h4>
+                    <h3>Professional Digital Creative Agency.</h3>
                     <p class="mt-3 mb-0">
                         Complete professional and specialised branding, marketing and advertisement solutions for your business.
                         <a href="#" class="btn-link btn-primary">Request a quote!</a>
@@ -107,15 +107,15 @@
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Target-Market"></i>
                         <h5 class="mt-3">Brand Activation & Marketing</h5>
-                        <p class="mt-3 mb-4">Increase brand reputation though engagement campaigns.</p>
+                        <p class="mt-3 mb-4">Increase your brands' reputation though engagement campaigns.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Optimization"></i>
-                        <h5 class="mt-3">User Experience, Digital & Print Design</h5>
-                        <p class="mt-3 mb-4">Professional design solutions focusing around the principles of UX.</p>
+                        <h5 class="mt-3">User Experience (UX), Digital & Print Design</h5>
+                        <p class="mt-3 mb-4">Professional design solutions for your business needs.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Monitor-Laptop"></i>
                         <h5 class="mt-3">E-Commerce Design & Development</h5>
-                        <p class="mt-3 mb-4">Increase business growth through online selling opportunities.</p>
+                        <p class="mt-3 mb-4">Business growth through online selling & e-commerce platforms</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
@@ -136,24 +136,24 @@
                 <div class="col-md-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Monitor-phone"></i>
-                        <h5 class="mt-3">Wordpress & CMS Development</h5>
+                        <h5 class="mt-3">Wordpress & Website Development</h5>
                         <p class="mt-3 mb-4">Manage your website and content without writing a single line of code.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
-                        <i class="funky-ui-icon icon-Newspaper-2"></i>
-                        <h5 class="mt-3">Newsletters & Email Signatures</h5>
-                        <p class="mt-3 mb-4">Professional approach to your daily operations with expert solutions</p>
+                        <i class="funky-ui-icon icon-Business-ManWoman"></i>
+                        <h5 class="mt-3">Business Operations & Solutions</h5>
+                        <p class="mt-3 mb-4">Business management through professional integrated solutions.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Support"></i>
-                        <h5 class="mt-3">Strategic Marketing & Operations</h5>
-                        <p class="mt-3 mb-4">Manage your daily operations and growth through a dedicated strategy</p>
+                        <h5 class="mt-3">Strategic Marketing Consulting</h5>
+                        <p class="mt-3 mb-4">Achieve growth and inoperations and growth through a dedicated strategy</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
@@ -180,8 +180,8 @@
                 </div>
                 <div class="col-lg-4 mt-4 mt-lg-0 mt-xl-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="call-box-5 dark">
-                        <h4 class="color-white">Engage the right Audience!</h4>
-                        <p class="mt-3 mb-5">Symantic Creative provides a one stop solution for all your branding and advertising needs through expert solutions and marketing strategies.</p>
+                        <h5 class="color-white"><em>Engage</em> your Audiences. <em>Increase</em> your brands reputation. <em>Define</em> your business!</h5>
+                        <p class="mt-3 mb-5"><mark>Symantic Creative</mark> provides a wide range of expert solutions and services for your marketing needs.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
@@ -192,75 +192,168 @@
     <!-- Testimonials Block
     ================================================== -->
 
-    <div class="section padding-top-bottom background-white over-hide">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="main-title">
-                        <div class="main-subtitle-top mb-4">testimonials</div>
-                        <h4>What some of our clients say about us.</h4>
-                        <div class="main-subtitle-bottom smaller mt-3">Built with passion & intuitiveness in mind. Symantic guarantees a happier you through all our services.</div>
-                    </div>
-                </div>
-                <div class="col-lg-8 px-0">
-                    <div id="owl-testimonials" class="owl-carousel owl-theme no-hidden">
-                        <div class="item">
-                            <div class="testimonials-box-1 bigger-img border-on-light">
-                                <img  src="img/t1.jpg" alt="" />
-                                <p class="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                <h6>Anna Furius</h6>
-                                <p><span>Alliance Motosport</span></p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonials-box-1 bigger-img border-on-light">
-                                <img  src="img/t2.jpg" alt="" />
-                                <p class="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                <h6>Alex Andrews</h6>
-                                <p><span>Creativity Media</span></p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonials-box-1 bigger-img border-on-light">
-                                <img  src="img/t3.jpg" alt="" />
-                                <p class="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                <h6>Frank Furius</h6>
-                                <p><span>Alliance Motosport</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{--<div class="section padding-top-bottom background-white over-hide">--}}
+        {{--<div class="container">--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-lg-4">--}}
+                    {{--<div class="main-title">--}}
+                        {{--<div class="main-subtitle-top mb-4">testimonials</div>--}}
+                        {{--<h4>What some of our clients say about us.</h4>--}}
+                        {{--<div class="main-subtitle-bottom smaller mt-3">Service with passion & intuitiveness in mind. Symantic Creative guarantees a happier you through all of our operations.</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="col-lg-8 px-0">--}}
+                    {{--<div id="owl-testimonials" class="owl-carousel owl-theme no-hidden">--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="testimonials-box-1 bigger-img border-on-light">--}}
+                                {{--<img  src="img/t1.jpg" alt="" />--}}
+                                {{--<p class="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>--}}
+                                {{--<h6>Rebekah Vogel</h6>--}}
+                                {{--<p><span>www.imagerybykye.co.za</span></p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="testimonials-box-1 bigger-img border-on-light">--}}
+                                {{--<img  src="img/t2.jpg" alt="" />--}}
+                                {{--<p class="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>--}}
+                                {{--<h6>Alex Andrews</h6>--}}
+                                {{--<p><span>Creativity Media</span></p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="testimonials-box-1 bigger-img border-on-light">--}}
+                                {{--<img  src="img/t3.jpg" alt="" />--}}
+                                {{--<p class="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>--}}
+                                {{--<h6>Frank Furius</h6>--}}
+                                {{--<p><span>Alliance Motosport</span></p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 
     <!-- Separator Line
     ================================================== -->
 
-    <div class="section padding-top-bottom-1 background-white">
+
+
+
+    <!-- Portfolio Block
+        ================================================== -->
+    <div class="section padding-top background-white">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="separator-wrap">
-                        <span class="separator"><span class="separator-line dashed"></span></span>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="main-title text-center">
+                        <div class="main-subtitle-top mb-4">latest work</div>
+                        <h3>We take pride in delivering only the best.</h3>
                     </div>
                 </div>
+                <div class="clear"></div>
+                <div class="col-md-12">
+                    <div class="grid-filter">
+                        <ul class="filter">
+                            <li><a href="#" class="current" data-filter="*" title="">all</a></li>
+                            <li><a href="#" data-filter=".branding" title="">branding</a></li>
+                            <li><a href="#" data-filter=".websites" title="">websites</a></li>
+                            <li><a href="#" data-filter=".campaigns" title="">campaigns</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-wraper with-margin clearfix">
+            <div class="grid-box float-inline third with-margin branding">
+                <a href="project-image.html">
+                    <div class="portfolio-box-1 rounded">
+                        <img  src="img/portfolio/grid/1.jpg" alt="" />
+                        <div class="portfolio-mask-2 rounded"></div>
+                        <h5 class="on-center text-center">primarily serve people</h5>
+                        <p class="on-center text-center">design, motion</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-box float-inline third with-margin photo motion">
+                <a href="project-image.html">
+                    <div class="portfolio-box-1 rounded">
+                        <img  src="img/portfolio/grid/2.jpg" alt="" />
+                        <div class="portfolio-mask-2 rounded"></div>
+                        <h5 class="on-center text-center">primarily serve people</h5>
+                        <p class="on-center text-center">design, motion</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-box float-inline third with-margin branding">
+                <a href="project-image.html">
+                    <div class="portfolio-box-1 rounded">
+                        <img  src="img/portfolio/grid/3.jpg" alt="" />
+                        <div class="portfolio-mask-2 rounded"></div>
+                        <h5 class="on-center text-center">primarily serve people</h5>
+                        <p class="on-center text-center">design, motion</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-box float-inline third with-margin photo motion">
+                <a href="project-image.html">
+                    <div class="portfolio-box-1 rounded">
+                        <img  src="img/portfolio/grid/4.jpg" alt="" />
+                        <div class="portfolio-mask-2 rounded"></div>
+                        <h5 class="on-center text-center">primarily serve people</h5>
+                        <p class="on-center text-center">design, motion</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-box float-inline third with-margin motion">
+                <a href="project-image.html">
+                    <div class="portfolio-box-1 rounded">
+                        <img  src="img/portfolio/grid/5.jpg" alt="" />
+                        <div class="portfolio-mask-2 rounded"></div>
+                        <h5 class="on-center text-center">primarily serve people</h5>
+                        <p class="on-center text-center">design, motion</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-box float-inline third with-margin branding photo">
+                <a href="project-image.html">
+                    <div class="portfolio-box-1 rounded">
+                        <img  src="img/portfolio/grid/6.jpg" alt="" />
+                        <div class="portfolio-mask-2 rounded"></div>
+                        <h5 class="on-center text-center">primarily serve people</h5>
+                        <p class="on-center text-center">design, motion</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
 
+    <!-- Seperator Line
+        ================================================== -->
+    {{--<div class="section padding-top-bottom-1 background-white">--}}
+        {{--<div class="container">--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-md-12">--}}
+                    {{--<div class="separator-wrap">--}}
+                        {{--<span class="separator"><span class="separator-line dashed"></span></span>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
     <!-- Blog Block
     ================================================== -->
 
-    <div class="section padding-top-bottom background-grey over-hide">
+    <div class="section padding-top-bottom background-grey-2 over-hide">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="main-title text-center">
                         <div class="main-subtitle-top mb-4">latest news</div>
-                        <h3>Add your creation to relevant collections.</h3>
-                        <div class="main-subtitle-bottom mt-3">you inspired me</div>
+                        <h3>Find out more about us</h3>
+                        <div class="main-subtitle-bottom mt-3">informative. inspirational. funny</div>
                     </div>
                 </div>
                 <div class="clear"></div>

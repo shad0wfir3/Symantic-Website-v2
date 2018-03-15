@@ -8,19 +8,14 @@
                     <li><a href="design-studio.html">Symantic Launch-IT&trade;</a></li>
                     <li><a>Symantic App-D <small>coming soon</small></a></li>
                 </ul>
-                <hr>
-                <ul class="list-style">
-                    <li><a href="portfolio-grid-3col.html">Collaborations</a></li>
-                    <li><a href="portfolio-grid-3col.html">Career Listings</a></li>
-                </ul>
             </div>
             <div class="col-md-3 mt-4 mt-md-0">
                 <h6>Quick Links</h6>
                 <ul class="list-style">
                     <li><a href="careers-listing.html">Request a quote</a></li>
-                    <li><a href="careers-listing.html">Website Development</a></li>
                     <li><a href="portfolio-grid-3col.html">Privacy Policy</a></li>
                     <li><a href="portfolio-grid-3col.html">Terms & Conditions</a></li>
+                    <li><a href="portfolio-grid-3col.html">Career Listings</a></li>
                 </ul>
 
 
@@ -29,7 +24,8 @@
                 <h6>Interesting</h6>
                 <ul class="list-style">
                     <li><a href="about-company.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about-company.html">Services</a></li>
+                    <li><a href="services.html">Our Work</a></li>
                     <li><a href="contact-modern.html">Contact Us</a></li>
                 </ul>
             </div>

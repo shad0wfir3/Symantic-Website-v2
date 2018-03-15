@@ -23,48 +23,65 @@
                                     Home
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('about') }}">
-                                    About Us
-                                </a>
-                            </li>
+                            {{--<li class="nav-item">--}}
+                                {{--<a class="nav-link" href="{{ route('about') }}">--}}
+                                    {{--About Us--}}
+                                {{--</a>--}}
+                            {{--</li>--}}
                             <li class="nav-item dropdown mega-menu">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-mainNav-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Services
+                                    Our Services
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-mainNav-2">
                                     <ul class="drop-mega-menu">
                                         <li>
-                                            <a class="dropdown-item" href="about-company.html">About Company</a>
-                                            <a class="dropdown-item" href="about-team.html">About Team</a>
-                                            <a class="dropdown-item" href="about-me.html">About Me</a>
-                                            <a class="dropdown-item" href="about-us.html">About Us</a>
-                                            <a class="dropdown-item" href="services.html">Services</a>
-                                            <a class="dropdown-item" href="services-creative.html">Services Creative</a>
+                                            <a class="dropdown-item" href="{{ route('branding') }}">Brand Activation</a>
+                                            <a class="dropdown-item" href="{{ route('design') }}">UX, Digital & Print Design</a>
+                                            <a class="dropdown-item" href="{{ route('e-commerce') }}">E-Commerce Design & Development </a>
+                                            <a class="dropdown-item" href="{{ route('development') }}">WordPress & Website Development</a>
+                                            <a class="dropdown-item" href="{{ route('operations') }}">Business Operations & Solutions</a>
+                                            <a class="dropdown-item" href="{{ route('strategic') }}">Strategic Marketing Consulting</a>
+                                            {{--<hr>--}}
+                                            {{--<a href="#" class="dropdown-item big_item">--}}
+                                                {{--<span class="dropdown-header" href="about-company.html">eaZy cms<em>&trade;</em></span>--}}
+                                                {{--<p>Symantic is proud to announce that we will be launching a new Content Management System soon. Click for more details</p>--}}
+
+                                            {{--</a>--}}
+
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="services-grid.html">Services Grid</a>
-                                            <a class="dropdown-item" href="services-split.html">Services Split</a>
-                                            <a class="dropdown-item" href="careers-listing.html">Careers Listing</a>
-                                            <a class="dropdown-item" href="careers-single.html">Careers Single</a>
-                                            <a class="dropdown-item" href="contact-modern.html">Contact Modern</a>
-                                            <a class="dropdown-item" href="contact-simple.html">Contact Simple</a>
+                                            <a href="#" class="dropdown-item big_item">
+                                                <span class="dropdown-header" href="about-company.html">symantic bds<em>&trade;</em> <br></span>
+                                                <p>Symantic Creative BDS&trade; provides <mark>small businesses and startups</mark> with an integrated full stack solution to branding, marketing and advertising, packaged together to <mark>reduce cost</mark> and expenses.
+                                                    <br>
+                                                    <br>
+                                                    <strong>
+                                                        Click to find our more!
+                                                    </strong>
+                                                </p>
+
+                                            </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="contact-map.html">Contact Map</a>
-                                            <a class="dropdown-item" href="contact-planner.html">Contact Planner</a>
-                                            <a class="dropdown-item" href="contact-clean.html">Contact Clean</a>
-                                            <a class="dropdown-item" href="contact-split.html">Contact Split</a>
-                                            <a class="dropdown-item" href="login.html">Login Page</a>
-                                            <a class="dropdown-item" href="create-account.html">Create Account</a>
+                                            <a href="#" class="dropdown-item big_item">
+                                                <span class="dropdown-header" href="about-company.html">launCh-it<em>&trade;</em></span>
+                                                <p>Launch-IT&trade; is the ultimate solution for your next product or service <mark>launch</mark>. Through expert marketing campaigns & experiences, launch-it&trade; provides the <mark>ultimate platform</mark> for businesses to expand.
+                                                    <br>
+                                                    <br>
+                                                    <strong>
+                                                        Click to find our more!
+                                                    </strong>
+                                                </p>
+
+                                            </a>
+
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="recover-account.html">Recover Account</a>
-                                            <a class="dropdown-item" href="cart.html">Shopping Cart</a>
-                                            <a class="dropdown-item" href="404.html">Error 404</a>
-                                            <a class="dropdown-item" href="500.html">Error 500</a>
-                                            <a class="dropdown-item" href="onboarding.html">Onboarding</a>
-                                            <a class="dropdown-item" href="search-results.html">Search Results</a>
+                                            <a href="#" class="dropdown-item big_item">
+                                                <span class="dropdown-header" href="about-company.html">symantic app-D<em>&trade;</em></span>
+                                                <p>More information <mark>Coming Soon.</mark></p>
+                                            </a>
+
                                         </li>
                                     </ul>
                                 </div>

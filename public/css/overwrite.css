@@ -53,7 +53,7 @@
 }
 
 .grey-fade-over {
-    background-color: rgba(55, 58, 62, 0.52);
+    background-color: rgba(41, 41, 41, 0.79);
 }
 
 .symscroll{
@@ -64,6 +64,62 @@
 .cbp-af-header.cbp-af-header-shrink.black-menu-background-1st-trans {
     background-color: #363a3e;
 }
+
+@media (max-width: 991px) {
+    .black-menu-background-1st-trans {
+        background-color: #363a3e;
+    }
+
+    #menu-wrap {
+        position: fixed;
+    }
+}
+
 .background-dark {
     background-color: #373a3e;
+}
+
+.dropdown-header em{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+p.dropdown-text {
+    display: block;
+    width: 100%;
+    padding: 3px 0.6rem;
+    clear: both;
+    font-weight: 400;
+    color: #292b2c;
+    text-align: inherit;
+    background: 0 0;
+    border: 0;
+}
+
+a.dropdown-item.big_item{
+    white-space: normal;
+
+}
+
+a.dropdown-item.big_item .dropdown-header{
+    font-family: "symantic-bold";
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: #636c72;
+    white-space: normal;
+    padding: 0;
+    padding-bottom: 0.5rem;
+}
+
+p.dropdown-text.icon{
+}
+
+.dropdown-img{
+    max-width:100%;
+    padding: 3px 1.5rem;
+}
+.dropdown-button {
+    max-width: 100%;
+    padding: 3px 1.5rem;
 }

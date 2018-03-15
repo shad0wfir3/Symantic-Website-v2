@@ -96,12 +96,12 @@
 
 <!-- JAVASCRIPT
 ================================================== -->
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/royal_preloader.min.js"></script>
-<script type="text/javascript" src="js/tether.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/plugins.js"></script>
-<script type="text/javascript" src="js/custom/custom-corporate.js"></script>
+<script type="text/javascript" src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/royal_preloader.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/tether.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/custom/custom-corporate.js') }}"></script>
 <!-- End Document
 ================================================== -->
 </body>
