@@ -51,6 +51,9 @@
     background-color: initial;
     border-bottom: 1px solid #31BFB3;
 }
+.nav-top-bar p a{
+    color:#fff;
+}
 
 .grey-fade-over {
     background-color: rgba(41, 41, 41, 0.79);
@@ -70,9 +73,9 @@
         background-color: #363a3e;
     }
 
-    #menu-wrap {
-        position: fixed;
-    }
+    /*#menu-wrap {*/
+        /*position: fixed;*/
+    /*}*/
 }
 
 .background-dark {
@@ -122,4 +125,23 @@ p.dropdown-text.icon{
 .dropdown-button {
     max-width: 100%;
     padding: 3px 1.5rem;
+}
+
+.limit-logo{
+    max-width:300px;
+}
+
+/*.main-title h2, .main-title h3, .main-title h4, .main-title h5 {*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+mark{
+    padding-left:0;
+    padding-right:0;
+    width:100%;
+}
+
+.service-scroll a{
+    color:inherit;
+    text-decoration: none;
 }

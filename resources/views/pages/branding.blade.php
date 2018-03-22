@@ -8,7 +8,7 @@
     ================================================== -->
 
     <div class="section padding-top-1st padding-bottom-1st over-hide">
-        <div class="parallax" style="background-image: url({{ asset('img/services/branding-header.jpg') }})"></div>
+        <div class="parallax" style="background-image: url( {{ asset('img/services/branding-header.jpg')}} )"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
             <div class="row">

@@ -116,7 +116,7 @@
                         <i class="funky-ui-icon icon-Optimization"></i>
                         <h5 class="mt-3">User Experience (UX), Digital & Print Design</h5>
                         <p class="mt-3 mb-4">Professional design solutions for your business needs.</p>
-                        <a href="#" class="btn-link btn-primary">read more</a>
+                        <a href="{{ route('design') }}" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
@@ -189,141 +189,113 @@
         </div>
     </div>
 
-    <!-- Testimonials Block
-    ================================================== -->
-
-    {{--<div class="section padding-top-bottom background-white over-hide">--}}
-        {{--<div class="container">--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-lg-4">--}}
-                    {{--<div class="main-title">--}}
-                        {{--<div class="main-subtitle-top mb-4">testimonials</div>--}}
-                        {{--<h4>What some of our clients say about us.</h4>--}}
-                        {{--<div class="main-subtitle-bottom smaller mt-3">Service with passion & intuitiveness in mind. Symantic Creative guarantees a happier you through all of our operations.</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="col-lg-8 px-0">--}}
-                    {{--<div id="owl-testimonials" class="owl-carousel owl-theme no-hidden">--}}
-                        {{--<div class="item">--}}
-                            {{--<div class="testimonials-box-1 bigger-img border-on-light">--}}
-                                {{--<img  src="img/t1.jpg" alt="" />--}}
-                                {{--<p class="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>--}}
-                                {{--<h6>Rebekah Vogel</h6>--}}
-                                {{--<p><span>www.imagerybykye.co.za</span></p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="item">--}}
-                            {{--<div class="testimonials-box-1 bigger-img border-on-light">--}}
-                                {{--<img  src="img/t2.jpg" alt="" />--}}
-                                {{--<p class="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>--}}
-                                {{--<h6>Alex Andrews</h6>--}}
-                                {{--<p><span>Creativity Media</span></p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="item">--}}
-                            {{--<div class="testimonials-box-1 bigger-img border-on-light">--}}
-                                {{--<img  src="img/t3.jpg" alt="" />--}}
-                                {{--<p class="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>--}}
-                                {{--<h6>Frank Furius</h6>--}}
-                                {{--<p><span>Alliance Motosport</span></p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-
-    <!-- Separator Line
-    ================================================== -->
-
-
-
-
-    <!-- Portfolio Block
+    <!-- Work Title Block
         ================================================== -->
-    <div class="section padding-top background-white">
+
+    <div class="section padding-top">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="main-title text-center">
-                        <div class="main-subtitle-top mb-4">latest work</div>
-                        <h3>We take pride in delivering only the best.</h3>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <div class="col-md-12">
-                    <div class="grid-filter">
-                        <ul class="filter">
-                            <li><a href="#" class="current" data-filter="*" title="">all</a></li>
-                            <li><a href="#" data-filter=".branding" title="">branding</a></li>
-                            <li><a href="#" data-filter=".websites" title="">websites</a></li>
-                            <li><a href="#" data-filter=".campaigns" title="">campaigns</a></li>
-                        </ul>
+                        <div class="main-subtitle-top mb-4">LATEST WORK</div>
+                        <h3>We Take Pride In Delivering Only The Best.</h3>
+                        <div class="main-subtitle-bottom mt-3">we do magic</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="grid-wraper with-margin clearfix">
-            <div class="grid-box float-inline third with-margin branding">
-                <a href="project-image.html">
-                    <div class="portfolio-box-1 rounded">
-                        <img  src="img/portfolio/grid/1.jpg" alt="" />
-                        <div class="portfolio-mask-2 rounded"></div>
-                        <h5 class="on-center text-center">primarily serve people</h5>
-                        <p class="on-center text-center">design, motion</p>
+    </div>
+
+    <!-- Work Block
+    ================================================== -->
+
+    <div class="section background-white padding-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="work-slider-wrap mb-4">
+                    <div id="owl-work" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="project-image.html">
+                                <div class="portfolio-box-1 dark rounded">
+                                    <img  src="img/portfolio/grid/1.jpg" alt="" />
+                                    <div class="portfolio-mask-2 rounded"></div>
+                                    <h5 class="on-center text-center">primarily serve people</h5>
+                                    <p class="on-center text-center">design, motion</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="project-image.html">
+                                <div class="portfolio-box-1 dark rounded">
+                                    <img  src="img/portfolio/grid/2.jpg" alt="" />
+                                    <div class="portfolio-mask-2 rounded"></div>
+                                    <h5 class="on-center text-center">primarily serve people</h5>
+                                    <p class="on-center text-center">design, motion</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="project-image.html">
+                                <div class="portfolio-box-1 dark rounded">
+                                    <img  src="img/portfolio/grid/3.jpg" alt="" />
+                                    <div class="portfolio-mask-2 rounded"></div>
+                                    <h5 class="on-center text-center">primarily serve people</h5>
+                                    <p class="on-center text-center">design, motion</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="project-image.html">
+                                <div class="portfolio-box-1 dark rounded">
+                                    <img  src="img/portfolio/grid/4.jpg" alt="" />
+                                    <div class="portfolio-mask-2 rounded"></div>
+                                    <h5 class="on-center text-center">primarily serve people</h5>
+                                    <p class="on-center text-center">design, motion</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="project-image.html">
+                                <div class="portfolio-box-1 dark rounded">
+                                    <img  src="img/portfolio/grid/5.jpg" alt="" />
+                                    <div class="portfolio-mask-2 rounded"></div>
+                                    <h5 class="on-center text-center">primarily serve people</h5>
+                                    <p class="on-center text-center">design, motion</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="project-image.html">
+                                <div class="portfolio-box-1 dark rounded">
+                                    <img  src="img/portfolio/grid/6.jpg" alt="" />
+                                    <div class="portfolio-mask-2 rounded"></div>
+                                    <h5 class="on-center text-center">primarily serve people</h5>
+                                    <p class="on-center text-center">design, motion</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="project-image.html">
+                                <div class="portfolio-box-1 dark rounded">
+                                    <img  src="img/portfolio/grid/7.jpg" alt="" />
+                                    <div class="portfolio-mask-2 rounded"></div>
+                                    <h5 class="on-center text-center">primarily serve people</h5>
+                                    <p class="on-center text-center">design, motion</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="project-image.html">
+                                <div class="portfolio-box-1 dark rounded">
+                                    <img  src="img/portfolio/grid/8.jpg" alt="" />
+                                    <div class="portfolio-mask-2 rounded"></div>
+                                    <h5 class="on-center text-center">primarily serve people</h5>
+                                    <p class="on-center text-center">design, motion</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="grid-box float-inline third with-margin photo motion">
-                <a href="project-image.html">
-                    <div class="portfolio-box-1 rounded">
-                        <img  src="img/portfolio/grid/2.jpg" alt="" />
-                        <div class="portfolio-mask-2 rounded"></div>
-                        <h5 class="on-center text-center">primarily serve people</h5>
-                        <p class="on-center text-center">design, motion</p>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-box float-inline third with-margin branding">
-                <a href="project-image.html">
-                    <div class="portfolio-box-1 rounded">
-                        <img  src="img/portfolio/grid/3.jpg" alt="" />
-                        <div class="portfolio-mask-2 rounded"></div>
-                        <h5 class="on-center text-center">primarily serve people</h5>
-                        <p class="on-center text-center">design, motion</p>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-box float-inline third with-margin photo motion">
-                <a href="project-image.html">
-                    <div class="portfolio-box-1 rounded">
-                        <img  src="img/portfolio/grid/4.jpg" alt="" />
-                        <div class="portfolio-mask-2 rounded"></div>
-                        <h5 class="on-center text-center">primarily serve people</h5>
-                        <p class="on-center text-center">design, motion</p>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-box float-inline third with-margin motion">
-                <a href="project-image.html">
-                    <div class="portfolio-box-1 rounded">
-                        <img  src="img/portfolio/grid/5.jpg" alt="" />
-                        <div class="portfolio-mask-2 rounded"></div>
-                        <h5 class="on-center text-center">primarily serve people</h5>
-                        <p class="on-center text-center">design, motion</p>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-box float-inline third with-margin branding photo">
-                <a href="project-image.html">
-                    <div class="portfolio-box-1 rounded">
-                        <img  src="img/portfolio/grid/6.jpg" alt="" />
-                        <div class="portfolio-mask-2 rounded"></div>
-                        <h5 class="on-center text-center">primarily serve people</h5>
-                        <p class="on-center text-center">design, motion</p>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -331,20 +303,60 @@
 
     <!-- Seperator Line
         ================================================== -->
-    {{--<div class="section padding-top-bottom-1 background-white">--}}
-        {{--<div class="container">--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-md-12">--}}
-                    {{--<div class="separator-wrap">--}}
-                        {{--<span class="separator"><span class="separator-line dashed"></span></span>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
+    <div class="section padding-top-bottom-1 background-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="separator-wrap">
+                        <span class="separator"><span class="separator-line dashed"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logos Block
+    ================================================== -->
+
+    <div class="section padding-top-bottom background-white over-hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#">
+                        <img  src="img/logos/d1.png" class="img-120 mx-auto" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 mt-4 mt-md-0">
+                    <a href="#">
+                        <img  src="img/logos/d2.png" class="img-120 mx-auto" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 mt-4 mt-md-0">
+                    <a href="#">
+                        <img  src="img/logos/d5.png" class="img-120 mx-auto" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 mt-4 mt-md-0">
+                    <a href="#">
+                        <img  src="img/logos/d6.png" class="img-120 mx-auto" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 mt-4 mt-md-0">
+                    <a href="#">
+                        <img  src="img/logos/d7.png" class="img-120 mx-auto" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 mt-4 mt-md-0">
+                    <a href="#">
+                        <img  src="img/logos/d11.png" class="img-120 mx-auto" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Blog Block
-    ================================================== -->
+   ================================================== -->
 
     <div class="section padding-top-bottom background-grey-2 over-hide">
         <div class="container">
@@ -439,6 +451,7 @@
         </div>
     </div>
 
+
     <!-- Parallax Block
     ================================================== -->
 
@@ -476,44 +489,8 @@
         </div>
     </div>
 
-    <!-- Logos Block
-    ================================================== -->
 
-    <div class="section padding-bottom background-white over-hide">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <a href="#">
-                        <img  src="img/logos/d1.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d2.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d5.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d6.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d7.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d11.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 
 @endsection

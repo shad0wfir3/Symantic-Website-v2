@@ -77,7 +77,7 @@
 			var parts = full_url.split("#");
 			var trgt = parts[1];
 			var target_offset = $("#"+trgt).offset();
-			var target_top = target_offset.top - 67;
+			var target_top = target_offset.top - 118;
 
 			$('html, body').animate({scrollTop:target_top}, 800);
 		});
@@ -261,6 +261,19 @@
 				owl.trigger('owl.prev');
 			})	
 		} )(jQuery);
+
+        /* Work Carousel */
+
+        $("#owl-work").owlCarousel({
+            items : 3,
+            itemsDesktop : [1350,2],
+            itemsDesktopSmall : [1000,2],
+            itemsTablet: [768,1],
+            itemsMobile : false,
+            pagination : true,
+            autoPlay : 8000,
+            slideSpeed : 300
+        });
 	
 	
 		// Facts Counter 
