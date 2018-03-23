@@ -1,5 +1,15 @@
 @extends('layouts.site')
+
+@section('open_graph')
+    <meta property="og:title" content="Symantic Creative Design" />
+    <meta property="og:type" content="page" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="{{ asset('img/services/design-header.jpg') }}" />
+    <meta property="og:description" content="Symantic Creative offers ux, digital and print design solutions for all your business needs" />
+@endsection
+
 @section('title','User Experience, Digital and Print Design')
+
 @section('slider')
     <!-- Hero Block
     ================================================== -->
@@ -289,6 +299,4 @@
             </div>
         </div>
     </div>
-
-
 @endsection
