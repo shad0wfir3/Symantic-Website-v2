@@ -40,9 +40,10 @@
                             generates more leads and ultimately brings in more business.</p>
                     </div>
                 </div>
+                {{--TODO: Update link to quote/onboarding page--}}
                 <div class="col-md-3 mt-4 mt-md-0">
                     <div class="call-box-3 text-center text-md-right">
-                        <a href="portfolio-masonry-3col.html" class="btn btn-primary btn-long mt-0 mt-md-4" >request a quote!</a>
+                        <a href="#" class="btn btn-primary btn-long mt-0 mt-md-4" >request a quote!</a>
                     </div>
                 </div>
             </div>
@@ -133,16 +134,17 @@
                 <div class="col-md-6 align-items-stretch padding-top-bottom">
                     <div class="section justify-content-center text-left padding-on-grid-12">
 
-                      <div class="main-title no-subtitle">
+                        <div class="main-title">
                             <div class="main-subtitle-top mb-4">User Experience (UX) Design</div>
-                            <h3 class="mb-0">Targeted design focused on user psycology and behaviour</h3>
+                            <h4>Targeted design focused on user psycology and behaviour</h4>
+                            <div class="main-subtitle-bottom smaller mt-3">direct the narrative</div>
+                            <p class="mt-3 mb-0"><strong>UX design is about making the user’s experience with the product the best it can be.</strong> At Symantic Creative all our design services has the concepts and principles of UX design ingrained in its core.
+                                <br>
+                                <br>
+                                We want to make sure we attract people to your website, brand, campaign or business, and then, once they are there, make their journey to executing transactions as easy and fun as possible.</p>
                         </div>
-                        <p class="lead mb-1"><strong>UX design is about making the user’s experience with the product the best it can be.</strong> At Symantic Creative all our design services has the concepts and principles of UX design ingrained in its core.
-                            <br>
-                            <br>
-                            We want to make sure we attract people to your website, brand, campaign or business, and then, once they are there, make their journey to executing transactions as easy and fun as possible.</p>
-
-                        <a href="contact-map.html" class="btn btn-primary btn-simple btn-round btn-long">work with us</a>
+                        {{--TODO: Update link to onboarding/quote page with service definition--}}
+                        <a href="contact-map.html" class="btn btn-primary btn-simple btn-round btn-long">ready to get started?</a>
                     </div>
                 </div>
             </div>
@@ -161,14 +163,19 @@
                 <div class="col-md-6 flex-xs-first align-items-stretch padding-top-bottom">
                     <div class="section justify-content-center text-left padding-on-grid-12">
                         <div class="main-title">
-                            <div class="main-subtitle-top mb-4">User Experience (UX) Design</div>
-                            <h4>Targeted design focused on user psycology and behaviour</h4>
-                            <div class="main-subtitle-bottom smaller mt-3">direct the narrative</div>
-                            <p class="mt-3 mb-0"><strong>UX design is about making the user’s experience with the product the best it can be.</strong> At Symantic Creative all our design services has the concepts and principles of UX design ingrained in its core.
-                                <br>
-                                <br>
-                                We want to make sure we attract people to your website, brand, campaign or business, and then, once they are there, make their journey to executing transactions as easy and fun as possible.</p>
+                            <div class="main-subtitle-top mb-4">Corporate Identity</div>
+                            <h4>Creative Branding Solutions</h4>
+                            <div class="main-subtitle-bottom smaller mt-3">your image redefined</div>
+                            <p class="mt-3 mb-3">
+                                    Our corporate identity design services is specifically formulated and refined through years of experience from <strong>world class designers</strong>.
+                                    <br>
+                                    <br>
+                                    From logo design to letterheads and stationary, corporate identity design allows you the freedom to choose the level of branding you desire and stand out from your competition.
+                            </p>
+
                         </div>
+                        {{--TODO: Update link to onboarding/quote page with service definition--}}
+                        <a href="contact-map.html" class="btn btn-primary btn-simple btn-round btn-long">redefine your image</a>
                     </div>
                 </div>
             </div>
