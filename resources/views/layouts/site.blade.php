@@ -24,6 +24,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet"/>
 
+    <!-- Open Graph
+    ================================================== -->
+    @yield('open_graph','')
+
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
@@ -102,6 +106,7 @@
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/custom/custom-corporate.js') }}"></script>
+@stack('scripts')
 <!-- End Document
 ================================================== -->
 </body>

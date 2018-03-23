@@ -1,4 +1,5 @@
 @extends('layouts.site')
+@section('title','Full Service Digital Agency')
 @section('slider')
     <div class="section full-height over-hide">
         <div class="hero-slider-wrap">
