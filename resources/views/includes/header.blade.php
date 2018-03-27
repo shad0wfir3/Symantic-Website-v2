@@ -4,7 +4,7 @@
             <div class="col-md-7">
                 <p><i class="fa fa-clock-o mr-1"></i> mon - fri: 09.00 - 17.00
                     <i class="fa fa-phone ml-2 mr-1"></i> <a href="tel:+27838223872"> +27 (0)83 822 3872</a>
-                    <a href="mailto:hello@symantic.co.za"><i class="fa fa-comment-o ml-2 mr-1"></i> hello@symantic.co.z</a>
+                    <a href="mailto:hello@symantic.co.za"><i class="fa fa-comment-o ml-2 mr-1"></i> hello@symantic.co.za</a>
                 </p>
             </div>
             <div class="col-md-5">
@@ -44,7 +44,7 @@
                     </a>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavMenuMain">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
+                            <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('home') }}">
                                     Home
                                 </a>
@@ -54,7 +54,7 @@
                                     {{--About Us--}}
                                 {{--</a>--}}
                             {{--</li>--}}
-                            <li class="nav-item dropdown mega-menu">
+                            <li class="nav-item dropdown mega-menu {{ Request::is('services*') ? 'active' : '' }}">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-mainNav-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Our Services
                                 </a>
@@ -112,17 +112,17 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item {{ Request::is('our-work*') ? 'active' : '' }}">
                                 <a class="nav-link" href="#">
                                     Our Work
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item {{ Request::is('blog*') ? 'active' : '' }}">
                                 <a class="nav-link" href="#">
                                     Blog
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item{{ Request::is('contact-us') ? 'active' : '' }}">
                                 <a class="nav-link" href="#">
                                     Get in Touch
                                 </a>
