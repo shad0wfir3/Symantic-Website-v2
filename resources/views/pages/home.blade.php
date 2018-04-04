@@ -107,7 +107,7 @@
                 <div class="col-md-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Target-Market"></i>
-                        <h5 class="mt-3">Brand Activation & Marketing</h5>
+                        <h5 class="mt-3">Brand Marketing & Strategy</h5>
                         <p class="mt-3 mb-4">Increase your brands' reputation though engagement campaigns.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
@@ -115,16 +115,16 @@
                 <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Optimization"></i>
-                        <h5 class="mt-3">User Experience (UX), Digital & Print Design</h5>
-                        <p class="mt-3 mb-4">Professional design solutions for your business needs.</p>
+                        <h5 class="mt-3">Graphic & User Experience Design</h5>
+                        <p class="mt-3 mb-4">Professional full service design solutions for your business.</p>
                         <a href="{{ route('design') }}" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Monitor-Laptop"></i>
-                        <h5 class="mt-3">E-Commerce Design & Development</h5>
-                        <p class="mt-3 mb-4">Business growth through online selling & e-commerce platforms</p>
+                        <h5 class="mt-3">Website Design & Development</h5>
+                        <p class="mt-3 mb-4">Business growth through online advertising and marketing.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
@@ -137,16 +137,16 @@
                 <div class="col-md-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Monitor-phone"></i>
-                        <h5 class="mt-3">Wordpress & Website Development</h5>
-                        <p class="mt-3 mb-4">Manage your website and content without writing a single line of code.</p>
+                        <h5 class="mt-3">WordPress & Themes Development</h5>
+                        <p class="mt-3 mb-4">WordPress websites and theme design and development services.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
-                        <i class="funky-ui-icon icon-Business-ManWoman"></i>
-                        <h5 class="mt-3">Business Operations & Solutions</h5>
-                        <p class="mt-3 mb-4">Business management through professional integrated solutions.</p>
+                        <i class="funky-ui-icon icon-Tag-5"></i>
+                        <h5 class="mt-3">E-Commerce & Online Selling Solutions</h5>
+                        <p class="mt-3 mb-4">Online store management and logistics development & management</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Support"></i>
                         <h5 class="mt-3">Strategic Marketing Consulting</h5>
-                        <p class="mt-3 mb-4">Achieve growth and inoperations and growth through a dedicated strategy</p>
+                        <p class="mt-3 mb-4">Operations, Management and Growth Opportunities consulting.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>

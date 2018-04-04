@@ -28,4 +28,8 @@ Route::prefix('services')->group(function(){
     Route::get('strategic-marketing','PagesController@strategic')->name('strategic');
 });
 
+Route::get('contact-us','PagesController@contact_us')->name('contact_us');
+
+Route::get('quote-me','PagesController@quote')->name('quote-me');
+
 

@@ -61,53 +61,25 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-mainNav-2">
                                     <ul class="drop-mega-menu">
                                         <li>
-                                            <a class="dropdown-item" href="{{ route('branding') }}">Brand Activation</a>
-                                            <a class="dropdown-item" href="{{ route('design') }}">UX, Digital & Print Design</a>
-                                            <a class="dropdown-item" href="{{ route('e-commerce') }}">E-Commerce Design & Development </a>
-                                            <a class="dropdown-item" href="{{ route('development') }}">WordPress & Website Development</a>
-                                            <a class="dropdown-item" href="{{ route('operations') }}">Business Operations & Solutions</a>
+                                            <a class="dropdown-header">Services</a>
+                                            <a class="dropdown-item" href="{{ route('branding') }}">Brand Marketing & Strategy</a>
+                                            <a class="dropdown-item" href="{{ route('design') }}">Graphic Design</a>
+                                            <a class="dropdown-item" href="{{ route('e-commerce') }}">Website Design & Development </a>
+                                            <a class="dropdown-item" href="{{ route('development') }}">WordPress & Themes</a>
+                                            <a class="dropdown-item" href="{{ route('development') }}">E-Commerce & Online Stores</a>
                                             <a class="dropdown-item" href="{{ route('strategic') }}">Strategic Marketing Consulting</a>
-                                            {{--<hr>--}}
-                                            {{--<a href="#" class="dropdown-item big_item">--}}
-                                                {{--<span class="dropdown-header" href="about-company.html">eaZy cms<em>&trade;</em></span>--}}
-                                                {{--<p>Symantic is proud to announce that we will be launching a new Content Management System soon. Click for more details</p>--}}
-
-                                            {{--</a>--}}
-
                                         </li>
                                         <li>
+                                            <a class="dropdown-header">Packages</a>
                                             <a href="#" class="dropdown-item big_item">
-                                                <span class="dropdown-header" href="about-company.html">symantic bds<em>&trade;</em> <br></span>
-                                                <p>Symantic Creative BDS&trade; provides <strong>small businesses and start-ups</strong> with an integrated full stack solution to branding, marketing and advertising, packaged together to <strong>reduce cost</strong> and expenses.
-                                                    <br>
-                                                    <br>
-                                                    <strong>
-                                                        Click to find our more!
-                                                    </strong>
-                                                </p>
+                                                <strong>Symnatic BDS</strong><em>&trade;</em>
+                                                <p>Symantic Creative BDS&trade; provides <strong>small businesses and start-ups</strong> with an integrated full stack solution to branding, marketing and advertising, packaged together to <strong>reduce cost</strong> and expenses.</p>
 
                                             </a>
-                                        </li>
-                                        <li>
                                             <a href="#" class="dropdown-item big_item">
-                                                <span class="dropdown-header" href="about-company.html">launCh-it<em>&trade;</em></span>
-                                                <p>Launch-IT&trade; is the ultimate solution for your next <strong>product or service</strong> launch. Through expert marketing campaigns & experiences, launch-it&trade; provides the <strong>ultimate platform</strong> for businesses to expand.
-                                                    <br>
-                                                    <br>
-                                                    <strong>
-                                                        Click to find our more!
-                                                    </strong>
-                                                </p>
-
+                                                <strong>Launch-It</strong><em>&trade;</em>
+                                                <p>Launch-IT&trade; is the ultimate solution for your next <strong>product or service</strong> launch. Through expert marketing campaigns & experiences, launch-it&trade; provides the <strong>ultimate platform</strong> for you to market your product.</p>
                                             </a>
-
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-item big_item">
-                                                <span class="dropdown-header" href="about-company.html">symantic app-D<em>&trade;</em></span>
-                                                <p>More information <mark>Coming Soon.</mark></p>
-                                            </a>
-
                                         </li>
                                     </ul>
                                 </div>
@@ -123,7 +95,7 @@
                                 </a>
                             </li>
                             <li class="nav-item{{ Request::is('contact-us') ? 'active' : '' }}">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="{{ route('contact_us') }}">
                                     Get in Touch
                                 </a>
                             </li>

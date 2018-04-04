@@ -14,7 +14,7 @@ class PagesController extends Controller
     //Services Pages Here
 
     public function branding(){
-        return view('pages.branding');
+        return view('pages.brand');
     }
 
     public function design(){
@@ -38,6 +38,10 @@ class PagesController extends Controller
     }
 
     //Services Pages End
+
+    public function contact_us(){
+        return view('pages.contact-us');
+    }
 
 
 }
