@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">
                         Posts
-                        <a href="#" class="btn btn-primary float-md-right">Create New</a>
+                        <a href="{{ route('admin.blog.create') }}" class="btn btn-primary float-md-right">Create New</a>
 
                     </div>
 

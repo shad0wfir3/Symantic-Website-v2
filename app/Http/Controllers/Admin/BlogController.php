@@ -16,7 +16,7 @@ class BlogController extends Controller
     public function index()
     {
         $posts = Post::with('authors')->paginate(10);
-        return view('dashboard.blog',compact('posts'));
+        return view('dashboard.blog.index',compact('posts'));
     }
 
     /**

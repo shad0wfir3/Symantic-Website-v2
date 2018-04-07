@@ -33,7 +33,7 @@ Auth::routes();
 Route::get('/admin', 'HomeController@index')->name('home');
 Route::prefix('admin')->namespace('Admin')->group(function(){
     Route::prefix('blog')->group(function(){
-        Route::get('','BlogController@index')->name('admin.blog');
+        Route::get('','BlogController@index')->name('admin.blog.index');
         Route::get('create','BlogController@create')->name('admin.blog.create');
     });
 });

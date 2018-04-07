@@ -28,7 +28,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @auth
-                                <li><a href="{{ route('admin.blog') }}">Blog</a></li>
+                                <li><a href="{{ route('admin.blog.index') }}">Blog</a></li>
                             @endauth
 
 
@@ -70,5 +70,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+@yield('page_scripts')
 </body>
 </html>
