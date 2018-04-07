@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Africa/Johannesburg',
 
     /*
     |--------------------------------------------------------------------------
@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Barryvdh\Elfinder\ElfinderServiceProvider::class,
 
         /*
          * Application Service Providers...

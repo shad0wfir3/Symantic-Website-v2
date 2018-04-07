@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
 Route::get('/','PagesController@index')->name('home');
 Route::get('about-us','PagesController@about')->name('about');
 
@@ -33,3 +28,12 @@ Route::get('contact-us','PagesController@contact_us')->name('contact_us');
 Route::get('quote-me','PagesController@quote')->name('quote-me');
 
 
+Auth::routes();
+
+Route::get('/admin', 'HomeController@index')->name('home');
+Route::prefix('admin')->namespace('Admin')->group(function(){
+    Route::prefix('blog')->group(function(){
+        Route::get('','BlogController@index')->name('admin.blog');
+        Route::get('create','BlogController@create')->name('admin.blog.create');
+    });
+});
