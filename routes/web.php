@@ -11,29 +11,32 @@
 |
 */
 
-Route::get('/','PagesController@index')->name('home');
+Route::get('/','PagesController@index')->name('index');
 Route::get('about-us','PagesController@about')->name('about');
 
 Route::prefix('services')->group(function(){
-    Route::get('branding','PagesController@branding')->name('branding');
-    Route::get('design','PagesController@design')->name('design');
-    Route::get('e-commerce','PagesController@e_commerce')->name('e-commerce');
-    Route::get('website-development','PagesController@development')->name('development');
-    Route::get('operations-solutions','PagesController@operations')->name('operations');
-    Route::get('strategic-marketing','PagesController@strategic')->name('strategic');
+    Route::get('{slug}','ServiceController@getPage')->name('service.page');
 });
 
 Route::get('contact-us','PagesController@contact_us')->name('contact_us');
 
-Route::get('quote-me','PagesController@quote')->name('quote-me');
+Route::get('quote-me','PagesController@quote')->name('quote_me');
 
 
 Auth::routes();
 
-Route::get('/admin', 'HomeController@index')->name('home');
-Route::prefix('admin')->namespace('Admin')->group(function(){
+
+Route::prefix('admin')->middleware('auth')->namespace('Admin')->group(function(){
+    Route::get('', 'HomeController@index')->name('home');
     Route::prefix('blog')->group(function(){
         Route::get('','BlogController@index')->name('admin.blog.index');
         Route::get('create','BlogController@create')->name('admin.blog.create');
     });
+
+        Route::resource('services',"ServiceController");
+
+
+
+    Route::post('services/{service}/edit/change_status','ServiceController@status_change')->name('service.status');
+//    Route::post('upload_image','HomeController@uploadImg')->name('cloudinary.upload');
 });

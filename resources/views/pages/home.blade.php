@@ -104,60 +104,16 @@
     <div class="section padding-bottom-smaller background-white over-hide">
         <div class="container">
             <div class="row">
-                <div class="col-md-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                @foreach($services as $service)
+                <div class="col-md mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
                     <div class="services-box-1 border-on-light text-center">
-                        <i class="funky-ui-icon icon-Target-Market"></i>
-                        <h5 class="mt-3">Brand Marketing & Strategy</h5>
-                        <p class="mt-3 mb-4">Increase your brands' reputation though engagement campaigns.</p>
-                        <a href="#" class="btn-link btn-primary">read more</a>
+                        <i class="funky-ui-icon {{$service->icon}}"></i>
+                        <h5 class="mt-3">{{$service->name}}</h5>
+                        <p class="mt-3 mb-4">{{ $service->short_description }}</p>
+                        <a href="{{ route('service.page',$service->slug) }}" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center">
-                        <i class="funky-ui-icon icon-Optimization"></i>
-                        <h5 class="mt-3">Graphic & User Experience Design</h5>
-                        <p class="mt-3 mb-4">Professional full service design solutions for your business.</p>
-                        <a href="{{ route('design') }}" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center">
-                        <i class="funky-ui-icon icon-Monitor-Laptop"></i>
-                        <h5 class="mt-3">Website Design & Development</h5>
-                        <p class="mt-3 mb-4">Business growth through online advertising and marketing.</p>
-                        <a href="#" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section padding-bottom background-white over-hide">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center">
-                        <i class="funky-ui-icon icon-Monitor-phone"></i>
-                        <h5 class="mt-3">WordPress & Themes Development</h5>
-                        <p class="mt-3 mb-4">WordPress websites and theme design and development services.</p>
-                        <a href="#" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center">
-                        <i class="funky-ui-icon icon-Tag-5"></i>
-                        <h5 class="mt-3">E-Commerce & Online Selling Solutions</h5>
-                        <p class="mt-3 mb-4">Online store management and logistics development & management</p>
-                        <a href="#" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center">
-                        <i class="funky-ui-icon icon-Support"></i>
-                        <h5 class="mt-3">Strategic Marketing Consulting</h5>
-                        <p class="mt-3 mb-4">Operations, Management and Growth Opportunities consulting.</p>
-                        <a href="#" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

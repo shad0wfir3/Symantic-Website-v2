@@ -2,39 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Service;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function index(){
-        return view('pages.home');
-    }
-
-
-    //Services Pages Here
-
-    public function branding(){
-        return view('pages.brand');
-    }
-
-    public function design(){
-        return view('pages.design');
-    }
-
-    public function e_commerce(){
-        return view('pages.e-commerce');
-    }
-
-    public function development(){
-        return view('pages.development');
-    }
-
-    public function operations(){
-        return view('pages.operations');
-    }
-
-    public function strategic(){
-        return view('pages.strategic');
+        $services = Service::where('status','published')->get();
+        return view('pages.home',compact('services'));
     }
 
     //Services Pages End

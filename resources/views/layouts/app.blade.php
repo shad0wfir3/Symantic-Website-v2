@@ -12,6 +12,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="{{asset('js/tinymce/jquery.tinymce.min.js')}}"></script>
+    <script src="{{asset('js/tinymce/tinymce.min.js')}}"></script>
 </head>
 <body>
     <div id="app">
@@ -28,7 +30,12 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @auth
-                                <li><a href="{{ route('admin.blog.index') }}">Blog</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.blog.index') }}">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('services.index') }}">Services</a>
+                            </li>
                             @endauth
 
 
@@ -62,14 +69,17 @@
                 </div>
             </div>
         </nav>
-
         <main class="py-4">
+            <div class="container">
+                @include('includes.messages')
+            </div>
             @yield('content')
         </main>
     </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
 @yield('page_scripts')
 </body>
 </html>

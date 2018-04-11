@@ -64,7 +64,7 @@
                                 </tbody>
                             </table>
 
-                        {{ $posts->render() }}
+                        {{ $posts->links('vendor.pagination.bootstrap-4') }}
                     </div>
                 </div>
             </div>

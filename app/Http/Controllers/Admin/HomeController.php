@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use JD\Cloudder\Facades\Cloudder;
 
 class HomeController extends Controller
 {
@@ -24,5 +26,12 @@ class HomeController extends Controller
     public function index()
     {
         return view('dashboard.home');
+    }
+
+    public function uploadImg(Request $request){
+        dd($request->all());
+
+        return response()->json(['success'=>'Images Uploaded Successfully.']);
+
     }
 }
