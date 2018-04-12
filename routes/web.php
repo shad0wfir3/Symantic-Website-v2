@@ -40,3 +40,5 @@ Route::prefix('admin')->middleware('auth')->namespace('Admin')->group(function()
     Route::post('services/{service}/edit/change_status','ServiceController@status_change')->name('service.status');
 //    Route::post('upload_image','HomeController@uploadImg')->name('cloudinary.upload');
 });
+
+Route::model('services', '\App\Services');

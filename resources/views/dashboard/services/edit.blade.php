@@ -68,18 +68,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleTextarea">Short Description</label>
-                                <textarea class="form-control" id="service_short_description" name="service_short_description" rows="2" style="resize: none" placeholder="Short Description for the Service (used on the home page)">{{ old('service_short_description',$service->short_description) }}</textarea>
-                                <small id="contentHelp" class="form-text text-muted">Displayed on the home page and on the header of the service page</small>
+                                <div class="form-group">
+                                    <label for="exampleTextarea">Short Description</label>
+                                    <textarea class="form-control" id="service_short_description" name="service_short_description" rows="2" style="resize: none" placeholder="Short Description for the Service (used on the home page)">{{ old('service_short_description',$service->short_description) }}</textarea>
+                                    <small id="contentHelp" class="form-text text-muted">Displayed on the home page and on the header of the service page</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Content</label>
+                                    <textarea class="form-control" id="service_content" name="service_content" rows="10" placeholder="Service Content displayed on the right side of the page">
+                                        {{ old('service_content',$service->content) }}
+                                    </textarea>
+                                    <small id="contentHelp" class="form-text text-muted">Content to display on the service page</small>
+                                </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="requestType">Request Display</label>
+                                    <select id="requestType" name="request_type" class="form-control">
+                                        <option value="contact" {{ $service->request_type == 'contact' ? "selected" : "" }}>Contact Us</option>
+                                        <option value="quote" {{ $service->request_type == 'quote' ? "selected" : "" }}>Quote</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputAddress2">Content</label>
-                                <textarea class="form-control" id="service_content" name="service_content" rows="10" placeholder="Service Content displayed on the right side of the page">
-                                    {{ old('service_content',$service->content) }}
-                                </textarea>
-                                <small id="contentHelp" class="form-text text-muted">Content to display on the service page</small>
-                            </div>
+
                             <hr>
                             <h4>Service Breakdown</h4>
                             <hr>

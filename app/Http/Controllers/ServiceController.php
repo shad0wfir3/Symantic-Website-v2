@@ -10,7 +10,7 @@ class ServiceController extends Controller
 {
     public function getPage($slug){
 
-        $service = Service::where('slug',$slug)->firstorfail();
+        $service = Service::published()->where('slug',$slug)->firstorfail();
 
         $featured_img = [
             'src' => get_cl_img($service->featured_img),

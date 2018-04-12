@@ -129,10 +129,55 @@ class ServiceController extends Controller
     public function update(ServiceUpdateRequest $request, Service $service)
     {
 
-        $test = $request->all();
+        //-----------------Featured Img Upload -------------------- //
+        if ($request->has('featured_img')) {
+            $featured_img = $request->file('featured_img');
 
-        dd($test);
+            $featured_img_name = pathinfo($featured_img->getClientOriginalName(), PATHINFO_FILENAME);
+            $featured_img_path = $featured_img->getRealPath();
 
+            Cloudder::upload($featured_img_path, Carbon::now()->timestamp . $featured_img_name);
+            $featured_img_cloud_id = Cloudder::getPublicId();
+            $service->featured_img = $featured_img_cloud_id;
+            $service->featured_img_alt = $featured_img_name;
+        }
+
+
+        //-----------------Page Img Upload -------------------- //
+        if ($request->has('page_img')) {
+            $page_img = $request->file('page_img');
+
+            $page_img_name = pathinfo($page_img->getClientOriginalName(), PATHINFO_FILENAME);
+            $page_img_path = $page_img->getRealPath();
+
+            Cloudder::upload($page_img_path, Carbon::now()->timestamp . $page_img_name);
+            $page_img_cloud_id = Cloudder::getPublicId();
+            $service->page_img = $page_img_cloud_id;
+            $service->page_img_alt = $page_img_name;
+        }
+
+        $service->name = $request->get('service_name');
+        $service->icon = $request->get('service_icon');
+        $service->short_description = $request->get('service_short_description');
+        $service->content = $request->get('service_content');
+        $service->slug = $request->get('service_slug');
+
+        $sub_services = $request->get('sub_service');
+
+        $service_count = 0;
+        foreach($sub_services as $single_service){
+            $service_count++;
+        }
+        $sub_service_arr = [
+            'services' => $sub_services,
+            'service_count' => $service_count
+        ];
+
+        $service->breakdown_services = $sub_service_arr;
+
+        $service->save();
+
+        return redirect()->route('services.index')->with('success','Service successfully updated');
     }
 
     /**
