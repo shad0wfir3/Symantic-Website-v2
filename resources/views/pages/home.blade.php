@@ -332,77 +332,30 @@
                         <a class="next-blog"><i class="fa fa-angle-right"></i></a>
                     </div>
                     <div id="owl-blog" class="owl-carousel owl-theme">
+                        @foreach($featured_posts as $post)
                         <div class="item">
                             <div class="blog-box-1 background-white drop-shadow">
-                                <a href="post.html"><h5>Don’t get lost.</h5></a>
-                                <p class="mt-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
+                                <a href="{{ route('blog.post',$post->slug) }}"><h5>{{ truncate_headings($post->title) }}</h5></a>
+                                <p class="mt-3">{{ $post->excerpt}}</p>
                                 <div class="separator-wrap pt-3">
                                     <span class="separator"><span class="separator-line"></span></span>
                                 </div>
-                                <div class="author-wrap mt-5">
-                                    <img  src="img/t1.jpg" alt="" />
-                                    <p> by <a href="#">Anna Furius</a></p>
+                                <div class="author-wrap mt-3">
+                                    @foreach($post->tags as $tag)
+                                        <a href="{{ route('blog.tags',$tag->slug) }}" class="btn btn-primary btn-sm ml-0 mr-1 mb-1">{{ $tag->title }}</a>
+                                        @endforeach
+                                    <p class="mt-2"> by <a href="#">{{ $post->author->name }}</a></pmt-2>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="blog-box-1 background-white drop-shadow">
-                                <a href="post.html"><h5>Moments from a life.</h5></a>
-                                <p class="mt-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                <div class="separator-wrap pt-3">
-                                    <span class="separator"><span class="separator-line"></span></span>
-                                </div>
-                                <div class="author-wrap mt-5">
-                                    <img  src="img/t2.jpg" alt="" />
-                                    <p> by <a href="#">Alex Andrews</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-box-1 background-white drop-shadow">
-                                <a href="post.html"><h5>Content together.</h5></a>
-                                <p class="mt-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                <div class="separator-wrap pt-3">
-                                    <span class="separator"><span class="separator-line"></span></span>
-                                </div>
-                                <div class="author-wrap mt-5">
-                                    <img  src="img/t3.jpg" alt="" />
-                                    <p> by <a href="#">Frank Furius</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-box-1 background-white drop-shadow">
-                                <a href="post.html"><h5>Modern webdesign.</h5></a>
-                                <p class="mt-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                <div class="separator-wrap pt-3">
-                                    <span class="separator"><span class="separator-line"></span></span>
-                                </div>
-                                <div class="author-wrap mt-5">
-                                    <img  src="img/t4.jpg" alt="" />
-                                    <p> by <a href="#">Marco Kulis</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-box-1 background-white drop-shadow">
-                                <a href="post.html"><h5>How you'll see it.</h5></a>
-                                <p class="mt-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                <div class="separator-wrap pt-3">
-                                    <span class="separator"><span class="separator-line"></span></span>
-                                </div>
-                                <div class="author-wrap mt-5">
-                                    <img  src="img/t2.jpg" alt="" />
-                                    <p> by <a href="#">Alex Andrews</a></p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4 mt-5 mg-auto" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <a href="blog-grid.html" class="btn btn-primary btn-simple btn-round btn-long">visit our blog</a>
+                    <a href="{{ route('blog.index') }}" class="btn btn-primary btn-simple btn-round btn-long">visit our blog</a>
                 </div>
             </div>
         </div>
@@ -476,3 +429,7 @@
 
 
 @endsection
+
+@push('scripts')
+    <script type="text/javascript" src="{{ asset('js/custom/custom-corporate.js') }}"></script>
+@endpush

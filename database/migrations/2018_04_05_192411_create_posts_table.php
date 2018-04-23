@@ -17,10 +17,11 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->integer('author_id')->unsigned();
             $table->foreign('author_id')->references('id')->on('users');
+            $table->boolean('featured')->default(false);
             $table->string('title');
+            $table->string('slug');
             $table->text('excerpt');
             $table->longText('content');
-            $table->json('tags');
             $table->string('featured_img');
             $table->dateTime('published_date')->nullable();
             $table->enum('status',['draft','published','archived','unpublished']);

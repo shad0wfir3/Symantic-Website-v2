@@ -128,3 +128,6 @@
     </div>
 
 @endsection
+@push('scripts')
+    <script type="text/javascript" src="{{asset('js/custom/custom-contact-clean.js')}}"></script>
+@endpush

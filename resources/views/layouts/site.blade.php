@@ -76,7 +76,7 @@
 <script type="text/javascript" src="{{ asset('js/tether.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/custom/custom-corporate.js') }}"></script>
+
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHHX0dxLoAM5KnOndXnr3TwS9gao7edGo"></script>
 @stack('scripts')
 <!-- End Document

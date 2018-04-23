@@ -14,19 +14,12 @@ use Carbon\Carbon;
 |
 */
 
-$factory->define(App\Post::class, function (Faker $faker) {
+$factory->define(App\Tag::class, function (Faker $faker) {
 
-    $title =  $faker->sentence(3,true);
+    $title = $faker->unique()->randomElement(['design','development','graphic','ux','print','unique','chaos','tag_2','more']);
 
     return [
         'title' => $title,
-        'slug' => slugify($title),
-        'excerpt' => $faker->text(200),
-        'content' => $faker->randomHtml(),
-        'author_id' => 1,
-        'featured' => $faker->boolean(30),
-        'featured_img' => '1523456824design page image',
-        'published_date' => Carbon::now(),
-        'status' => $faker->randomElement(['draft','published','archived','unpublished']),
+        'slug' => slugify($title)
     ];
 });

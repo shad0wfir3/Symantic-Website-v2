@@ -92,7 +92,7 @@
                                 </a>
                             </li>
                             <li class="nav-item {{ Request::is('blog*') ? 'active' : '' }}">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="{{ route('blog.index') }}">
                                     Blog
                                 </a>
                             </li>

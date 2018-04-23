@@ -18,6 +18,13 @@ Route::prefix('services')->group(function(){
     Route::get('{slug}','ServiceController@getPage')->name('service.page');
 });
 
+Route::prefix('blog')->group(function(){
+    Route::get('','BlogController@index')->name('blog.index');
+    Route::get('{slug}','BlogController@getPost')->name('blog.post');
+    Route::get('tags/{slug}','BlogController@getTag')->name('blog.tags');
+    Route::get('categories/{slug}','BlogController@getCategories')->name('blog.categories');
+});
+
 Route::get('contact-us','PagesController@contact_us')->name('contact_us');
 
 Route::get('quote-me','PagesController@quote')->name('quote_me');
