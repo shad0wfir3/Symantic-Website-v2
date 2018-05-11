@@ -14,6 +14,10 @@ class PagesController extends Controller
         return view('pages.home',compact('services','featured_posts'));
     }
 
+    public function about(){
+        return view('pages.about');
+    }
+
     //Services Pages End
 
     public function contact_us(){

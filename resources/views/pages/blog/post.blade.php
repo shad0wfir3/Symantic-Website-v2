@@ -1,14 +1,14 @@
 @extends('layouts.site')
 
 @section('open_graph')
-    <meta property="og:title" content="Symantic Creative Design" />
-    <meta property="og:type" content="page" />
+    <meta property="og:title" content="{{ $post->title }}" />
+    <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:image" content="{{ asset('img/services/design-header.jpg') }}" />
-    <meta property="og:description" content="Symantic Creative offers ux, digital and print design solutions for all your business needs" />
+    <meta property="og:image" content="{{ get_cl_img($post->featured_img) }}" />
+    <meta property="og:description" content="{{ $post->excerpt }}" />
 @endsection
 
-@section('title','Graphic Design Solutions')
+@section('title', $post->title )
 
 @section('slider')
     <!-- Hero Block
@@ -87,7 +87,7 @@
                             <script>
                                 var disqus_config = function () {
                                 this.page.url = "{{ url()->current() }}";  // Replace PAGE_URL with your page's canonical URL variable
-                                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                this.page.identifier = "{{ $post->slug }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                                 };
 
                                 (function() { // DON'T EDIT BELOW THIS LINE

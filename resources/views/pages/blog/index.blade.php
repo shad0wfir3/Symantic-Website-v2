@@ -43,11 +43,12 @@
                     @foreach($posts as $post)
                         @php($count++)
                         @if($posts->count() % $count)
+                            @php($quote = $quotes->random(1)->first() )
                             <div class="grid-box float-inline quarter with-margin drop-shadow rounded">
                                 <div class="blog-box-1 blog-home background-dark over-hide">
                                     <div class="blog-quote-wrap">
-                                        <p class="mb-5">"Good buildings come from good people, and all problems are solved by good design."</p>
-                                        <h5>Stephen Gardiner</h5>
+                                        <p class="mb-5">"{{ $quote->quote }}"</p>
+                                        <h5>{{ $quote->author }}</h5>
                                     </div>
                                 </div>
                             </div>

@@ -21,8 +21,8 @@
             <div class="row justify-content-center">
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-center mb-0">
-                        <h2>Get in Touch</h2>
-                        <div class="main-subtitle-bottom mt-4">find out more, or just say hello</div>
+                        <h2>Read to get started?</h2>
+                        <div class="main-subtitle-bottom mt-4">Contact us Today</div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -35,6 +35,45 @@
 @section('content')
     <!-- Primary Page Layout
 	================================================== -->
+
+    <div class="section background-white padding-top-bottom-small over-hide z-bigger-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="services-box-1 p-0 text-center">
+                        <i class="funky-ui-icon icon-Phone-2"></i>
+                        <a href="tel:0838223872" class="btn-link"><h5 class="mt-3 pb-0 mb-0">+27 (0)83 822 3872</h5></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0">
+                    <div class="services-box-1 p-0 text-center">
+                        <i class="funky-ui-icon icon-Smartphone-4"></i>
+                        <h5 class="mt-3 pb-0 mb-0">+1 425 424 8643</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0">
+                    <div class="services-box-1 p-0 text-center">
+                        <i class="funky-ui-icon icon-Mail-Open"></i>
+                        <h5 class="mt-3 pb-0 mb-0">info@funky.com</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section padding-top-bottom-1 background-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="separator-wrap">
+                        <span class="separator"><span class="separator-line dashed"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Block
@@ -76,45 +115,12 @@
     <!-- Separator Line
     ================================================== -->
 
-    <div class="section padding-top-bottom-1 background-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="separator-wrap">
-                        <span class="separator"><span class="separator-line dashed"></span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Block
     ================================================== -->
 
-    <div class="section background-white padding-top-bottom-small over-hide z-bigger-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="services-box-1 p-0 text-center">
-                        <i class="funky-ui-icon icon-Phone-2"></i>
-                        <h5 class="mt-3 pb-0 mb-0">+1 62 254 2722</h5>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="services-box-1 p-0 text-center">
-                        <i class="funky-ui-icon icon-Smartphone-4"></i>
-                        <h5 class="mt-3 pb-0 mb-0">+1 425 424 8643</h5>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="services-box-1 p-0 text-center">
-                        <i class="funky-ui-icon icon-Mail-Open"></i>
-                        <h5 class="mt-3 pb-0 mb-0">info@funky.com</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Google Map Block
     ================================================== -->
@@ -129,5 +135,6 @@
 
 @endsection
 @push('scripts')
-    <script type="text/javascript" src="{{asset('js/custom/custom-contact-clean.js')}}"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWOda6UIX6b_ixVAyOyQHcg-zhrc8zMaI"></script>
+    <script type="text/javascript" src="{{asset('js/custom/custom-contact-simple.js')}}"></script>
 @endpush

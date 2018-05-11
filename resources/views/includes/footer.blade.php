@@ -1,10 +1,10 @@
-<div class="section padding-top background-image-cover-top over-hide footer-1" style="background-image: url('img/footer-1.jpg')">
+<div class="section padding-top background-image-cover-top over-hide footer-1" style="background-image: url('{{ asset('img/footer-1.jpg') }}')">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <h6>Packaged Solutions</h6>
                 <ul class="list-style">
-                    <li><a href="digital-agency.html">Symantic BDS&trade; (SME / Startup)</a></li>
+                    <li><a href="">Symantic BDS&trade; (SME / Startup)</a></li>
                     <li><a href="design-studio.html">Symantic Launch-IT&trade;</a></li>
                     <li><a>Symantic App-D <small>coming soon</small></a></li>
                 </ul>
@@ -15,7 +15,6 @@
                     <li><a href="careers-listing.html">Request a quote</a></li>
                     <li><a href="portfolio-grid-3col.html">Privacy Policy</a></li>
                     <li><a href="portfolio-grid-3col.html">Terms & Conditions</a></li>
-                    <li><a href="portfolio-grid-3col.html">Career Listings</a></li>
                 </ul>
 
 
@@ -24,7 +23,6 @@
                 <h6>Interesting</h6>
                 <ul class="list-style">
                     <li><a href="about-company.html">About Us</a></li>
-                    <li><a href="about-company.html">Services</a></li>
                     <li><a href="services.html">Our Work</a></li>
                     <li><a href="contact-modern.html">Contact Us</a></li>
                 </ul>

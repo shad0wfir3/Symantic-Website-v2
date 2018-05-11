@@ -14,15 +14,12 @@
     <!-- Hero Block
     ================================================== -->
 
-    <div class="section padding-top-1st padding-bottom-1st over-hide">
-        <div class="parallax" style="background-image: url('{{ asset('img/blog/blog_header.jpg') }}')"></div>
-        <div class="grey-fade-over"></div>
+    <div class="section padding-top-1st padding-bottom-1st over-hide background-dark">
         <div class="container z-bigger">
             <div class="row justify-content-center">
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-center mb-0">
-                        <h2>Our Blog</h2>
-                        <div class="main-subtitle-bottom mt-4">Find out what makes us tick!</div>
+                        <h2>Blog Tag : {{ $tag->title }}</h2>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -80,5 +77,5 @@
 @endsection
 
 @push('scripts')
-    <script type="text/javascript" src="js/custom/custom-blog-masonry.js"></script>
+    <script type="text/javascript" src="{{ asset('js/custom/custom-blog-masonry.js') }}"></script>
 @endpush

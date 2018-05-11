@@ -22,7 +22,7 @@
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-center mb-0">
                         <h2>Blog: {{ $category->title }} </h2>
-                        <div class="main-subtitle-bottom mt-4">Find out what makes us tick!</div>
+                        <div class="main-subtitle-bottom mt-4">{{ $category->subtext }}</div>
                     </div>
                 </div>
                 <div class="clear"></div>

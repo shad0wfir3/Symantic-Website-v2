@@ -242,7 +242,6 @@
 
         });
 
-
         function convertToSlug(Text)
         {
             return Text

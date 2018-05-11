@@ -135,3 +135,6 @@
     </div>
 
 @endsection
+@push('scripts')
+    <script type="text/javascript" src="{{ asset('js/custom/custom-corporate.js') }}"></script>
+@endpush

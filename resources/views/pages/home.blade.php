@@ -128,10 +128,10 @@
                 <div class="clear"></div>
                 <div class="col-lg-8 mt-lg-5 mt-xl-0">
                     <div class="video-section">
-                        <figure class="vimeo rounded-2 img-raised over-hide">
-                            <a href="https://player.vimeo.com/video/219627581">
+                        <figure class="youtube rounded-2 img-raised over-hide">
+
                                 <img src="{{ asset('img/video-2.jpg') }}" alt="image"  class="rounded-2 over-hide"/>
-                            </a>
+
                         </figure>
                     </div>
                 </div>

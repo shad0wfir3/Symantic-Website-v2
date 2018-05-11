@@ -142,7 +142,6 @@ class ServiceController extends Controller
             $service->featured_img_alt = $featured_img_name;
         }
 
-
         //-----------------Page Img Upload -------------------- //
         if ($request->has('page_img')) {
             $page_img = $request->file('page_img');

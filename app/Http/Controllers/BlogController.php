@@ -3,17 +3,27 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\InspirationalQuotes;
 use App\Post;
 use App\Tag;
 use Illuminate\Http\Request;
+use GuzzleHttp\Client;
 
 class BlogController extends Controller
 {
 
     public function index(){
 
-        $posts = Post::published()->with('author','tags','categories')->simplePaginate(8);
-        return view('pages.blog.index',compact('posts'));
+        $posts = Post::published()->orderBy('published_date','DESC')->with('author','tags','categories')->simplePaginate(8);
+
+        $quotes = InspirationalQuotes::get()->random(10);
+
+
+//        dd($quotes->random(1));
+
+
+
+        return view('pages.blog.index',compact('posts','quotes'));
     }
 
     public function getPost($slug)
@@ -47,8 +57,21 @@ class BlogController extends Controller
         return view('pages.blog.categories',compact('category','posts'));
     }
 
-    public function getTags($slug){
-        return view('pages.blog.tags');
+    public function getTag($slug){
+
+        $tag = Tag::where('slug',$slug)->firstorfail();
+
+        $tag_id = $tag->id;
+
+        $posts = Post::published()->wherehas('tags',function($query) use ($tag_id){
+            $query->where('tags.id',$tag_id);
+        })->with('tags')->simplepaginate(8);
+
+        return view('pages.blog.tags',compact('tag','posts'));
+    }
+
+    public function quotes(){
+        
     }
 
 }

@@ -49,11 +49,11 @@
                                     Home
                                 </a>
                             </li>
-                            {{--<li class="nav-item">--}}
-                                {{--<a class="nav-link" href="{{ route('about') }}">--}}
-                                    {{--About Us--}}
-                                {{--</a>--}}
-                            {{--</li>--}}
+                            <li class="nav-item {{ Request::is('about*') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('about') }}">
+                                    About
+                                </a>
+                            </li>
                             <li class="nav-item dropdown mega-menu {{ Request::is('services*') ? 'active' : '' }}">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-mainNav-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Our Services
@@ -86,6 +86,7 @@
                                     </ul>
                                 </div>
                             </li>
+
                             <li class="nav-item {{ Request::is('our-work*') ? 'active' : '' }}">
                                 <a class="nav-link" href="#">
                                     Our Work
