@@ -53,7 +53,7 @@
                                             @endif
                                     </td>
                                     <td>
-                                        {{ $post->authors->name }}
+                                        {{ $post->author->name }}
                                     </td>
                                     <td>
                                         <span><a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a></span>

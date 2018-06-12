@@ -18,11 +18,11 @@
         <div class="parallax" style="background-image: url('img/parallax-hero-4.jpg')"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
-            <div class="row justify-content-center">
+            <div class="row">
                 <div class="col-md-7 parallax-fade-top">
-                    <div class="main-title on-dark text-center mb-0">
-                        <h2>Read to get started?</h2>
-                        <div class="main-subtitle-bottom mt-4">Contact us Today</div>
+                    <div class="main-title on-dark text-left mb-0">
+                        <h1 class="text-white">Read to work with us?</h1>
+                        <div class="main-subtitle-bottom mt-4">Call us, email us, whatsapp us, or send smoke signals. Let us help you grow! </div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -39,22 +39,91 @@
     <div class="section background-white padding-top-bottom-small over-hide z-bigger-2">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="services-box-1 p-0 text-center">
                         <i class="funky-ui-icon icon-Phone-2"></i>
-                        <a href="tel:0838223872" class="btn-link"><h5 class="mt-3 pb-0 mb-0">+27 (0)83 822 3872</h5></a>
+                        <a href="tel:0838223872" class="btn-link"><h5 class="mt-3 pb-0 mb-0">+27 (0)73 132 9076</h5></a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 mt-md-0">
+                <div class="col-md-4 mb-4">
                     <div class="services-box-1 p-0 text-center">
                         <i class="funky-ui-icon icon-Smartphone-4"></i>
-                        <h5 class="mt-3 pb-0 mb-0">+1 425 424 8643</h5>
+                        <h5 class="mt-3 pb-0 mb-0">+27 (0)83 822 3872</h5>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 mt-md-0">
+                <div class="col-md-4 mb-4">
                     <div class="services-box-1 p-0 text-center">
                         <i class="funky-ui-icon icon-Mail-Open"></i>
-                        <h5 class="mt-3 pb-0 mb-0">info@funky.com</h5>
+                        <h5 class="mt-3 pb-0 mb-0">hello@symanticreative.com</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="section padding-top-bottom-1 background-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="separator-wrap">
+                                <span class="separator"><span class="separator-line dashed"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-2 mt-4">
+                    <div class="services-box-1 p-0 text-center">
+                        <a href="#">
+                            <i class="funky-ui-icon icon-Facebook"></i>
+                            <h6 class="mt-3 pb-0 mb-0 main-subtitle-bottom">Facebook</h6>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4">
+                    <div class="services-box-1 p-0 text-center">
+                        <a href="#">
+                            <i class="funky-ui-icon icon-Instagram"></i>
+                            <h6 class="mt-3 pb-0 mb-0 main-subtitle-bottom">Instagram</h6>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4">
+                    <div class="services-box-1 p-0 text-center">
+                        <a href="#">
+                            <i class="funky-ui-icon icon-Twitter"></i>
+                            <h6 class="mt-3 pb-0 mb-0 main-subtitle-bottom">Twitter</h6>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4">
+                    <div class="services-box-1 p-0 text-center">
+                        <a href="#">
+                            <i class="funky-ui-icon icon-Google-Plus"></i>
+                            <h6 class="mt-3 pb-0 mb-0 main-subtitle-bottom">Google+</h6>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4">
+                    <div class="services-box-1 p-0 text-center">
+                        <a href="#">
+                            <i class="funky-ui-icon icon-Linkedin"></i>
+                            <h6 class="mt-3 pb-0 mb-0 main-subtitle-bottom">LinkedIN</h6>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4">
+                    <div class="services-box-1 p-0 text-center">
+                        <a href="#">
+                            <i class="funky-ui-icon icon-Youtube"></i>
+                            <h6 class="mt-3 pb-0 mb-0 main-subtitle-bottom">Youtube</h6>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -79,20 +148,26 @@
     <!-- Block
     ================================================== -->
 
-    <div class="section background-white padding-top-bottom over-hide z-bigger-2">
+    <div class="section background-white padding-top-bottom-smaller over-hide z-bigger-2">
+        <div class="main-title text-center">
+            <h3>Send us a message and we will get back to you!</h3>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
                     <div class="subscribe-box-1">
                         <input type="text" value="" placeholder="Your Name *" class="form-control" />
                     </div>
                 </div>
-                <div class="col-md-6 mt-4 mt-md-0">
+                <div class="col-md-4 mt-4 mt-md-0">
                     <div class="subscribe-box-1">
                         <input type="text" value="" placeholder="Email *" class="form-control" />
                     </div>
                 </div>
-                <div class="col-md-12 mt-4">
+                <div class="col-md-2"></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-8 mt-4">
                     <div class="subscribe-box-1">
                         <textarea name="message"  placeholder="Tell Us Everything *" class="for-textarea form-control" ></textarea>
                     </div>

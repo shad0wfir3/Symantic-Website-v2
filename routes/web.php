@@ -13,10 +13,14 @@
 
 Route::get('/','PagesController@index')->name('index');
 Route::get('about-us','PagesController@about')->name('about');
+Route::get('our-work','PagesController@work')->name('work');
 
 Route::prefix('services')->group(function(){
     Route::get('{slug}','ServiceController@getPage')->name('service.page');
 });
+
+Route::get('symantic-business-development-solutions','ServiceController@sbds')->name('sbds');
+Route::get('launch-it','ServiceController@launch_it')->name('launch_it');
 
 Route::prefix('blog')->group(function(){
     Route::get('','BlogController@index')->name('blog.index');

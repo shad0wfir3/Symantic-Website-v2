@@ -18,11 +18,11 @@
         <div class="parallax" style="background-image: url('{{ asset('img/blog/blog_header.jpg') }}')"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
-            <div class="row justify-content-center">
+            <div class="row">
                 <div class="col-md-7 parallax-fade-top">
-                    <div class="main-title on-dark text-center mb-0">
-                        <h2>Our Blog</h2>
-                        <div class="main-subtitle-bottom mt-4">Find out what makes us tick!</div>
+                    <div class="main-title on-dark text-left mb-0">
+                        <h1 class="text-white">Facts, Information and Articles!</h1>
+                        <div class="main-subtitle-bottom mt-4">Do not go blindly into the night. Our database of articles and posts are available for free!</div>
                     </div>
                 </div>
                 <div class="clear"></div>

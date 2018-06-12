@@ -270,6 +270,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- Blog Block
    ================================================== -->
     <div class="section padding-top-bottom background-grey-2 over-hide">
@@ -317,6 +319,8 @@
             </div>
         </div>
     </div>
+    {{--@include('includes.sbds-cta')--}}
+
     <!-- Subscribe Block
     ================================================== -->
     <div class="section" id="contact">
