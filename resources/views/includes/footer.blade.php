@@ -1,7 +1,7 @@
 <div class="section padding-top background-image-cover-top over-hide footer-1" style="background-image: url('{{ asset('img/footer-1.jpg') }}')">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 text-center">
                 <h6>Packaged Solutions</h6>
                 <ul class="list-style">
                     <li><a href="">Symantic BDS&trade; (SME / Startup)</a></li>
@@ -36,7 +36,7 @@
                     <span class="separator"><span class="separator-line dashed"></span></span>
                 </div>
                 <ul class="list-style mt-3 mb-3">
-                    <li><i class="fa fa-envelope-o"></i><a href="mailto:hello@symantic.co.za">hello@symantic.co.za</a></li>
+                    <li><i class="fa fa-envelope-o"></i><a href="mailto:hello@symantic.co.za">hello@symanticreative.com</a></li>
                     <li><i class="fa fa-phone"></i><a href="tel:+27838223872">+27 (0)83 822 3872</a></li>
                     <li><i class="fa fa-map"></i>Cape Town, South Africa</li>
                 </ul>

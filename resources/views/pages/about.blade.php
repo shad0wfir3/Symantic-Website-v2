@@ -22,7 +22,7 @@
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
                         <h2>About Symantic Creative</h2>
-                        <div class="main-subtitle-bottom mt-4">Established in 2014, We have made it our mission to provide businesses with the tools they need to succeed.</div>
+                        <div class="main-subtitle-bottom mt-4">Established in 2016, We have made it our mission to provide businesses with the tools they need to succeed.</div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -61,8 +61,8 @@
                 </div>
                 <div class="col-lg-4 mt-4 mt-lg-0">
                     <div class="call-box-5">
-                        <h4>Unique and truly responsive!</h4>
-                        <p class="mt-3 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
+                        <h4>Truly focused on growth!</h4>
+                        <p class="mt-3 mb-5">At Symantic Creative we are truly focused on the growth of your business. We have created a all-encompassing packaged solution to take your business to the next stage.</p>
                         <a href="#" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
@@ -85,41 +85,14 @@
                             <a class="next-testimonials-1"><i class="fa fa-angle-right"></i></a>
                         </div>
                         <div id="owl-testimonials-1" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="testimonials-box-2 text-center">
-                                    <h5 class="mb-5 color-white">"Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people."</h5>
-                                    <h4 class="color-white">Thomas J. Watson</h4>
-                                    <p class="mt-2">some magazine</p>
+                            @foreach($quotes as $quote)
+                                <div class="item">
+                                    <div class="testimonials-box-2 text-center">
+                                        <h5 class="mb-5 color-white">"{{ $quote->quote }}"</h5>
+                                        <h4 class="color-white">{{ $quote->author }}</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonials-box-2 text-center">
-                                    <h5 class="mb-5 color-white">"Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people."</h5>
-                                    <h4 class="color-white">Thomas J. Watson</h4>
-                                    <p class="mt-2">some magazine</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonials-box-2 text-center">
-                                    <h5 class="mb-5 color-white">"Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people."</h5>
-                                    <h4 class="color-white">Thomas J. Watson</h4>
-                                    <p class="mt-2">some magazine</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonials-box-2 text-center">
-                                    <h5 class="mb-5 color-white">"Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people."</h5>
-                                    <h4 class="color-white">Thomas J. Watson</h4>
-                                    <p class="mt-2">some magazine</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonials-box-2 text-center">
-                                    <h5 class="mb-5 color-white">"Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people."</h5>
-                                    <h4 class="color-white">Thomas J. Watson</h4>
-                                    <p class="mt-2">some magazine</p>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -128,28 +101,22 @@
                         <span class="separator"><span class="separator-line dashed opacity-40"></span></span>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="counter-wrap dark">
-                        <p><span class="counter-numb small-2">8.819</span></p>
+                        <p><span class="counter-numb small-2">40819</span></p>
                         <h6>lines of code</h6>
                     </div>
                 </div>
-                <div class="col-md-3 mt-4 mt-md-0">
+                <div class="col-md-4 mt-4 mt-md-0">
                     <div class="counter-wrap dark">
-                        <p><span class="counter-numb small-2">4.768</span></p>
-                        <h6>projects finished</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 mt-4 mt-md-0">
-                    <div class="counter-wrap dark">
-                        <p><span class="counter-numb small-2">7.307</span></p>
+                        <p><span class="counter-numb small-2">307</span></p>
                         <h6>coups of coffee</h6>
                     </div>
                 </div>
-                <div class="col-md-3 mt-4 mt-md-0">
+                <div class="col-md-4 mt-4 mt-md-0">
                     <div class="counter-wrap dark">
-                        <p><span class="counter-numb small-2">5.921</span></p>
-                        <h6>working hours</h6>
+                        <p><span class="counter-numb small-2">5820</span></p>
+                        <h6>hours</h6>
                     </div>
                 </div>
             </div>
@@ -164,13 +131,13 @@
             <div class="row">
                 <div class="col-md-9">
                     <div class="call-box-3 text-center text-md-left dark">
-                        <h5 class="mb-3 color-white">Design must reflect the practical and aesthetic in business.</h5>
-                        <p class="mb-0">Some people think design means how it looks. But of course, if you<br>dig deeper, it's really how it works.</p>
+                        <h5 class="mb-3 color-white">Discover Small Business Development Services (SBDS) &trade;</h5>
+                        <p class="mb-0">SBDS is the ultimate solution for Start-Ups and Small Businesses<br>Find out how we can help you.</p>
                     </div>
                 </div>
                 <div class="col-md-3 mt-4 mt-md-0">
                     <div class="call-box-3 text-center text-md-right">
-                        <a href="portfolio-masonry-3col.html" class="btn btn-primary btn-simple btn-round btn-long mt-0 mt-md-4" >discover design</a>
+                        <a href="portfolio-masonry-3col.html" class="btn btn-primary btn-simple btn-round btn-long mt-0 mt-md-4" >discover SBDS</a>
                     </div>
                 </div>
             </div>
@@ -180,175 +147,175 @@
     <!-- Team Block
     ================================================== -->
 
-    <div class="section padding-top-bottom background-grey over-hide z-bigger-2">
-        <div class="container">
-            <div class="row">
-                <div class="team-slider-wrap">
-                    <div id="owl-team-1" class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="team-box-1 all-padding background-white drop-shadow text-center">
-                                <img src="img/t4.jpg" alt="" />
-                                <h6 class="mt-4 mb-1">Marco Kulis</h6>
-                                <p class="mb-4">app & media</p>
-                                <ul class="team-social">
-                                    <li class="twitter">
-                                        <a href="#">Tw</a>
-                                    </li>
-                                    <li class="google">
-                                        <a href="#">G+</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box-1 all-padding background-white drop-shadow text-center">
-                                <img  src="img/t1.jpg" alt="" />
-                                <h6 class="mt-4 mb-1">Anna Furius</h6>
-                                <p class="mb-4">identity building</p>
-                                <ul class="team-social">
-                                    <li class="facebook">
-                                        <a href="#">Fb</a>
-                                    </li>
-                                    <li class="google">
-                                        <a href="#">G+</a>
-                                    </li>
-                                    <li class="vimeo">
-                                        <a href="#">Vm</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box-1 all-padding background-white drop-shadow text-center">
-                                <img  src="img/t2.jpg" alt="" />
-                                <h6 class="mt-4 mb-1">Alex Andrews</h6>
-                                <p class="mb-4">design process</p>
-                                <ul class="team-social">
-                                    <li class="twitter">
-                                        <a href="#">Tw</a>
-                                    </li>
-                                    <li class="vimeo">
-                                        <a href="#">Vm</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box-1 all-padding background-white drop-shadow text-center">
-                                <img  src="img/t3.jpg" alt="" />
-                                <h6 class="mt-4 mb-1">Frank Furius</h6>
-                                <p class="mb-4">web development</p>
-                                <ul class="team-social">
-                                    <li class="twitter">
-                                        <a href="#">Tw</a>
-                                    </li>
-                                    <li class="facebook">
-                                        <a href="#">Fb</a>
-                                    </li>
-                                    <li class="google">
-                                        <a href="#">G+</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box-1 all-padding background-white drop-shadow text-center">
-                                <img  src="img/t4.jpg" alt="" />
-                                <h6 class="mt-4 mb-1">Marco Kulis</h6>
-                                <p class="mb-4">app & media</p>
-                                <ul class="team-social">
-                                    <li class="twitter">
-                                        <a href="#">Tw</a>
-                                    </li>
-                                    <li class="vimeo">
-                                        <a href="#">Vm</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box-1 all-padding background-white drop-shadow text-center">
-                                <img  src="img/t1.jpg" alt="" />
-                                <h6 class="mt-4 mb-1">Anna Furius</h6>
-                                <p class="mb-4">identity building</p>
-                                <ul class="team-social">
-                                    <li class="twitter">
-                                        <a href="#">Tw</a>
-                                    </li>
-                                    <li class="facebook">
-                                        <a href="#">Fb</a>
-                                    </li>
-                                    <li class="google">
-                                        <a href="#">G+</a>
-                                    </li>
-                                    <li class="vimeo">
-                                        <a href="#">Vm</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box-1 all-padding background-white drop-shadow text-center">
-                                <img  src="img/t2.jpg" alt="" />
-                                <h6 class="mt-4 mb-1">Alex Andrews</h6>
-                                <p class="mb-4">design process</p>
-                                <ul class="team-social">
-                                    <li class="twitter">
-                                        <a href="#">Tw</a>
-                                    </li>
-                                    <li class="facebook">
-                                        <a href="#">Fb</a>
-                                    </li>
-                                    <li class="google">
-                                        <a href="#">G+</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box-1 all-padding background-white drop-shadow text-center">
-                                <img  src="img/t3.jpg" alt="" />
-                                <h6 class="mt-4 mb-1">Frank Furius</h6>
-                                <p class="mb-4">web development</p>
-                                <ul class="team-social">
-                                    <li class="facebook">
-                                        <a href="#">Fb</a>
-                                    </li>
-                                    <li class="google">
-                                        <a href="#">G+</a>
-                                    </li>
-                                    <li class="vimeo">
-                                        <a href="#">Vm</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box-1 all-padding background-white drop-shadow text-center">
-                                <img  src="img/t4.jpg" alt="" />
-                                <h6 class="mt-4 mb-1">Marco Kulis</h6>
-                                <p class="mb-4">app & media</p>
-                                <ul class="team-social">
-                                    <li class="twitter">
-                                        <a href="#">Tw</a>
-                                    </li>
-                                    <li class="google">
-                                        <a href="#">G+</a>
-                                    </li>
-                                    <li class="vimeo">
-                                        <a href="#">Vm</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{--<div class="section padding-top-bottom background-grey over-hide z-bigger-2">--}}
+        {{--<div class="container">--}}
+            {{--<div class="row">--}}
+                {{--<div class="team-slider-wrap">--}}
+                    {{--<div id="owl-team-1" class="owl-carousel owl-theme">--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="team-box-1 all-padding background-white drop-shadow text-center">--}}
+                                {{--<img src="img/t4.jpg" alt="" />--}}
+                                {{--<h6 class="mt-4 mb-1">Marco Kulis</h6>--}}
+                                {{--<p class="mb-4">app & media</p>--}}
+                                {{--<ul class="team-social">--}}
+                                    {{--<li class="twitter">--}}
+                                        {{--<a href="#">Tw</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="google">--}}
+                                        {{--<a href="#">G+</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="team-box-1 all-padding background-white drop-shadow text-center">--}}
+                                {{--<img  src="img/t1.jpg" alt="" />--}}
+                                {{--<h6 class="mt-4 mb-1">Anna Furius</h6>--}}
+                                {{--<p class="mb-4">identity building</p>--}}
+                                {{--<ul class="team-social">--}}
+                                    {{--<li class="facebook">--}}
+                                        {{--<a href="#">Fb</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="google">--}}
+                                        {{--<a href="#">G+</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="vimeo">--}}
+                                        {{--<a href="#">Vm</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="team-box-1 all-padding background-white drop-shadow text-center">--}}
+                                {{--<img  src="img/t2.jpg" alt="" />--}}
+                                {{--<h6 class="mt-4 mb-1">Alex Andrews</h6>--}}
+                                {{--<p class="mb-4">design process</p>--}}
+                                {{--<ul class="team-social">--}}
+                                    {{--<li class="twitter">--}}
+                                        {{--<a href="#">Tw</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="vimeo">--}}
+                                        {{--<a href="#">Vm</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="team-box-1 all-padding background-white drop-shadow text-center">--}}
+                                {{--<img  src="img/t3.jpg" alt="" />--}}
+                                {{--<h6 class="mt-4 mb-1">Frank Furius</h6>--}}
+                                {{--<p class="mb-4">web development</p>--}}
+                                {{--<ul class="team-social">--}}
+                                    {{--<li class="twitter">--}}
+                                        {{--<a href="#">Tw</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="facebook">--}}
+                                        {{--<a href="#">Fb</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="google">--}}
+                                        {{--<a href="#">G+</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="team-box-1 all-padding background-white drop-shadow text-center">--}}
+                                {{--<img  src="img/t4.jpg" alt="" />--}}
+                                {{--<h6 class="mt-4 mb-1">Marco Kulis</h6>--}}
+                                {{--<p class="mb-4">app & media</p>--}}
+                                {{--<ul class="team-social">--}}
+                                    {{--<li class="twitter">--}}
+                                        {{--<a href="#">Tw</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="vimeo">--}}
+                                        {{--<a href="#">Vm</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="team-box-1 all-padding background-white drop-shadow text-center">--}}
+                                {{--<img  src="img/t1.jpg" alt="" />--}}
+                                {{--<h6 class="mt-4 mb-1">Anna Furius</h6>--}}
+                                {{--<p class="mb-4">identity building</p>--}}
+                                {{--<ul class="team-social">--}}
+                                    {{--<li class="twitter">--}}
+                                        {{--<a href="#">Tw</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="facebook">--}}
+                                        {{--<a href="#">Fb</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="google">--}}
+                                        {{--<a href="#">G+</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="vimeo">--}}
+                                        {{--<a href="#">Vm</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="team-box-1 all-padding background-white drop-shadow text-center">--}}
+                                {{--<img  src="img/t2.jpg" alt="" />--}}
+                                {{--<h6 class="mt-4 mb-1">Alex Andrews</h6>--}}
+                                {{--<p class="mb-4">design process</p>--}}
+                                {{--<ul class="team-social">--}}
+                                    {{--<li class="twitter">--}}
+                                        {{--<a href="#">Tw</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="facebook">--}}
+                                        {{--<a href="#">Fb</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="google">--}}
+                                        {{--<a href="#">G+</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="team-box-1 all-padding background-white drop-shadow text-center">--}}
+                                {{--<img  src="img/t3.jpg" alt="" />--}}
+                                {{--<h6 class="mt-4 mb-1">Frank Furius</h6>--}}
+                                {{--<p class="mb-4">web development</p>--}}
+                                {{--<ul class="team-social">--}}
+                                    {{--<li class="facebook">--}}
+                                        {{--<a href="#">Fb</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="google">--}}
+                                        {{--<a href="#">G+</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="vimeo">--}}
+                                        {{--<a href="#">Vm</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="item">--}}
+                            {{--<div class="team-box-1 all-padding background-white drop-shadow text-center">--}}
+                                {{--<img  src="img/t4.jpg" alt="" />--}}
+                                {{--<h6 class="mt-4 mb-1">Marco Kulis</h6>--}}
+                                {{--<p class="mb-4">app & media</p>--}}
+                                {{--<ul class="team-social">--}}
+                                    {{--<li class="twitter">--}}
+                                        {{--<a href="#">Tw</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="google">--}}
+                                        {{--<a href="#">G+</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li class="vimeo">--}}
+                                        {{--<a href="#">Vm</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 
-
-
+@include('includes.logo-block')
+    @include('includes.seperator-line')
 @endsection
 @push('scripts')
     <script type="text/javascript" src="{{asset('js/custom/custom-about-company.js')}}"></script>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\Service;
 use Illuminate\Http\Request;
+use App\InspirationalQuotes;
 
 class PagesController extends Controller
 {
@@ -15,7 +16,8 @@ class PagesController extends Controller
     }
 
     public function about(){
-        return view('pages.about');
+        $quotes = InspirationalQuotes::get()->random(7);
+        return view('pages.about',compact('quotes'));
     }
 
     //Services Pages End

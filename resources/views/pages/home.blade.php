@@ -75,10 +75,8 @@
 @section('title', 'Symantic Creative Digital Agency')
 
 @section('content')
-
     <!-- Text Block
-================================================== -->
-
+    ================================================= -->
     <div class="section padding-top-bottom background-white over-hide" id="scroll-top">
         <div class="container">
             <div class="row">
@@ -92,7 +90,8 @@
                 <div class="col-md-8 mt-4 mt-md-0">
                     <p class="lead mb-0">Symantic Creative is a full service digital agency based in the beautiful Cape Town, South Africa.
                         Established in 2016, we have had the opportunity to work with industry leading clients and partners from all over the world, providing professional branding, marketing and advertisement solutions and services.
-                        <br><span class=" colored-prim">Is your business next?</span></p>
+                        <br>We are dedicated to providing high-quality service in a comfortable atmosphere for clients who seek a professional experience from expert professionals.
+                        <span class=" colored-prim">Is your business next?</span></p>
                 </div>
             </div>
         </div>
@@ -119,54 +118,64 @@
     </div>
 
 
-    <!-- Video & Call To Action Block
-    ================================================== -->
+    <!-- Parallax Block
+   ================================================== -->
 
-    <div class="section padding-top-bottom background-dark over-hide">
-        <div class="container">
-            <div class="row">
-                <div class="clear"></div>
-                <div class="col-lg-8 mt-lg-5 mt-xl-0">
-                    <div class="video-section">
-                        <figure class="youtube rounded-2 img-raised over-hide">
-
-                                <img src="{{ asset('img/video-2.jpg') }}" alt="image"  class="rounded-2 over-hide"/>
-
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 mt-lg-0 mt-xl-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="call-box-5 dark">
-                        <h5 class="color-white"><em>Engage</em> your Audiences. <em>Increase</em> your brands reputation. <em>Define</em> your business!</h5>
-                        <p class="mt-3 mb-5"><mark>Symantic Creative</mark> provides a wide range of expert solutions and services for your marketing needs.</p>
-                        <a href="#" class="btn-link btn-primary">read more</a>
+    <div class="section padding-top-bottom over-hide">
+        <div class="parallax-1" style="background-image: url('img/slide3.jpg')"></div>
+        <div class="grey-fade-over"></div>
+        <div class="container z-bigger">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="main-title on-dark text-center">
+                        <div class="main-subtitle-top mb-4">time to get started</div>
+                        <h3>Give your business a boost!</h3>
+                        <div class="main-subtitle-bottom mt-3">Discover the possibilities of marketing done right, and see what we can do for your business.</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Work Title Block
-        ================================================== -->
+    <!-- Call To Action Block
+    ================================================== -->
 
-    <div class="section padding-top">
+    <div class="section background-white z-bigger-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 transform-y-120 transform-on-mob">
+                    <div class="call-box-3 p-5 dark text-center background-dark rounded-2 drop-shadow">
+                        <i class="funky-ui-icon icon-Add-UserStar"></i>
+                        <h5 class="mt-4 mb-3 color-white">Ready to get started, request a quote!</h5>
+                        <p class="mb-5">From graphic design to application development, contact us today to provide you with a obligation free quote!</p>
+                        <a href="#" class="btn btn-primary btn-simple btn-round btn-long" >request a quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seperator Line
+    ================================================== -->
+    @include('includes.seperator-line')
+    <!-- Work Title Block
+    ================================================== -->
+    <div class="section padding-top-smaller">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="main-title text-center">
                         <div class="main-subtitle-top mb-4">LATEST WORK</div>
                         <h3>We Take Pride In Delivering Only The Best.</h3>
-                        <div class="main-subtitle-bottom mt-3">we do magic</div>
+                        <div class="main-subtitle-bottom mt-3">case studies</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Work Block
     ================================================== -->
-
-    <div class="section background-white padding-bottom">
+    <div class="section background-white padding-bottom-smaller">
         <div class="container-fluid">
             <div class="row">
                 <div class="work-slider-wrap mb-4">
@@ -254,67 +263,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-    <!-- Seperator Line
-        ================================================== -->
-    <div class="section padding-top-bottom-1 background-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="separator-wrap">
-                        <span class="separator"><span class="separator-line dashed"></span></span>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mt-5 mg-auto" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <a href="{{ route('blog.index') }}" class="btn btn-primary btn-simple btn-round btn-long">visit our portfolio</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Logos Block
-    ================================================== -->
-
-    <div class="section padding-top-bottom background-white over-hide">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <a href="#">
-                        <img  src="img/logos/d1.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d2.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d5.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d6.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d7.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-2 mt-4 mt-md-0">
-                    <a href="#">
-                        <img  src="img/logos/d11.png" class="img-120 mx-auto" alt="" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Blog Block
    ================================================== -->
-
     <div class="section padding-top-bottom background-grey-2 over-hide">
         <div class="container">
             <div class="row justify-content-center">
@@ -360,55 +317,14 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Parallax Block
+    <!-- Subscribe Block
     ================================================== -->
-
-    <div class="section padding-top-bottom over-hide">
-        <div class="parallax-1" style="background-image: url('img/slide3.jpg')"></div>
-        <div class="grey-fade-over"></div>
-        <div class="container z-bigger">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="main-title on-dark text-center">
-                        <div class="main-subtitle-top mb-4">time to get started</div>
-                        <h3>Give your business a boost!</h3>
-                        <div class="main-subtitle-bottom mt-3">Discover the possibilities of marketing done right, and see what we can do for your business.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Call To Action Block
-    ================================================== -->
-
-    <div class="section background-white z-bigger-2">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 transform-y-120 transform-on-mob">
-                    <div class="call-box-3 p-5 dark text-center background-dark rounded-2 drop-shadow">
-                        <i class="funky-ui-icon icon-Add-UserStar"></i>
-                        <h5 class="mt-4 mb-3 color-white">Ready to get started, request a quote!</h5>
-                        <p class="mb-5">From graphic design to application development, contact us today to provide you with a obligation free quote!</p>
-                        <a href="#" class="btn btn-primary btn-simple btn-round btn-long" >request a quote</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <div class="section" id="contact">
-        <!-- Subscribe Block
-        ================================================== -->
-
         <div class="section padding-top-bottom background-dark">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-5 text-center">
-                        <h4 class="mb-5 color-white">Subscribe</h4>
+                        <h4 class="mb-5 color-white">Subscribe to our Newsletter</h4>
                         <div class="subscribe-box-1 dark">
                             <input type="text" value="" placeholder="Email address" class="form-control" />
                             <button class="btn btn-primary subscribe-1" type="submit" value="">
@@ -422,6 +338,13 @@
         </div>
 
     </div>
+    <!-- Logos Block
+    ================================================== -->
+    @include('includes.logo-block')
+    <!-- Seperator Line
+    ================================================== -->
+    @include('includes.seperator-line')
+
 
 
 
