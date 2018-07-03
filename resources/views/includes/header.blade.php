@@ -4,7 +4,7 @@
             <div class="col-md-7">
                 <p><i class="fa fa-clock-o mr-1"></i> mon - fri: 09.00 - 17.00
                     <i class="fa fa-phone ml-2 mr-1"></i> <a href="tel:+27838223872"> +27 (0)83 822 3872</a>
-                    <a href="mailto:hello@symantic.co.za"><i class="fa fa-comment-o ml-2 mr-1"></i> hello@symanticreative.com</a>
+                    <a href="mailto:hello@symanticreative.com"><i class="fa fa-comment-o ml-2 mr-1"></i> hello@symanticreative.com</a>
                 </p>
             </div>
             <div class="col-md-5">

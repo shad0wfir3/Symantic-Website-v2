@@ -1,7 +1,7 @@
 <div class="section padding-top background-image-cover-top over-hide footer-1" style="background-image: url('{{ asset('img/footer-1.jpg') }}')">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 text-center">
+            <div class="col-md-3">
                 <h6>Packaged Solutions</h6>
                 <ul class="list-style">
                     <li><a href="">Symantic BDS&trade; (SME / Startup)</a></li>
@@ -12,9 +12,9 @@
             <div class="col-md-3 mt-4 mt-md-0">
                 <h6>Quick Links</h6>
                 <ul class="list-style">
-                    <li><a href="careers-listing.html">Request a quote</a></li>
-                    <li><a href="portfolio-grid-3col.html">Privacy Policy</a></li>
-                    <li><a href="portfolio-grid-3col.html">Terms & Conditions</a></li>
+                    <li><a href="about-company.html">Who are we</a></li>
+                    <li><a href="services.html">Our Work</a></li>
+                    <li><a href="contact-modern.html">Connect with us!</a></li>
                 </ul>
 
 
@@ -22,9 +22,10 @@
             <div class="col-md-3 mt-4 mt-md-0">
                 <h6>Interesting</h6>
                 <ul class="list-style">
-                    <li><a href="about-company.html">About Us</a></li>
-                    <li><a href="services.html">Our Work</a></li>
-                    <li><a href="contact-modern.html">Contact Us</a></li>
+                    <li><a href="careers-listing.html">Career Opportunities</a></li>
+                    <li><a href="portfolio-grid-3col.html">Privacy Policy</a></li>
+                    <li><a href="portfolio-grid-3col.html">Terms & Conditions</a></li>
+
                 </ul>
             </div>
             <div class="col-md-3 mt-4 mt-md-0 logo-footer-100">
@@ -37,7 +38,7 @@
                 </div>
                 <ul class="list-style mt-3 mb-3">
                     <li><i class="fa fa-envelope-o"></i><a href="mailto:hello@symantic.co.za">hello@symanticreative.com</a></li>
-                    <li><i class="fa fa-phone"></i><a href="tel:+27838223872">+27 (0)83 822 3872</a></li>
+                    <li><i class="fa fa-phone"></i><a href="tel:+27731329076">+27 (0)73 132 9076</a></li>
                     <li><i class="fa fa-map"></i>Cape Town, South Africa</li>
                 </ul>
                 <div class="separator-wrap">
@@ -54,16 +55,13 @@
             <div class="col-md-6">
                 <ul class="footer-social">
                     <li class="twitter">
-                        <a href="#">Tw</a>
+                        <a href="https://twitter.com/symanticreative" target="_blank">Tw</a>
                     </li>
                     <li class="facebook">
-                        <a href="#">Fb</a>
+                        <a href="https://www.facebook.com/symanticreative/" target="_blank">Fb</a>
                     </li>
                     <li class="google">
-                        <a href="#">G+</a>
-                    </li>
-                    <li class="youtube">
-                        <a href="#">Yt</a>
+                        <a href="http://google.com/+SymanticZa" target="_blank">G+</a>
                     </li>
                 </ul>
             </div>

@@ -146,8 +146,8 @@
                 <div class="col-md-6 transform-y-120 transform-on-mob">
                     <div class="call-box-3 p-5 dark text-center background-dark rounded-2 drop-shadow">
                         <i class="funky-ui-icon icon-Add-UserStar"></i>
-                        <h5 class="mt-4 mb-3 color-white">Ready to get started, request a quote!</h5>
-                        <p class="mb-5">From graphic design to application development, contact us today to provide you with a obligation free quote!</p>
+                        <h5 class="mt-4 mb-3 color-white">Ready to get started, request a quote today!</h5>
+                        <p class="mb-5">From graphic design to application development, contact us today and let us help you grow!</p>
                         <a href="#" class="btn btn-primary btn-simple btn-round btn-long" >request a quote</a>
                     </div>
                 </div>
@@ -185,8 +185,8 @@
                                 <div class="portfolio-box-1 dark rounded">
                                     <img  src="img/portfolio/grid/1.jpg" alt="" />
                                     <div class="portfolio-mask-2 rounded"></div>
-                                    <h5 class="on-center text-center">primarily serve people</h5>
-                                    <p class="on-center text-center">design, motion</p>
+                                    <h5 class="on-center text-center">Crafty Art</h5>
+                                    <p class="on-center text-center">logo design, website, </p>
                                 </div>
                             </a>
                         </div>
@@ -214,46 +214,6 @@
                             <a href="project-image.html">
                                 <div class="portfolio-box-1 dark rounded">
                                     <img  src="img/portfolio/grid/4.jpg" alt="" />
-                                    <div class="portfolio-mask-2 rounded"></div>
-                                    <h5 class="on-center text-center">primarily serve people</h5>
-                                    <p class="on-center text-center">design, motion</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="project-image.html">
-                                <div class="portfolio-box-1 dark rounded">
-                                    <img  src="img/portfolio/grid/5.jpg" alt="" />
-                                    <div class="portfolio-mask-2 rounded"></div>
-                                    <h5 class="on-center text-center">primarily serve people</h5>
-                                    <p class="on-center text-center">design, motion</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="project-image.html">
-                                <div class="portfolio-box-1 dark rounded">
-                                    <img  src="img/portfolio/grid/6.jpg" alt="" />
-                                    <div class="portfolio-mask-2 rounded"></div>
-                                    <h5 class="on-center text-center">primarily serve people</h5>
-                                    <p class="on-center text-center">design, motion</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="project-image.html">
-                                <div class="portfolio-box-1 dark rounded">
-                                    <img  src="img/portfolio/grid/7.jpg" alt="" />
-                                    <div class="portfolio-mask-2 rounded"></div>
-                                    <h5 class="on-center text-center">primarily serve people</h5>
-                                    <p class="on-center text-center">design, motion</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="project-image.html">
-                                <div class="portfolio-box-1 dark rounded">
-                                    <img  src="img/portfolio/grid/8.jpg" alt="" />
                                     <div class="portfolio-mask-2 rounded"></div>
                                     <h5 class="on-center text-center">primarily serve people</h5>
                                     <p class="on-center text-center">design, motion</p>

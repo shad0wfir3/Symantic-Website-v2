@@ -22,7 +22,7 @@
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
                         <h1 class="text-white ">Specialized in brand experience.</h1>
-                        <div class="main-subtitle-bottom on-light mt-4"><mark>Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</mark></div>
+                        <div class="main-subtitle-bottom on-light mt-4">Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -45,8 +45,8 @@
                         <ul class="filter">
                             <li><a href="#" class="current" data-filter="*" title="">all</a></li>
                             <li><a href="#" data-filter=".branding" title="">branding</a></li>
-                            <li><a href="#" data-filter=".photo" title="">photo</a></li>
-                            <li><a href="#" data-filter=".motion" title="">motion</a></li>
+                            <li><a href="#" data-filter=".websites" title="">websites</a></li>
+                            <li><a href="#" data-filter=".social" title="">social media</a></li>
                         </ul>
                     </div>
                 </div>
