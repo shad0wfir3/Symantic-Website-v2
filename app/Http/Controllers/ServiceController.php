@@ -25,4 +25,12 @@ class ServiceController extends Controller
         return view('pages.service',compact('service','featured_img','page_img'));
 
     }
+
+    public function sbds(){
+        return 'test';
+    }
+
+    public function launch_it(){
+        return 'test';
+    }
 }

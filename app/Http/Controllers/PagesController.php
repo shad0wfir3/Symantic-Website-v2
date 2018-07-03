@@ -20,7 +20,10 @@ class PagesController extends Controller
         return view('pages.about',compact('quotes'));
     }
 
-    //Services Pages End
+    public function work(){
+        $quote = InspirationalQuotes::get()->random(1);
+        return view('pages.portfolio.index',compact('quote'));
+    }
 
     public function contact_us(){
         return view('pages.contact-us');

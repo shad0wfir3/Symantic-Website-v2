@@ -4,7 +4,7 @@
             <div class="col-md-7">
                 <p><i class="fa fa-clock-o mr-1"></i> mon - fri: 09.00 - 17.00
                     <i class="fa fa-phone ml-2 mr-1"></i> <a href="tel:+27838223872"> +27 (0)83 822 3872</a>
-                    <a href="mailto:hello@symantic.co.za"><i class="fa fa-comment-o ml-2 mr-1"></i> hello@symanticreative.com</a>
+                    <a href="mailto:hello@symanticreative.com"><i class="fa fa-comment-o ml-2 mr-1"></i> hello@symanticreative.com</a>
                 </p>
             </div>
             <div class="col-md-5">
@@ -17,9 +17,6 @@
                     </li>
                     <li class="google">
                         <a href="http://google.com/+SymanticZa" target="_blank">G+</a>
-                    </li>
-                    <li class="vimeo">
-                        <a href="#">Vm</a>
                     </li>
                 </ul>
             </div>
@@ -73,12 +70,12 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-header">Packages</a>
-                                            <a href="#" class="dropdown-item big_item">
+                                            <a href="{{ route('sbds') }}" class="dropdown-item big_item">
                                                 <strong>Symnatic BDS</strong><em>&trade;</em>
                                                 <p>Symantic Creative BDS&trade; provides <strong>small businesses and start-ups</strong> with an integrated full stack solution to branding, marketing and advertising, packaged together to <strong>reduce cost</strong> and expenses.</p>
 
                                             </a>
-                                            <a href="#" class="dropdown-item big_item">
+                                            <a href="{{ route('launch_it') }}" class="dropdown-item big_item">
                                                 <strong>Launch-It</strong><em>&trade;</em>
                                                 <p>Launch-IT&trade; is the ultimate solution for your next <strong>product or service</strong> launch. Through expert marketing campaigns & experiences, launch-it&trade; provides the <strong>ultimate platform</strong> for you to market your product.</p>
                                             </a>
@@ -88,7 +85,7 @@
                             </li>
 
                             <li class="nav-item {{ Request::is('our-work*') ? 'active' : '' }}">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="{{ route('work') }}">
                                     Our Work
                                 </a>
                             </li>
