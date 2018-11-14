@@ -13,7 +13,7 @@
 
 Route::get('/','PagesController@index')->name('index');
 Route::get('about-us','PagesController@about')->name('about');
-Route::get('our-work','PagesController@work')->name('work');
+//Route::get('our-work','PagesController@work')->name('work');
 
 Route::prefix('services')->group(function(){
     Route::get('{slug}','ServiceController@getPage')->name('service.page');

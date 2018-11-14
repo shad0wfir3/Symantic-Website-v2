@@ -157,9 +157,10 @@
 
     <!-- Seperator Line
     ================================================== -->
-    @include('includes.seperator-line')
+
     <!-- Work Title Block
     ================================================== -->
+    {{--
     <div class="section padding-top-smaller">
         <div class="container">
             <div class="row justify-content-center">
@@ -231,10 +232,12 @@
         </div>
     </div>
 
+    --}}
+
 
     <!-- Blog Block
    ================================================== -->
-    <div class="section padding-top-bottom background-grey-2 over-hide">
+    <div class="section padding-bottom-small background-grey-2 over-hide">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">

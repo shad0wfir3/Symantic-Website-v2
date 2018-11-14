@@ -84,11 +84,11 @@
                                 </div>
                             </li>
 
-                            <li class="nav-item {{ Request::is('our-work*') ? 'active' : '' }}">
-                                <a class="nav-link" href="{{ route('work') }}">
-                                    Our Work
-                                </a>
-                            </li>
+                            {{--<li class="nav-item {{ Request::is('our-work*') ? 'active' : '' }}">--}}
+                                {{--<a class="nav-link" href="{{ route('work') }}">--}}
+                                    {{--Our Work--}}
+                                {{--</a>--}}
+                            {{--</li>--}}
                             <li class="nav-item {{ Request::is('blog*') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('blog.index') }}">
                                     Blog
