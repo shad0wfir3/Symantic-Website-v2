@@ -158,86 +158,32 @@
     <!-- Seperator Line
     ================================================== -->
 
-    <!-- Work Title Block
-    ================================================== -->
-    {{--
-    <div class="section padding-top-smaller">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="main-title text-center">
-                        <div class="main-subtitle-top mb-4">LATEST WORK</div>
-                        <h3>We Take Pride In Delivering Only The Best.</h3>
-                        <div class="main-subtitle-bottom mt-3">case studies</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Work Block
     ================================================== -->
-    <div class="section background-white padding-bottom-smaller">
-        <div class="container-fluid">
+    <div class="section background-grey over-hide">
+        <div class="container-fluid m-0 p-0 background-grey">
             <div class="row">
-                <div class="work-slider-wrap mb-4">
-                    <div id="owl-work" class="owl-carousel owl-theme">
-                        <div class="item">
-                            <a href="project-image.html">
-                                <div class="portfolio-box-1 dark rounded">
-                                    <img  src="img/portfolio/grid/1.jpg" alt="" />
-                                    <div class="portfolio-mask-2 rounded"></div>
-                                    <h5 class="on-center text-center">Crafty Art</h5>
-                                    <p class="on-center text-center">logo design, website, </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="project-image.html">
-                                <div class="portfolio-box-1 dark rounded">
-                                    <img  src="img/portfolio/grid/2.jpg" alt="" />
-                                    <div class="portfolio-mask-2 rounded"></div>
-                                    <h5 class="on-center text-center">primarily serve people</h5>
-                                    <p class="on-center text-center">design, motion</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="project-image.html">
-                                <div class="portfolio-box-1 dark rounded">
-                                    <img  src="img/portfolio/grid/3.jpg" alt="" />
-                                    <div class="portfolio-mask-2 rounded"></div>
-                                    <h5 class="on-center text-center">primarily serve people</h5>
-                                    <p class="on-center text-center">design, motion</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="project-image.html">
-                                <div class="portfolio-box-1 dark rounded">
-                                    <img  src="img/portfolio/grid/4.jpg" alt="" />
-                                    <div class="portfolio-mask-2 rounded"></div>
-                                    <h5 class="on-center text-center">primarily serve people</h5>
-                                    <p class="on-center text-center">design, motion</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-lg-7 row-in background-image-cover padding-top-bottom" style="background-image: url('img/parallax-6.jpg')">
+                    <div class="grey-fade-over"></div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mt-5 mg-auto" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <a href="{{ route('blog.index') }}" class="btn btn-primary btn-simple btn-round btn-long">visit our portfolio</a>
+                <div class="col-lg-5 row-in padding-top-bottom">
+                    <div class="section align-self-center text-left padding-on-grid-12">
+                        <div class="main-title no-subtitle">
+                            <div class="main-subtitle-top mb-4">CASE STUDY</div>
+                            <h3 class="mb-0">Lookor - A innovative solution to equipment hire</h3>
+                        </div>
+                        <p class="lead mb-5">Some people think design means how it looks. But of course, if you dig deeper, it's really how it works. Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people. Some people think design means how it looks.</p>
+                        <a href="#pricing" class="btn btn-primary btn-simple btn-round btn-long scroll">our pricing</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    --}}
-
 
     <!-- Blog Block
    ================================================== -->
-    <div class="section padding-bottom-small background-grey-2 over-hide">
+    <div class="section padding-top-bottom-small background-grey-2 over-hide">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
