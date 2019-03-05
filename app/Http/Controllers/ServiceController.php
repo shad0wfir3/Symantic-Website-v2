@@ -27,10 +27,10 @@ class ServiceController extends Controller
     }
 
     public function sbds(){
-        return 'test';
+        return view('pages.sbds');
     }
 
     public function launch_it(){
-        return 'test';
+        return view('pages.launch-it');
     }
 }

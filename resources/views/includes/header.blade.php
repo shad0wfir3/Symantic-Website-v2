@@ -1,4 +1,11 @@
-<div id="menu-wrap" class="cbp-af-header black-menu-background-1st-trans menu-fixed-padding menu-shadow">
+<div id="menu-wrap" class="cbp-af-header black-menu-background-1st-trans menu-fixed-padding menu-shadow
+
+@if(Request::is('terms-and-conditions'))
+        background-dark
+        @endif
+
+
+">
     <div class="container nav-top-bar">
         <div class="row">
             <div class="col-md-7">
@@ -75,7 +82,7 @@
                                                 <p>Symantic Creative BDS&trade; provides <strong>small businesses and start-ups</strong> with an integrated full stack solution to branding, marketing and advertising, packaged together to <strong>reduce cost</strong> and expenses.</p>
 
                                             </a>
-                                            <a href="{{ route('launch_it') }}" class="dropdown-item big_item">
+                                            <a href="{{ route('launch-it') }}" class="dropdown-item big_item">
                                                 <strong>Launch-It</strong><em>&trade;</em>
                                                 <p>Launch-IT&trade; is the ultimate solution for your next <strong>product or service</strong> launch. Through expert marketing campaigns & experiences, launch-it&trade; provides the <strong>ultimate platform</strong> for you to market your product.</p>
                                             </a>
@@ -84,11 +91,11 @@
                                 </div>
                             </li>
 
-                            {{--<li class="nav-item {{ Request::is('our-work*') ? 'active' : '' }}">--}}
-                                {{--<a class="nav-link" href="{{ route('work') }}">--}}
-                                    {{--Our Work--}}
-                                {{--</a>--}}
-                            {{--</li>--}}
+                            <li class="nav-item {{ Request::is('our-work*') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('work') }}">
+                                    Our Work
+                                </a>
+                            </li>
                             <li class="nav-item {{ Request::is('blog*') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('blog.index') }}">
                                     Blog

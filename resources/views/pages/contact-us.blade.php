@@ -15,14 +15,14 @@
     ================================================== -->
 
     <div class="section padding-top-1st padding-bottom-1st over-hide">
-        <div class="parallax" style="background-image: url('img/parallax-hero-4.jpg')"></div>
+        <div class="parallax" style="background-image: url('{{asset('img/contact-us.jpg')}}')"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
             <div class="row">
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
                         <h1 class="text-white">Read to work with us?</h1>
-                        <div class="main-subtitle-bottom mt-4">Call us, email us, whatsapp us, or send smoke signals. Let us help you grow! </div>
+                        <div class="main-subtitle-bottom mt-4">Call us, email us, whatsapp us, or send smoke signals. Whatever works for you, but get in touch and let us help you grow! </div>
                     </div>
                 </div>
                 <div class="clear"></div>

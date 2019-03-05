@@ -29,5 +29,9 @@ class PagesController extends Controller
         return view('pages.contact-us');
     }
 
+    public function terms_conditions(){
+        return view('pages.terms-conditions');
+    }
+
 
 }

@@ -16,10 +16,14 @@
                     <div class="col-md-12 error-page text-center parallax-fade-top on-dark">
                         <h1>404</h1>
                         <p class="mt-3 mb-5 color-white">The page you were looking for was not found.</p>
-                        <a href="{{ route('home') }}" class="btn-link btn-primary mt-5"><i class="fa fa-long-arrow-left mr-2"></i> go back</a>
+                        <a href="{{ route('index') }}" class="btn-link btn-primary mt-5"><i class="fa fa-long-arrow-left mr-2"></i> go back</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     @stop
+
+@push('scripts')
+    <script type="text/javascript" src="{{ asset('js/custom/custom-corporate.js') }}"></script>
+@endpush
