@@ -11,6 +11,6 @@ class PortfolioController extends Controller
             'item 1',
             'item 2',
         ];
-        return view('portfolio.index',compact('items'));
+        return view('pages.portfolio.index',compact('items'));
     }
 }

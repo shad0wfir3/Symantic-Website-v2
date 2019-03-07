@@ -28,7 +28,7 @@ Route::prefix('blog')->group(function(){
     Route::get('categories/{slug}','BlogController@getCategories')->name('blog.categories');
 });
 
-//Route::prefix('our-work')
+Route::get('our-work','PortfolioController@index')->name('our-work');
 
 Route::get('contact-us','PagesController@contact_us')->name('contact_us');
 Route::get('terms-and-conditions','PagesController@terms_conditions')->name('terms-conditions');
