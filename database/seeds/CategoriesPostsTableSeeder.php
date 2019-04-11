@@ -12,7 +12,6 @@ class CategoriesPostsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('categories_posts')->truncate();
 
         $relation = [
             [

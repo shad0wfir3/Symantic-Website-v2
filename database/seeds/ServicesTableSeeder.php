@@ -13,9 +13,6 @@ class ServicesTableSeeder extends Seeder
     public function run()
     {
 
-        DB::table('services')->truncate();
-
-
         $services = [
             [
                 'name' => 'Brand Marketing & Strategy',

@@ -12,7 +12,7 @@ class QuoteTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('inspirational_quotes')->truncate();
+        
         $qoutes = [
             [
                 "author" => "Thomas Edison",

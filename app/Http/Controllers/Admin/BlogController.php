@@ -17,7 +17,7 @@ class BlogController extends Controller
     public function index()
     {
         $posts = Post::with('author')->paginate(10);
-        return view('dashboard.blog.index',compact('posts'));
+        return view('admin.blog.index',compact('posts'));
     }
 
     /**
@@ -27,7 +27,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('dashboard.blog.create');
+        return view('admin.blog.create');
     }
 
     /**
@@ -60,7 +60,9 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        //
+        $blog_post = Post::find($id);
+
+        dd($blog_post);
     }
 
     /**

@@ -12,7 +12,7 @@ class PostsTagsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('posts_tags')->truncate();
+
 
         $posts = \App\Post::all();
         $tags = \App\Tag::all()->random(4);
