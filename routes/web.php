@@ -23,8 +23,18 @@ Route::namespace('Theme')->group(function(){
 
     //Pages from DB
     Route::prefix('services')->group(function(){
-        Route::get('','ServiceController@index')->name('theme.services.index');
-        Route::get('{slug}','ServiceController@single')->name('theme.services.single');
+//        Route::get('','ServiceController@index')->name('theme.services.index');
+//        Route::get('{slug}','ServiceController@single')->name('theme.services.single');
+        Route::get('strategic-consulting','ServicesController@strategic_consulting')->name('theme.services.strategic_consulting');
+        Route::get('brand-analyses','Servicescontroller@brand_analyses')->name('theme.services.brand_analyses');
+        Route::get('graphic-design','Servicescontroller@graphic_design')->name('theme.services.graphic_design');
+        Route::get('website-design-and-development','ServicesController@website_design_development')->name('theme.services.website_design_development');
+        Route::get('saas-enterprise-development','ServicesController@saas_enterprise_development')->name('theme.services.saas_enterprise_development');
+        Route::get('e-commerce-development','ServicesController@e-commerce-development')->name('theme.services.e_commerce_development');
+        Route::get('seo','ServicesController@seo')->name('theme.services.seo');
+        Route::get('social-media-marketing','ServicesController@social_media_marketing')->name('theme.services.social_media_marketing');
+
+        //Package Pages (Looks Different)
         Route::get('business-development-solutions','ServiceController@sbds')->name('theme.services.sbds');
         Route::get('launch-it','ServiceController@launch_it')->name('theme.services.launch_it');
 
@@ -48,7 +58,7 @@ Auth::routes();
 
 
 Route::prefix('admin')->middleware('auth')->namespace('Admin')->group(function(){
-    Route::get('', 'DashboardController@index')->name('home');
+    Route::get('', 'DashboardController@index')->name('admin.index');
     Route::resource('blog','BlogController');
 //    Route::prefix('blog')->group(function(){
 ////        Route::get('','BlogController@index')->name('admin.blog.index');

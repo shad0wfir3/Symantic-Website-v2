@@ -1,21 +1,28 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="mb-4">Create a Service</h1>
+        {{--@if ($errors->any())--}}
+            {{--<div class="alert alert-danger">--}}
+                {{--<ul>--}}
+                    {{--@foreach ($errors->all() as $error)--}}
+                        {{--<li>{{ $error }}</li>--}}
+                    {{--@endforeach--}}
+                {{--</ul>--}}
+            {{--</div>--}}
+        {{--@endif--}}
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Minimum Value</h4>
+                    <h6 class="card-subtitle">Add attribute <code>minlength="5"</code> to input area.</h6>
+                    <form class="m-t-30">
+                        <div class="form-group">
+                            <input type="text" class="form-control" minlength="5" id="minval" aria-describedby="minval" placeholder="Name">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">

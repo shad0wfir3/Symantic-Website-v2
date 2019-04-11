@@ -45,4 +45,37 @@ class ServiceController extends Controller
     public function launch_it(){
         return view('pages.launch-it');
     }
+
+    public function strategic_consulting(){
+        return view('theme.pages.services.strategic_consulting');
+    }
+
+    public function brand_analyses(){
+            return view('theme.pages.services.brand_analyses');
+    }
+
+    public function graphic_design(){
+            return view('theme.pages.services.brand_analyses');
+    }
+
+    public function website_design_development(){
+            return view('theme.pages.services.website_design_development');
+    }
+
+    public function saas_enterprise_development(){
+            return view('theme.pages.services.saas_enterprise_development');
+    }
+
+    public function e_commerce_development(){
+            return view('theme.pages.services.e_commerce_development');
+    }
+
+    public function seo(){
+        return view('theme.pages.services.seo');
+    }
+
+    public function social_media_marketing(){
+        return view('theme.pages.services.social_media_management');
+    }
+
 }

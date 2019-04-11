@@ -100,19 +100,93 @@
     <!-- Services Block
     ================================================== -->
 
-    <div class="section padding-bottom-smaller background-white over-hide">
+    <div class="section padding-top-bottom-smaller background-dark over-hide">
         <div class="container">
-            <div class="row">
-                @foreach($services as $service)
-                <div class="col-md mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center">
-                        <i class="funky-ui-icon {{$service->icon}}"></i>
-                        <h5 class="mt-3">{{$service->name}}</h5>
-                        <p class="mt-3 mb-4">{{ $service->short_description }}</p>
-                        <a href="{{ route('theme.services.single',$service->slug) }}" class="btn-link btn-primary">read more</a>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="main-title text-center">
+                        <div class="main-subtitle-top mb-4">our services</div>
+                        <h3 class="text-white">Services We Offer!</h3>
+                        <div class="main-subtitle-bottom mt-3">Our wide range of services is specifically designed to offer you the most flexibility when it comes to your next project.</div>
                     </div>
                 </div>
-                @endforeach
+            </div>
+            <div class="row">
+
+                {{--<a class="dropdown-item" href="{{  }}">Strategic Consulting</a>--}}
+                {{--<a class="dropdown-item" href="{{ route('theme.services.brand_analyses') }}">Brand Analyses</a>--}}
+                {{--<a class="dropdown-item" href="{{ route('theme.services.graphic_design') }}">Graphic Design </a>--}}
+                {{--<a class="dropdown-item" href="{{ route('theme.services.website_design_development') }}">Website Design & Development</a>--}}
+                {{--<a class="dropdown-item" href="{{ route('theme.services.saas_enterprise_development') }}">SAAS & Enterprise Development</a>--}}
+                {{--<a class="dropdown-item" href="{{ route('theme.services.e_commerce_development') }}">E-Commerce Website Development</a>--}}
+                {{--<a class="dropdown-item" href="{{ route('theme.services.seo') }}">Search Engine Optimisation</a>--}}
+                {{--<a class="dropdown-item" href="{{ route('theme.services.social_media_marketing') }}">Social Media Marketing</a>--}}
+
+                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="services-box-1 border-on-light text-center background-grey">
+                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
+                        <h5 class="mt-3">Strategic Consulting</h5>
+                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
+                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="services-box-1 border-on-light text-center background-grey">
+                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
+                        <h5 class="mt-3">Strategic Consulting</h5>
+                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
+                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="services-box-1 border-on-light text-center background-grey">
+                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
+                        <h5 class="mt-3">Strategic Consulting</h5>
+                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
+                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="services-box-1 border-on-light text-center background-grey">
+                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
+                        <h5 class="mt-3">Strategic Consulting</h5>
+                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
+                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="services-box-1 border-on-light text-center background-grey">
+                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
+                        <h5 class="mt-3">Strategic Consulting</h5>
+                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
+                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="services-box-1 border-on-light text-center background-grey">
+                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
+                        <h5 class="mt-3">Strategic Consulting</h5>
+                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
+                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                    </div>
+                </div>
+                <div class="col-md mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="services-box-1 border-on-light text-center background-grey">
+                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
+                        <h5 class="mt-3">Strategic Consulting</h5>
+                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
+                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                    </div>
+                </div>
+                <div class="col-md mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="services-box-1 border-on-light text-center background-grey">
+                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
+                        <h5 class="mt-3">Strategic Consulting</h5>
+                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
+                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

@@ -62,18 +62,18 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-mainNav-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Our Services
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-mainNav-2">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-mainNav-1">
                                     <ul class="drop-mega-menu">
                                         <li>
                                             <a class="dropdown-header">Services</a>
-                                            @foreach($services_list as $single_service_slug => $single_service_name)
-                                            <a class="dropdown-item" href="{{ route('theme.services.single',$single_service_slug) }}">{{ $single_service_name }}</a>
-                                            @endforeach
-                                            {{--<a class="dropdown-item" href="{{ route('design') }}">Graphic Design</a>--}}
-                                            {{--<a class="dropdown-item" href="{{ route('e-commerce') }}">Website Design & Development </a>--}}
-                                            {{--<a class="dropdown-item" href="{{ route('development') }}">WordPress & Themes</a>--}}
-                                            {{--<a class="dropdown-item" href="{{ route('development') }}">E-Commerce & Online Stores</a>--}}
-                                            {{--<a class="dropdown-item" href="{{ route('strategic') }}">Strategic Marketing Consulting</a>--}}
+                                            <a class="dropdown-item" href="{{ route('theme.services.strategic_consulting') }}">Strategic Consulting</a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.brand_analyses') }}">Brand Analyses</a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.graphic_design') }}">Graphic Design </a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.website_design_development') }}">Website Design & Development</a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.saas_enterprise_development') }}">SAAS & Enterprise Development</a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.e_commerce_development') }}">E-Commerce Website Development</a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.seo') }}">Search Engine Optimisation</a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.social_media_marketing') }}">Social Media Marketing</a>
                                         </li>
                                         <li>
                                             <a class="dropdown-header">Packages</a>
