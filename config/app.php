@@ -152,6 +152,7 @@ return [
          */
         Barryvdh\Elfinder\ElfinderServiceProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
+        Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
 
         /*
          * Application Service Providers...

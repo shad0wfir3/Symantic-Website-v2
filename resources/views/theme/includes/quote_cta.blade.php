@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-3 mt-4 mt-md-0">
                 <div class="call-box-3 text-center text-md-right">
-                    <a href="{{ route('quote_me',$service->id) }}" class="btn btn-primary btn-long mt-0 mt-md-4" >request a quote!</a>
+                    <a href="{{ route('theme.pages.request_quote',$service->id) }}" class="btn btn-primary btn-long mt-0 mt-md-4" >request a quote!</a>
                 </div>
             </div>
         </div>

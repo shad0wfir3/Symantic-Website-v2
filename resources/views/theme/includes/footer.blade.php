@@ -4,17 +4,17 @@
             <div class="col-md-3">
                 <h6>Packaged Solutions</h6>
                 <ul class="list-style">
-                    <li><a href="{{ route('sbds') }}">Symantic BDS&trade; (SME / Startup)</a></li>
-                    <li><a href="{{ route('launch-it') }}">Symantic Launch-IT&trade;</a></li>
+                    <li><a href="{{ route('theme.services.sbds') }}">Symantic BDS&trade; (SME / Startup)</a></li>
+                    <li><a href="{{ route('theme.services.launch_it') }}">Symantic Launch-IT&trade;</a></li>
                     <li><a>Symantic App-D <small>coming soon</small></a></li>
                 </ul>
             </div>
             <div class="col-md-3 mt-4 mt-md-0">
                 <h6>Quick Links</h6>
                 <ul class="list-style">
-                    <li><a href="{{ route('about') }}">Who are we</a></li>
-                    <li><a href="#">Our Work</a></li>
-                    <li><a href="{{ route('contact_us') }}">Connect with us!</a></li>
+                    <li><a href="{{ route('theme.pages.about_us') }}">Who are we</a></li>
+                    <li><a href="{{ route('theme.portfolio.index') }}">Our Work</a></li>
+                    <li><a href="{{ route('theme.pages.contact_us') }}">Connect with us!</a></li>
                 </ul>
 
 
@@ -22,9 +22,9 @@
             <div class="col-md-3 mt-4 mt-md-0">
                 <h6>Interesting</h6>
                 <ul class="list-style">
-                    <li><a href="{{ route('careers') }}">Career Opportunities</a></li>
-                    <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
-                    <li><a href="{{ route('terms-conditions') }}">Terms & Conditions</a></li>
+                    <li><a href="{{ route('theme.pages.careers') }}">Career Opportunities</a></li>
+                    <li><a href="{{ route('theme.pages.privacy_policy') }}">Privacy Policy</a></li>
+                    <li><a href="{{ route('theme.pages.terms_conditions') }}">Terms & Conditions</a></li>
 
                 </ul>
             </div>

@@ -1,4 +1,4 @@
-@extends('layouts.site')
+@extends('theme.layouts.site')
 
 @section('open_graph')
     <meta property="og:title" content="Symantic Creative Design - About Us" />

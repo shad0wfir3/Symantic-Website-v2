@@ -21,10 +21,10 @@ class PagesController extends Controller
         return view('theme.pages.about',compact('quotes'));
     }
 
-    public function work(){
-        $quote = InspirationalQuotes::get()->random(1);
-        return view('theme.pages.portfolio.index',compact('quote'));
-    }
+//    public function work(){
+//        $quote = InspirationalQuotes::get()->random(1);
+//        return view('theme.pages.portfolio.index',compact('quote'));
+//    }
 
     public function contact_us(){
         return view('theme.pages.contact-us');
@@ -35,7 +35,11 @@ class PagesController extends Controller
     }
 
     public function career_listings(){
-        return 'career listing page';
+        return view('theme.pages.listings');
+    }
+
+    public function request_quote(){
+        return view('theme.pages.request_quote');
     }
 
 

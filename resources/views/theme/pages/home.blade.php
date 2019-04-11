@@ -109,7 +109,7 @@
                         <i class="funky-ui-icon {{$service->icon}}"></i>
                         <h5 class="mt-3">{{$service->name}}</h5>
                         <p class="mt-3 mb-4">{{ $service->short_description }}</p>
-                        <a href="{{ route('service.page',$service->slug) }}" class="btn-link btn-primary">read more</a>
+                        <a href="{{ route('theme.services.single',$service->slug) }}" class="btn-link btn-primary">read more</a>
                     </div>
                 </div>
                 @endforeach
@@ -203,14 +203,14 @@
                         @foreach($featured_posts as $post)
                         <div class="item">
                             <div class="blog-box-1 background-white drop-shadow">
-                                <a href="{{ route('blog.post',$post->slug) }}"><h5>{{ truncate_headings($post->title) }}</h5></a>
+                                <a href="{{ route('theme.blog.post',$post->slug) }}"><h5>{{ truncate_headings($post->title) }}</h5></a>
                                 <p class="mt-3">{{ $post->excerpt}}</p>
                                 <div class="separator-wrap pt-3">
                                     <span class="separator"><span class="separator-line"></span></span>
                                 </div>
                                 <div class="author-wrap mt-3">
                                     @foreach($post->tags as $tag)
-                                        <a href="{{ route('blog.tags',$tag->slug) }}" class="btn btn-primary btn-sm ml-0 mr-1 mb-1">{{ $tag->title }}</a>
+                                        <a href="{{ route('theme.blog.tags',$tag->slug) }}" class="btn btn-primary btn-sm ml-0 mr-1 mb-1">{{ $tag->title }}</a>
                                         @endforeach
                                     <p class="mt-2"> by <a href="#">{{ $post->author->name }}</a></pmt-2>
                                 </div>
@@ -257,13 +257,6 @@
     <!-- Seperator Line
     ================================================== -->
     @include('theme.includes.seperator-line')
-
-
-
-
-
-
-
 @endsection
 
 @push('scripts')

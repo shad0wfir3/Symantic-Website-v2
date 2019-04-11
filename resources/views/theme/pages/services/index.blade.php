@@ -34,19 +34,13 @@
     @endsection
 @section('content')
     <!-- Primary Page Layout
-	================================================== -->
 
 
 
     <!-- Call To Action Block
     ================================================== -->
 
-    @if($service->request_type == 'quote')
         @include('theme.includes.quote_cta')
-    @else
-        @include('theme.includes.contact_cta')
-    @endif
-
     <!-- Separator Line
     ================================================== -->
 

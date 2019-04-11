@@ -13,32 +13,36 @@
 Route::namespace('Theme')->group(function(){
 
     //Static Pages
-    Route::get('/','PagesController@index')->name('index');
-    Route::get('about-us','PagesController@about')->name('about');
-    Route::get('contact-us','PagesController@contact_us')->name('contact_us');
-    Route::get('terms-and-conditions','PagesController@terms_conditions')->name('terms-conditions');
-    Route::get('privacy-policy','PagesController@privacy_policy')->name('privacy-policy');
-    Route::get('career-opportunities','PagesController@career_listings')->name('careers');
-    Route::get('quote-me','PagesController@quote')->name('quote_me');
+    Route::get('/','PagesController@index')->name('theme.pages.index');
+    Route::get('about-us','PagesController@about')->name('theme.pages.about_us');
+    Route::get('contact-us','PagesController@contact_us')->name('theme.pages.contact_us');
+    Route::get('terms-and-conditions','PagesController@terms_conditions')->name('theme.pages.terms_conditions');
+    Route::get('privacy-policy','PagesController@privacy_policy')->name('theme.pages.privacy_policy');
+    Route::get('career-opportunities','PagesController@career_listings')->name('theme.pages.careers');
+    Route::get('request-a-quote','PagesController@request_quote')->name('theme.pages.request_quote');
 
     //Pages from DB
     Route::prefix('services')->group(function(){
-        Route::get('{slug}','ServiceController@getPage')->name('service.page');
-    });
+        Route::get('','ServiceController@index')->name('theme.services.index');
+        Route::get('{slug}','ServiceController@single')->name('theme.services.single');
+        Route::get('business-development-solutions','ServiceController@sbds')->name('theme.services.sbds');
+        Route::get('launch-it','ServiceController@launch_it')->name('theme.services.launch_it');
 
-    //Temporary Routes untill i take the time to make it dynamic
-    Route::get('symantic-business-development-solutions','ServiceController@sbds')->name('sbds');
-    Route::get('launch-it','ServiceController@launch_it')->name('launch-it');
+    });
 
     Route::prefix('blog')->group(function(){
-        Route::get('','BlogController@index')->name('blog.index');
-        Route::get('{slug}','BlogController@getPost')->name('blog.post');
-        Route::get('tags/{slug}','BlogController@getTag')->name('blog.tags');
-        Route::get('categories/{slug}','BlogController@getCategories')->name('blog.categories');
+        Route::get('','BlogController@index')->name('theme.blog.index');
+        Route::get('{slug}','BlogController@single')->name('theme.blog.post');
+        Route::get('tags/{slug}','BlogController@getTag')->name('theme.blog.tags');
+        Route::get('categories/{slug}','BlogController@getCategories')->name('theme.blog.categories');
     });
 
-    Route::get('our-work','PortfolioController@index')->name('our-work');
+    Route::prefix('our-work')->group(function(){
+        Route::get('','PortfolioController@index')->name('theme.portfolio.index');
+        Route::get('{slug}','PortfolioController@single')->name('theme.portfolio.post');
+    });
 });
+
 
 Auth::routes();
 

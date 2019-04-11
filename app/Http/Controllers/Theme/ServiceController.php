@@ -9,7 +9,18 @@ use App\Http\Controllers\Controller;
 
 class ServiceController extends Controller
 {
-    public function getPage($slug){
+    /*
+     * Services index page
+     * @return view()
+     */
+    public function index(){
+        return view('pages.services.index');
+    }
+
+    /*
+     * Single Service
+     */
+    public function single($slug){
 
         $service = Service::published()->where('slug',$slug)->firstorfail();
 
@@ -23,7 +34,7 @@ class ServiceController extends Controller
             'alt' => $service->page_img_alt
         ];
 
-        return view('pages.service',compact('service','featured_img','page_img'));
+        return view('theme.pages.services.single',compact('service','featured_img','page_img'));
 
     }
 
