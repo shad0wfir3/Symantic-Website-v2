@@ -1,4 +1,4 @@
-@extends('layouts.site')
+@extends('theme.layouts.site')
 @section('open_graph')
     <meta property="og:title" content="Symantic Creative Design - About Us" />
     <meta property="og:type" content="website" />
@@ -9,11 +9,13 @@
 @section('title','About Us')
 @section('slider')
     <div class="section padding-top-1st padding-bottom-smaller over-hide">
+        <div class="parallax" style="background-image: url('{{ asset('img/about-us-header.jpg') }}')"></div>
+        <div class="grey-fade-over"></div>
         <div class="container z-bigger">
             <div class="row">
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
-                        <h1 class="">Terms & Conditions</h1>
+                        <h1 class="text-white">Terms & Conditions</h1>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -25,10 +27,11 @@
     <!-- Block
 	================================================== -->
 
-    <div class="section padding-bottom over-hide z-bigger-2">
+    <div class="section padding-top-bottom-smaller over-hide z-bigger-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <h2>General</h2>
                     <p>These terms and conditions outline the rules and regulations for the use of Symantic Creative (Pty) Ltd's Website.</p>
                     <span style="text-transform: capitalize;"> Symantic Creative (Pty) Ltd</span> is located in:<br />
                     <address>Cape Town<br />Western Cape - 8001, South Africa<br />

@@ -108,7 +108,12 @@
             </div>
         </div>
     </div>
-    @include('theme.includes.sbds-cta')
+    @include('theme.includes.sbds-cta',[
+   "title" => 'Discover Symantic Business Development Services (SBDS)&trade;',
+   "text" => "Not sure where to start? Why not have a look at our packaged solutions? SBDS is the ultimate solution for your startup or small bushiness's marketing needs. <strong>Affordable</strong> and <strong>Professional</strong>.",
+   'button_text' => 'discover SBDS &trade;',
+   'url_route' => 'theme.services.sbds'
+   ])
     @include('theme.includes.logo-block')
     @include('theme.includes.seperator-line')
 @endsection

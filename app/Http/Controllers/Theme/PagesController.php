@@ -13,7 +13,8 @@ class PagesController extends Controller
     public function index(){
         $services = Service::where('status','published')->get();
         $featured_posts = Post::featured()->with('author','tags')->get();
-        return view('theme.pages.home',compact('services','featured_posts'));
+        $quotes = InspirationalQuotes::get()->random(7);
+        return view('theme.pages.home',compact('services','featured_posts','quotes'));
     }
 
     public function about(){
@@ -31,6 +32,10 @@ class PagesController extends Controller
     }
 
     public function terms_conditions(){
+        return view('theme.pages.terms-conditions');
+    }
+
+    public function privacy_policy(){
         return view('theme.pages.terms-conditions');
     }
 

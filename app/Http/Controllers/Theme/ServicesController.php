@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use JD\Cloudder\Facades\Cloudder;
 use App\Http\Controllers\Controller;
 
-class ServiceController extends Controller
+class ServicesController extends Controller
 {
     /*
      * Services index page
@@ -46,8 +46,8 @@ class ServiceController extends Controller
         return view('pages.launch-it');
     }
 
-    public function strategic_consulting(){
-        return view('theme.pages.services.strategic_consulting');
+    public function strategic_brand_marketing(){
+        return view('theme.pages.services.strategic_brand_marketing');
     }
 
     public function brand_analyses(){

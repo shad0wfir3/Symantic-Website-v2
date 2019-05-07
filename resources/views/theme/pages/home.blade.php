@@ -77,11 +77,11 @@
 @section('content')
     <!-- Text Block
     ================================================= -->
-    <div class="section padding-top-bottom background-white over-hide" id="scroll-top">
-        <div class="container">
+    <div class="section padding-top-bottom  over-hide on-dark" id="scroll-top">
+        <div class="container ">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Professional Digital Creative Agency.</h3>
+                    <h3 class="">Professional Digital Creative Agency.</h3>
                     <p class="mt-3 mb-0">
                         Complete professional and specialised branding, marketing and advertisement solutions for your business.
                         <a href="#" class="btn-link btn-primary">Request a quote!</a>
@@ -97,96 +97,75 @@
         </div>
     </div>
 
+
+    @include('theme.includes.seperator-line')
+
     <!-- Services Block
     ================================================== -->
 
-    <div class="section padding-top-bottom-smaller background-dark over-hide">
+    <div class="section padding-top-bottom-smaller over-hide">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="main-title text-center">
-                        <div class="main-subtitle-top mb-4">our services</div>
-                        <h3 class="text-white">Services We Offer!</h3>
-                        <div class="main-subtitle-bottom mt-3">Our wide range of services is specifically designed to offer you the most flexibility when it comes to your next project.</div>
+                        <div class="main-subtitle-top mb-4">services</div>
+                        <h3>Our Services Offered</h3>
+                        <div class="main-subtitle-bottom mt-3">growth. development. experience</div>
                     </div>
                 </div>
             </div>
+
             <div class="row">
 
-                {{--<a class="dropdown-item" href="{{  }}">Strategic Consulting</a>--}}
-                {{--<a class="dropdown-item" href="{{ route('theme.services.brand_analyses') }}">Brand Analyses</a>--}}
-                {{--<a class="dropdown-item" href="{{ route('theme.services.graphic_design') }}">Graphic Design </a>--}}
-                {{--<a class="dropdown-item" href="{{ route('theme.services.website_design_development') }}">Website Design & Development</a>--}}
-                {{--<a class="dropdown-item" href="{{ route('theme.services.saas_enterprise_development') }}">SAAS & Enterprise Development</a>--}}
-                {{--<a class="dropdown-item" href="{{ route('theme.services.e_commerce_development') }}">E-Commerce Website Development</a>--}}
-                {{--<a class="dropdown-item" href="{{ route('theme.services.seo') }}">Search Engine Optimisation</a>--}}
-                {{--<a class="dropdown-item" href="{{ route('theme.services.social_media_marketing') }}">Social Media Marketing</a>--}}
-
-                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center background-grey">
-                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
-                        <h5 class="mt-3">Strategic Consulting</h5>
-                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
-                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.2s">
+                    <div class="services-box-2  text-center">
+                        <img src="{{ asset('img/services/strategic-marketing/service-2.png') }}" class="img-fluid img-raised-2" alt="">
+                        <h5 class="mt-3">Strategic Brand Marketing</h5>
+                        <p class="mt-3 mb-4 ">Strategic Brand Marketing focuses on the strategic marketing of your brand through research and analyses, raising awareness and increasing recognition. </p>
+                        <a href="{{ route('theme.services.strategic_brand_marketing') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center background-grey">
-                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
-                        <h5 class="mt-3">Strategic Consulting</h5>
-                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
-                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.4s">
+                    <div class="services-box-2 text-center">
+                        <img src="{{ asset('img/services/graphic-design/service-2.png') }}" class="img-fluid img-raised-2" alt="Graphic Design">
+                        <h5 class="mt-3">Graphic Design</h5>
+                        <p class="mt-3 mb-4">A core component in any business is the design elements that builds your image. From logo design to websites, newsletter and digital assets, our services build your business.</p>
+                        <a href="{{ route('theme.services.graphic_design') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center background-grey">
-                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
-                        <h5 class="mt-3">Strategic Consulting</h5>
-                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
-                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center background-grey">
-                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
-                        <h5 class="mt-3">Strategic Consulting</h5>
-                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
-                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center background-grey">
-                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
-                        <h5 class="mt-3">Strategic Consulting</h5>
-                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
-                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center background-grey">
-                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
-                        <h5 class="mt-3">Strategic Consulting</h5>
-                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
-                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
-                <div class="col-md mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center background-grey">
-                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
-                        <h5 class="mt-3">Strategic Consulting</h5>
-                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
-                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
-                    </div>
-                </div>
-                <div class="col-md mt-3 mb-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="services-box-1 border-on-light text-center background-grey">
-                        <i class="funky-ui-icon icon-Angel-Smiley "></i>
-                        <h5 class="mt-3">Strategic Consulting</h5>
-                        <p class="mt-3 mb-4">Excerpt and description here for this servcices</p>
-                        <a href="{{ route('theme.services.strategic_consulting') }}" class="btn-link btn-primary">read more</a>
+                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.6s">
+                    <div class="services-box-2  text-center">
+                        <img src="{{ asset('img/services/web-development/service-2.png') }}" class="img-fluid img-raised-2" alt="">
+                        <h5 class="mt-3">Website Design & Development</h5>
+                        <p class="mt-3 mb-4">Our comprehensive website development cater to your specific needs, from SPA pages to E-commerce and Custom solutions, we provide you with a product that excells.</p>
+                        <a href="{{ route('theme.services.website_development') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
                     </div>
                 </div>
 
+                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.2s">
+                    <div class="services-box-2  text-center">
+                        <img src="{{ asset('img/services/social-media-marketing/service-2.png') }}" class="img-fluid img-raised-2" alt="">
+                        <h5 class="mt-3">Social Media Marketing</h5>
+                        <p class="mt-3 mb-4">Targeted campaigns and managed social profiles provide you with the ultimate solutions to increase your customers while you focus on running your business.</p>
+                        <a href="{{ route('theme.services.social_media_marketing') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.4s">
+                    <div class="services-box-2 text-center">
+                        <img src="{{ asset('img/services/seo/service-2.png') }}" class="img-fluid img-raised-2" alt="Search Engine Optimisation">
+                        <h5 class="mt-3">Search Engine Optimisation</h5>
+                        <p class="mt-3 mb-4">Our SEO services provide your business with a scalable online presence that increases customer aquisition, exposes your brand and grants you specialised insights into your business.</p>
+                        <a href="{{ route('theme.services.strategic_brand_marketing') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.6s">
+                    <div class="services-box-2 text-center rounded-3">
+                        <img src="{{ asset('img/services/business-development/service-2.png') }}" class="img-fluid img-raised-2" alt="Business Development">
+                        <h5 class="mt-3">Business Development</h5>
+                        <p class="mt-3 mb-4">We provide a variety of expertly crafted well established managment and automation solutions that will help you manage the day to day operations of your business. </p>
+                        <a href="{{ route('theme.services.strategic_brand_marketing') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -248,7 +227,7 @@
                             <h3 class="mb-0">Lookor - A innovative solution to equipment hire</h3>
                         </div>
                         <p class="lead mb-5">Some people think design means how it looks. But of course, if you dig deeper, it's really how it works. Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people. Some people think design means how it looks.</p>
-                        <a href="#pricing" class="btn btn-primary btn-simple btn-round btn-long scroll">our pricing</a>
+                        <a href="#" class="btn btn-primary btn-simple btn-round btn-long scroll">read more</a>
                     </div>
                 </div>
             </div>
@@ -302,22 +281,35 @@
             </div>
         </div>
     </div>
-    {{--@include('includes.sbds-cta')--}}
 
     <!-- Subscribe Block
     ================================================== -->
+
+    <div class="section padding-top-bottom">
+        <div class="parallax-1" style="background-image: url('{{ asset('img/about_page.jpg') }}')"></div>
+        <div class="grey-fade-over"></div>
+        <div class="container z-bigger">
+            @include('theme.includes.sbds-cta',[
+    "title" => 'Discover Symantic Business Development Services (SBDS)&trade;',
+    "text" => "Not sure where to start? Why not have a look at our packaged solutions? SBDS is the ultimate solution for your startup or small bushiness's marketing needs. <strong>Affordable</strong> and <strong>Professional</strong>.",
+    'button_text' => 'discover SBDS &trade;',
+    'url_route' => 'theme.services.sbds'
+    ])
+        </div>
+    </div>
+
     <div class="section" id="contact">
-        <div class="section padding-top-bottom background-dark">
+        <div class="section padding-top-bottom background-grey">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-5 text-center">
-                        <h4 class="mb-5 color-white">Subscribe to our Newsletter</h4>
-                        <div class="subscribe-box-1 dark">
+                        <h4 class="mb-5">Subscribe to our Newsletter</h4>
+                        <div class="subscribe-box-1">
                             <input type="text" value="" placeholder="Email address" class="form-control" />
                             <button class="btn btn-primary subscribe-1" type="submit" value="">
                                 <i class="fa fa-angle-right"></i>
                             </button>
-                            <p class="mt-1"><small>* we promise that we won´t spam you, never!</small></p>
+                            <p class="mt-1"><small>* we promise not to spam you!</small></p>
                         </div>
                     </div>
                 </div>

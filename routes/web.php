@@ -25,14 +25,19 @@ Route::namespace('Theme')->group(function(){
     Route::prefix('services')->group(function(){
 //        Route::get('','ServiceController@index')->name('theme.services.index');
 //        Route::get('{slug}','ServiceController@single')->name('theme.services.single');
-        Route::get('strategic-consulting','ServicesController@strategic_consulting')->name('theme.services.strategic_consulting');
-        Route::get('brand-analyses','Servicescontroller@brand_analyses')->name('theme.services.brand_analyses');
+
+
+        //Current Services
+        Route::get('strategic-brand-marketing','ServicesController@strategic_brand_marketing')->name('theme.services.strategic_brand_marketing');
         Route::get('graphic-design','Servicescontroller@graphic_design')->name('theme.services.graphic_design');
-        Route::get('website-design-and-development','ServicesController@website_design_development')->name('theme.services.website_design_development');
-        Route::get('saas-enterprise-development','ServicesController@saas_enterprise_development')->name('theme.services.saas_enterprise_development');
-        Route::get('e-commerce-development','ServicesController@e-commerce-development')->name('theme.services.e_commerce_development');
-        Route::get('seo','ServicesController@seo')->name('theme.services.seo');
-        Route::get('social-media-marketing','ServicesController@social_media_marketing')->name('theme.services.social_media_marketing');
+        Route::get('website-design-and-development','ServicesController@website_design_development')->name('theme.services.website_development');
+        Route::get('social-media-marketing','ServicesController@e-commerce-development')->name('theme.services.social_media_marketing');
+        Route::get('search-engine-optimisation','ServicesController@seo')->name('theme.services.search_engine_optimisation');
+        Route::get('business-solutions','ServicesController@business_solutions')->name('theme.services.business_solutions');
+
+
+        //        Route::get('saas-enterprise-development','ServicesController@saas_enterprise_development')->name('theme.services.saas_enterprise_development');
+
 
         //Package Pages (Looks Different)
         Route::get('business-development-solutions','ServiceController@sbds')->name('theme.services.sbds');
