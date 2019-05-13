@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-3 mt-4 mt-md-0">
                 <div class="call-box-3 text-center text-md-right">
-                    <a href="{{ route($url_route) }}" class="btn btn-primary btn-simple btn-round btn-long mt-0 mt-md-4" >discover SBDS &trade;</a>
+                    <a href="{{ route($url_route) }}" class="btn btn-primary btn-simple btn-round btn-long mt-0 mt-md-4" >{!! $button_text  !!}</a>
                 </div>
             </div>
         </div>

@@ -117,7 +117,7 @@
 
             <div class="row">
 
-                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.2s">
+                <div class="col-md-4 mt-4 mb-4">
                     <div class="services-box-2  text-center">
                         <img src="{{ asset('img/services/strategic-marketing/service-2.png') }}" class="img-fluid img-raised-2" alt="">
                         <h5 class="mt-3">Strategic Brand Marketing</h5>
@@ -125,7 +125,7 @@
                         <a href="{{ route('theme.services.strategic_brand_marketing') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.4s">
+                <div class="col-md-4 mt-4 mb-4">
                     <div class="services-box-2 text-center">
                         <img src="{{ asset('img/services/graphic-design/service-2.png') }}" class="img-fluid img-raised-2" alt="Graphic Design">
                         <h5 class="mt-3">Graphic Design</h5>
@@ -133,7 +133,7 @@
                         <a href="{{ route('theme.services.graphic_design') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.6s">
+                <div class="col-md-4 mt-4 mb-4">
                     <div class="services-box-2  text-center">
                         <img src="{{ asset('img/services/web-development/service-2.png') }}" class="img-fluid img-raised-2" alt="">
                         <h5 class="mt-3">Website Design & Development</h5>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.2s">
+                <div class="col-md-4 mt-4 mb-4">
                     <div class="services-box-2  text-center">
                         <img src="{{ asset('img/services/social-media-marketing/service-2.png') }}" class="img-fluid img-raised-2" alt="">
                         <h5 class="mt-3">Social Media Marketing</h5>
@@ -150,7 +150,7 @@
                         <a href="{{ route('theme.services.social_media_marketing') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.4s">
+                <div class="col-md-4 mt-4 mb-4">
                     <div class="services-box-2 text-center">
                         <img src="{{ asset('img/services/seo/service-2.png') }}" class="img-fluid img-raised-2" alt="Search Engine Optimisation">
                         <h5 class="mt-3">Search Engine Optimisation</h5>
@@ -158,7 +158,7 @@
                         <a href="{{ route('theme.services.strategic_brand_marketing') }}" class="btn btn-primary btn-simple btn-round btn-long">read more</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 mb-4" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.6s">
+                <div class="col-md-4 mt-4 mb-4">
                     <div class="services-box-2 text-center rounded-3">
                         <img src="{{ asset('img/services/business-development/service-2.png') }}" class="img-fluid img-raised-2" alt="Business Development">
                         <h5 class="mt-3">Business Development</h5>
@@ -211,29 +211,6 @@
     <!-- Seperator Line
     ================================================== -->
 
-
-    <!-- Work Block
-    ================================================== -->
-    <div class="section background-grey over-hide">
-        <div class="container-fluid m-0 p-0 background-grey">
-            <div class="row">
-                <div class="col-lg-7 row-in background-image-cover padding-top-bottom" style="background-image: url('img/parallax-6.jpg')">
-                    <div class="grey-fade-over"></div>
-                </div>
-                <div class="col-lg-5 row-in padding-top-bottom">
-                    <div class="section align-self-center text-left padding-on-grid-12">
-                        <div class="main-title no-subtitle">
-                            <div class="main-subtitle-top mb-4">CASE STUDY</div>
-                            <h3 class="mb-0">Lookor - A innovative solution to equipment hire</h3>
-                        </div>
-                        <p class="lead mb-5">Some people think design means how it looks. But of course, if you dig deeper, it's really how it works. Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people. Some people think design means how it looks.</p>
-                        <a href="#" class="btn btn-primary btn-simple btn-round btn-long scroll">read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Blog Block
    ================================================== -->
     <div class="section padding-top-bottom-small background-grey-2 over-hide">
@@ -247,7 +224,7 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="blog-slider-wrap mb-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                <div class="blog-slider-wrap mb-4">
                     <div class="customNavigation">
                         <a class="prev-blog"><i class="fa fa-angle-left"></i></a>
                         <a class="next-blog"><i class="fa fa-angle-right"></i></a>
@@ -286,7 +263,7 @@
     ================================================== -->
 
     <div class="section padding-top-bottom">
-        <div class="parallax-1" style="background-image: url('{{ asset('img/about_page.jpg') }}')"></div>
+        <div class="parallax-1" style="background-image: url('{{ asset('img/home_cta.jpg') }}')"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
             @include('theme.includes.sbds-cta',[
