@@ -157,6 +157,9 @@ mark{
     color:inherit;
     text-decoration: none;
 }
+#home_services .services-box-1 i{
+    font-size:60px;
+}
 
 .drop-mega-menu li {
     /*width: 33.33333333333%;*/
@@ -174,4 +177,12 @@ mark{
         border-bottom:1px solid #eaeaea;
         padding-bottom:1rem;
     }
+}
+
+a.original{
+    text-decoration: none;
+    color:inherit;
+}
+a.original:hover{
+    color: #31BFB3;
 }

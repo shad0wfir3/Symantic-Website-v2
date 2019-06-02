@@ -1,4 +1,4 @@
-<div class="section padding-top-bottom-smaller background-dark">
+<div class="section padding-top-bottom-small background-dark">
     <div class="container">
         <div class="row">
             <div class="col-md-9">

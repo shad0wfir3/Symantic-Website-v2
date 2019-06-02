@@ -7,7 +7,7 @@
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Symantic Creative - @yield('title')</title>
+    <title>@yield('title') | Symantic Creative</title>
     <meta name="description" content="">
     <meta name="author" content="">
 

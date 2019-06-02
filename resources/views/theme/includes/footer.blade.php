@@ -50,7 +50,7 @@
     <div class="container scd-foot padding-top-small padding-bottom-smaller">
         <div class="row">
             <div class="col-md-6">
-                <p><i class="fa fa-heart"></i> © 2018 Symantic Creative (Pty) Ltd. All Rights Reserved. </p>
+              <p>&copy; {{ date('Y') }}. Made with <i class="fa fa-heart"></i> by Symantic Creative (Pty) Ltd. All Rights Reserved.</p>
             </div>
             <div class="col-md-6">
                 <ul class="footer-social">
