@@ -68,12 +68,12 @@
 }
 
 .cbp-af-header.cbp-af-header-shrink.black-menu-background-1st-trans {
-    background-color:  #2B343A;
+    background-color:  #232c33;
 }
 
 @media (max-width: 991px) {
     .black-menu-background-1st-trans {
-        background-color: #2B343A;
+        background-color: #232c33;
     }
 
     /*#menu-wrap {*/
@@ -82,9 +82,13 @@
 }
 
 .background-dark {
-    background-color: #2B343A;
-
-
+    background-color: #232c33;
+}
+.background-dark-1 {
+    background-color: #2f3b44;
+}
+.background-dark-2 {
+    background-color: #232a2f;
 }
 
 .dropdown-header em{

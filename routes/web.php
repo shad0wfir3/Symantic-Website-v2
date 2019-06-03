@@ -30,10 +30,10 @@ Route::namespace('Theme')->group(function(){
         //Current Services
         Route::get('strategic-brand-marketing','ServicesController@strategic_brand_marketing')->name('theme.services.strategic_brand_marketing');
         Route::get('graphic-design','Servicescontroller@graphic_design')->name('theme.services.graphic_design');
-        Route::get('website-design-and-development','ServicesController@website_design_development')->name('theme.services.website_development');
-        Route::get('social-media-marketing','ServicesController@e-commerce-development')->name('theme.services.social_media_marketing');
-        Route::get('search-engine-optimisation','ServicesController@seo')->name('theme.services.search_engine_optimisation');
-        Route::get('business-solutions','ServicesController@business_solutions')->name('theme.services.business_solutions');
+        Route::get('website-design-development','ServicesController@website_design_development')->name('theme.services.website_development');
+        Route::get('social-media-marketing','ServicesController@social_media_marketing')->name('theme.services.social_media_marketing');
+        Route::get('search-engine-optimisation','ServicesController@search_engine_optimisation')->name('theme.services.search_engine_optimisation');
+        Route::get('business-development','ServicesController@business_development')->name('theme.services.business_development');
 
 
         //        Route::get('saas-enterprise-development','ServicesController@saas_enterprise_development')->name('theme.services.saas_enterprise_development');

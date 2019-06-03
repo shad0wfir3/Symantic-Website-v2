@@ -52,6 +52,19 @@ class ServicesController extends Controller
         return view('theme.pages.services.website_design_development');
     }
 
+    public function social_media_marketing(){
+        return view('theme.pages.services.social_media_marketing');
+    }
+
+    public function search_engine_optimisation(){
+        return view('theme.pages.services.search_engine_optimisation');
+    }
+
+    public function business_development(){
+        return view('theme.pages.services.business_development');
+    }
+
+
 
 //    __________________________________________________
 
@@ -72,13 +85,7 @@ class ServicesController extends Controller
             return view('theme.pages.services.e_commerce_development');
     }
 
-    public function seo(){
-        return view('theme.pages.services.seo');
-    }
 
-    public function social_media_marketing(){
-        return view('theme.pages.services.social_media_management');
-    }
 
     public function sbds(){
         return view('pages.sbds');

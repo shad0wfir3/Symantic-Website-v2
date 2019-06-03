@@ -22,8 +22,8 @@
             <div class="row">
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
-                        <h2>Strategic Branding & Marketing</h2>
-                        <div class="main-subtitle-bottom mt-2">Strategic impact analyses, brand awareness and road-mapping through qualified research.</div>
+                        <h2>Business Development Services</h2>
+                        <div class="main-subtitle-bottom mt-2">Growing your business through technology and innovation.</div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -35,19 +35,19 @@
 @section('content')
     <!-- Text Block
     ================================================= -->
-    <div class="section padding-top-bottom-small over-hide on-dark" id="scroll-top">
+    <div class="section padding-top-bottom-small  over-hide on-dark" id="scroll-top">
         <div class="container ">
             <div class="row">
                 <div class="col-md-4">
-                    <h3 class="">Define your brand!</h3>
+                    <h3 class="">Modern innovative solutions!</h3>
                     <p class="mt-3 mb-0">
-                        Strategic market placement, research, and analyses.
+                        Increase your operations with innovative solutions.
                     </p>
                 </div>
                 <div class="col-md-8 mt-4 mt-md-0">
-                    <p class=" mb-0 lead a">We provide a crucial part of building your business through perspective
-                        driven marketing strategies and brand management that provides positivity in the minds of potential consumers
-                        in order for them to become loyal customers and purchase your products or services.
+                    <p class=" mb-0 lead a">Our business development services provide your startup, small business or company with a range of solutions aimed at increasing
+                        the efficiency of your daily operations through innovative products and packages. Our various international partnership programs allows your business to grow through innovative
+                        services and packages such as email operations, payment services and global shipping solutions.
                     </p>
 
                 </div>
@@ -81,44 +81,23 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="services-box-1 border-on-light text-center mb-4">
-                        <div class="big-text-in color-primary">SC.</div>
-                        <h5 class="mt-3">Strategic Consulting</h5>
-                        <p class="mt-3 mb-4">Our strategic consultation services defines your marketing needs and provides you with an expert and professional roadmap/plan to increase ROI and grow your business.</p>
+                        <div class="big-text-in color-primary">GB.</div>
+                        <h5 class="mt-3">Google Business</h5>
+                        <p class="mt-3 mb-4">Our Google Business services provides your business with online digital tools through google's g-suit packages and services, managing your business 24/7.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0">
                     <div class="services-box-1 border-on-light text-center mb-4">
-                        <div class="big-text-in color-primary">BA.</div>
-                        <h5 class="mt-3">Brand Awareness</h5>
-                        <p class="mt-3 mb-4">Through engaging campaigns and ongoing analyses,we provide a current and continuous representation of your brand awareness in the real world.</p>
+                        <div class="big-text-in color-primary">SD.</div>
+                        <h5 class="mt-3">Shipping & Distribution</h5>
+                        <p class="mt-3 mb-4">We have partnered with DHL worldwide to provide you with shipping and distribution services for both local and international products. Safe, Secure, Reliable.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0">
                     <div class="services-box-1 border-on-light text-center mb-4">
                         <div class="big-text-in color-primary">CD.</div>
-                        <h5 class="mt-3">Campaign Development</h5>
-                        <p class="mt-3 mb-4">Our campaign development services results in unique, targeted and successfull professionally designed campaigns and programs to achieve you goals.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="services-box-1 border-on-light text-center mb-4">
-                        <div class="big-text-in color-primary">PT.</div>
-                        <h5 class="mt-3">Prototyping</h5>
-                        <p class="mt-3 mb-4">Our low-cost prototyping speciality services allows you to define and execute an idea, plan or campaign at minimal cost with maximum feedback.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="services-box-1 border-on-light text-center mb-4">
-                        <div class="big-text-in color-primary">MR.</div>
-                        <h5 class="mt-3">Market Research</h5>
-                        <p class="mt-3 mb-4">By using our market research services with your next project, we provide comprehensive reports on current advertising trends and market fluctuations.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="services-box-1 border-on-light text-center mb-4">
-                        <div class="big-text-in color-primary">VA.</div>
-                        <h5 class="mt-3">Viability Assesments</h5>
-                        <p class="mt-3 mb-4">Our ongoing viability assessment service provides you with a continuous stream of data through reports and updates, allowing you to make the right desisions. </p>
+                        <h5 class="mt-3">Amazon Web Services</h5>
+                        <p class="mt-3 mb-4">We provide your business with continuity and infrastructure through amazon web services, allowing your business to grow and expand through secure and affordable solutions.</p>
                     </div>
                 </div>
             </div>
@@ -136,7 +115,7 @@
                     <div class="main-title on-dark text-left">
                         <div class="main-subtitle-top mb-4">Digital Marketing</div>
                         <h4>Industry leading experts in <br> strategic marketing</h4>
-                            <div class="main-subtitle-bottom smaller mt-3">a unique approach to learning<br>for tertiary education</div>
+                        <div class="main-subtitle-bottom smaller mt-3">a unique approach to learning<br>for tertiary education</div>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-4" id="progress">
@@ -192,7 +171,6 @@
             </div>
         </div>
     </div>
-
     @include('theme.includes.seperator-line')
 
 @endsection

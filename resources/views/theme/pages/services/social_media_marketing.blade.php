@@ -35,7 +35,7 @@
 @section('content')
     <!-- Text Block
     ================================================= -->
-    <div class="section padding-top-bottom-small over-hide on-dark" id="scroll-top">
+    <div class="section padding-top-bottom-small  over-hide on-dark" id="scroll-top">
         <div class="container ">
             <div class="row">
                 <div class="col-md-4">
@@ -125,59 +125,28 @@
         </div>
     </div>
 
-    <!-- Skills Parallax Block
-	================================================== -->
-    <div class="section padding-top-small padding-bottom-1st over-hide">
-        <div class="parallax-1" style="background-image: url({{ asset('img/services/strategic-marketing/hero_1.jpg') }})"></div>
+    <!-- Parallax Block
+  ================================================== -->
+
+    <div class="section padding-top-bottom over-hide">
+        <div class="parallax-1" style="background-image: url({{ asset('img/slide3.jpg') }})"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="main-title on-dark text-left">
-                        <div class="main-subtitle-top mb-4">Digital Marketing</div>
-                        <h4>Industry leading experts in <br> strategic marketing</h4>
-                            <div class="main-subtitle-bottom smaller mt-3">a unique approach to learning<br>for tertiary education</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-4" id="progress">
-                    <div class="progress-container">
-                        <span class="progress-badge dark">Research</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 87%;">
-                                <span class="progress-value"><span class="counter">87</span>%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-container mt-4">
-                        <span class="progress-badge dark">Analyse</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                                <span class="progress-value"><span class="counter">100</span>%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-container mt-4">
-                        <span class="progress-badge dark">Plan</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 93%;">
-                                <span class="progress-value"><span class="counter">93</span>%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-container mt-4">
-                        <span class="progress-badge dark">Execute</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 93%;">
-                                <span class="progress-value"><span class="counter">93</span>%</span>
-                            </div>
-                        </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="main-title on-dark text-center">
+                        <div class="main-subtitle-top mb-4">time to get started</div>
+                        <h3>Get in touch today</h3>
+                        <div class="main-subtitle-bottom mt-3">Discover the possibilities of marketing done right.</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Call To Action Block
     ================================================== -->
+
     <div class="section background-white z-bigger-2">
         <div class="container">
             <div class="row justify-content-center">
@@ -192,7 +161,6 @@
             </div>
         </div>
     </div>
-
     @include('theme.includes.seperator-line')
 
 @endsection

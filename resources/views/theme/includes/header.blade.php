@@ -72,12 +72,24 @@
                                     <ul class="drop-mega-menu">
                                         <li>
                                             <a class="dropdown-header">Services</a>
-                                            <a class="dropdown-item" href="{{ route('theme.services.strategic_brand_marketing') }}">Strategic Brand Marketing</a>
-                                            <a class="dropdown-item" href="{{ route('theme.services.graphic_design') }}">Graphic Design</a>
-                                            <a class="dropdown-item" href="{{ route('theme.services.website_development') }}">Website Design & Development </a>
-
-                                            <a class="dropdown-item" href="{{ route('theme.services.social_media_marketing') }}">Social Media Marketing</a>
-                                            <a class="dropdown-item" href="{{ route('theme.services.search_engine_optimisation') }}">Search Engine Optimisation ( SEO )</a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.strategic_brand_marketing') }}">
+                                                {!! Request::is('services/strategic-brand-marketing') ? '<i class="funky-ui-icon icon-Arrow-Right"></i>' : ''  !!}Strategic Brand Marketing
+                                            </a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.graphic_design') }}">
+                                                {!! Request::is('services/graphic-design') ? '<i class="funky-ui-icon icon-Arrow-Right"></i>' : ''  !!}Graphic Design
+                                            </a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.website_development') }}">
+                                                {!! Request::is('services/website-design-development') ? '<i class="funky-ui-icon icon-Arrow-Right"></i>' : ''  !!}Website Design & Development
+                                            </a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.social_media_marketing') }}">
+                                                {!! Request::is('services/social-media-marketing') ? '<i class="funky-ui-icon icon-Arrow-Right"></i>' : ''  !!}Social Media Marketing
+                                            </a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.search_engine_optimisation') }}">
+                                                {!! Request::is('services/search-engine-optimisation') ? '<i class="funky-ui-icon icon-Arrow-Right"></i>' : ''  !!}Search Engine Optimisation ( SEO )
+                                            </a>
+                                            <a class="dropdown-item" href="{{ route('theme.services.business_development') }}">
+                                                {!! Request::is('services/business-development') ? '<i class="funky-ui-icon icon-Arrow-Right"></i>' : ''  !!}Business Development
+                                            </a>
                                             <hr>
                                             <a class="dropdown-header">Development Services - B2B</a>
                                             <a class="dropdown-item" href="#">API Development</a>
