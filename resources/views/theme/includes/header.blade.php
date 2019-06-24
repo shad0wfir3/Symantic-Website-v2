@@ -92,8 +92,8 @@
                                             </a>
                                             <hr>
                                             <a class="dropdown-header">Development Services - B2B</a>
-                                            <a class="dropdown-item" href="#">API Development</a>
-                                            <a class="dropdown-item" href="#">Integration Solutions</a>
+                                            <a class="dropdown-item" href="#">API Development - Coming Soon</a>
+                                            <a class="dropdown-item" href="#">Integration Solutions - Coming Soon</a>
                                             <hr>
                                             <a class="dropdown-header">Hosting Services</a>
                                             <a class="dropdown-item" href="{{ route('theme.services.search_engine_optimisation') }}">Small Business Hosting</a>

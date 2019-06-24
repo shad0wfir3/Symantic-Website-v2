@@ -57,9 +57,9 @@
                         <div class="blog-box-1 blog-home background-white over-hide">
                             <img src="{{ get_cl_img($post->featured_img) }}" alt="" class="blog-home-img"/>
                             <div class="padding-in">
-                                <a href="{{ route('blog.post',$post->slug) }}"><h5 class="pt-4 mt-3">{{ $post->title }}</h5></a>
+                                <a href="{{ route('theme.blog.post',$post->slug) }}"><h5 class="pt-4 mt-3">{{ $post->title }}</h5></a>
                                 <p class="mt-3">{{$post->excerpt}}</p>
-                                <a href="{{ route('blog.post',$post->slug) }}" class="btn-link btn-primary pl-0 mt-4">read more</a>
+                                <a href="{{ route('theme.blog.post',$post->slug) }}" class="btn-link btn-primary pl-0 mt-4">read more</a>
                                 <div class="separator-wrap pt-4">
                                     <span class="separator"><span class="separator-line"></span></span>
                                 </div>

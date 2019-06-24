@@ -23,7 +23,7 @@
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
                         <h2>Strategic Branding & Marketing</h2>
-                        <div class="main-subtitle-bottom mt-2">Strategic impact analyses, brand awareness and road-mapping through qualified research.</div>
+                        <div class="main-subtitle-bottom mt-2">Strategic impact analyses, brand awareness and road-mapping through qualified research and conceptualisation.</div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -35,7 +35,7 @@
 @section('content')
     <!-- Text Block
     ================================================= -->
-    <div class="section padding-top-bottom-small over-hide on-dark" id="scroll-top">
+    <div class="section padding-top-bottom over-hide on-dark background-grey-2" id="scroll-top">
         <div class="container ">
             <div class="row">
                 <div class="col-md-4">
@@ -49,23 +49,36 @@
                         driven marketing strategies and brand management that provides positivity in the minds of potential consumers
                         in order for them to become loyal customers and purchase your products or services.
                     </p>
-
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Separator Line
-    ================================================== -->
+    <!-- Video & Call To Action Block
+================================================== -->
 
-    <div class="section padding-top-bottom-1 background-white">
+    <div class="section padding-top-bottom background-dark-2 over-hide">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="separator-wrap">
-                        <span class="separator"><span class="separator-line primary-color med dashed"></span></span>
-                        <p>&nbsp;</p><h4 class="text-center text-uppercase">Offers</h4><p>&nbsp;</p>
-                        <span class="separator"><span class="separator-line primary-color med dashed"></span></span>
+                <div class="clear"></div>
+                <div class="col-lg-8 mt-lg-5 mt-xl-0">
+                    <div class="video-section">
+                        <figure class="youtube rounded-2 img-raised over-hide">
+                            <a href="https://www.youtube.com/embed/7HpULxbZ874">
+                                <img src="{{ asset('img/services/strategic-marketing/video_placeholder.jpg') }}" alt="image"  class="rounded-2 over-hide"/>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0 mt-xl-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="call-box-5 dark">
+                        <h1 class="color-white">
+                            EFFECTIVE.
+                            <hr class="separator-line">
+                            BRAND.
+                            <hr class="separator-line">
+                            MARKETING.
+                            <hr></h1>
                     </div>
                 </div>
             </div>
@@ -75,7 +88,7 @@
     <!-- Services Block
     ================================================== -->
 
-    <div class="section padding-top-small padding-bottom-small background-white over-hide">
+    <div class="section padding-top-small padding-bottom-small over-hide">
 
         <div class="container">
             <div class="row">
@@ -128,7 +141,7 @@
     <!-- Skills Parallax Block
 	================================================== -->
     <div class="section padding-top-small padding-bottom-1st over-hide">
-        <div class="parallax-1" style="background-image: url({{ asset('img/services/strategic-marketing/hero_1.jpg') }})"></div>
+        <div class="parallax-1" style="background-image: url({{ asset('img/services/strategic_marketing_cta.jpg') }})"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
             <div class="row">
@@ -136,7 +149,7 @@
                     <div class="main-title on-dark text-left">
                         <div class="main-subtitle-top mb-4">Digital Marketing</div>
                         <h4>Industry leading experts in <br> strategic marketing</h4>
-                            <div class="main-subtitle-bottom smaller mt-3">a unique approach to learning<br>for tertiary education</div>
+                            <div class="main-subtitle-bottom smaller mt-3">strategic initiatives in<br>brand marketing and thought analyses</div>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-4" id="progress">

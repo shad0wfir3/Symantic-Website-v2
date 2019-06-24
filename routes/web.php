@@ -29,7 +29,7 @@ Route::namespace('Theme')->group(function(){
 
         //Current Services
         Route::get('strategic-brand-marketing','ServicesController@strategic_brand_marketing')->name('theme.services.strategic_brand_marketing');
-        Route::get('graphic-design','Servicescontroller@graphic_design')->name('theme.services.graphic_design');
+        Route::get('graphic-design-ux-and-print','Servicescontroller@graphic_design')->name('theme.services.graphic_design');
         Route::get('website-design-development','ServicesController@website_design_development')->name('theme.services.website_development');
         Route::get('social-media-marketing','ServicesController@social_media_marketing')->name('theme.services.social_media_marketing');
         Route::get('search-engine-optimisation','ServicesController@search_engine_optimisation')->name('theme.services.search_engine_optimisation');
@@ -47,7 +47,7 @@ Route::namespace('Theme')->group(function(){
 
     Route::prefix('blog')->group(function(){
         Route::get('','BlogController@index')->name('theme.blog.index');
-        Route::get('{slug}','BlogController@single')->name('theme.blog.post');
+        Route::get('{slug}','BlogController@getPost')->name('theme.blog.post');
         Route::get('tags/{slug}','BlogController@getTag')->name('theme.blog.tags');
         Route::get('categories/{slug}','BlogController@getCategories')->name('theme.blog.categories');
     });
@@ -65,10 +65,6 @@ Auth::routes();
 Route::prefix('admin')->middleware('auth')->namespace('Admin')->group(function(){
     Route::get('', 'DashboardController@index')->name('admin.index');
     Route::resource('blog','BlogController');
-//    Route::prefix('blog')->group(function(){
-////        Route::get('','BlogController@index')->name('admin.blog.index');
-////        Route::get('create','BlogController@create')->name('admin.blog.create');
-////    });
     Route::resource('services',"ServiceController");
     Route::post('services/{service}/edit/change_status','ServiceController@status_change')->name('service.status');
 //    Route::post('upload_image','HomeController@uploadImg')->name('cloudinary.upload');

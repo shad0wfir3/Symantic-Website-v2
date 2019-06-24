@@ -1,10 +1,10 @@
 @extends('theme.layouts.site')
 
 @section('open_graph')
-    <meta property="og:title" content="Symantic Creative - Strategic Marketing Consulting" />
+    <meta property="og:title" content="Graphic Design, UX and Print | Symantic Creative" />
     <meta property="og:type" content="page" />
     <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="{{ asset('img/services/graphic-design/header_2.jpg') }}" />
     <meta property="og:description" content="Description here" />
 @endsection
 
@@ -22,8 +22,8 @@
             <div class="row">
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
-                        <h2>Graphic Design</h2>
-                        <div class="main-subtitle-bottom mt-2">Professional design at affordable rates.</div>
+                        <h2>Graphic Design, UX and Print</h2>
+                        <div class="main-subtitle-bottom mt-2">Professional and affordable design, user experience and printing services for any project.</div>
                     </div>
                 </div>
                 <div class="clear"></div>

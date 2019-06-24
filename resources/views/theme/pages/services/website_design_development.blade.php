@@ -23,7 +23,7 @@
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
                         <h2>Website Design & Development</h2>
-                        <div class="main-subtitle-bottom mt-2">Complete digital property asset development and design </div>
+                        <div class="main-subtitle-bottom mt-2">Complete digital property adn asset conceptualisation, design and development. </div>
                     </div>
                 </div>
                 <div class="clear"></div>

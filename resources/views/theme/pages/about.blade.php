@@ -65,19 +65,19 @@
     <div class="section background-white over-hide">
         <div class="container-fluid m-0 p-0 background-white">
             <div class="row">
-                <div class="col-lg-6 row-in background-image-cover padding-top-bottom" style="background-image: url('img/parallax-1.jpg')">
+                <div class="col-lg-6 row-in background-image-cover padding-top-bottom" style="background-image: url({{ asset('img/about_2.jpg') }})">
                     <div class="grey-fade-over"></div>
                     <div class="section align-self-center text-left padding-on-grid-12 z-bigger">
                         <div class="testimonials-1-slider-wrap">
                             <div class="customNavigation">
-                                <a class="prev-testimonials"><i class="fa fa-angle-left"></i></a>
-                                <a class="next-testimonials"><i class="fa fa-angle-right"></i></a>
+                                <a class="prev-testimonials-1"><i class="fa fa-angle-left"></i></a>
+                                <a class="next-testimonials-1"><i class="fa fa-angle-right"></i></a>
                             </div>
-                            <div id="owl-testimonials" class="owl-carousel owl-theme">
+                            <div id="owl-testimonials-1" class="owl-carousel owl-theme">
                                 @foreach($quotes as $quote)
                                     <div class="item">
                                         <div class="testimonials-box-1 background-on-dark dark">
-                                            {{--<img  src="img/t1.jpg" alt="" />--}}
+                                            <img  src="img/t1.jpg" alt="" />
                                             <p class="mt-4 mb-5">{{ $quote->quote }}</p>
                                             <h6>{{ $quote->author }}</h6>
                                         </div>
@@ -91,7 +91,7 @@
                     <div class="section align-self-center text-left padding-on-grid-12">
                         <div class="counter-wrap ver-3">
                             <p><span class="counter-numb small-2">174.819</span></p>
-                            <h6>ACTIVE USERS</h6>
+                            <h6>ACTIVE TRAFFIC</h6>
                         </div>
                     </div>
                 </div>
@@ -127,74 +127,6 @@
         {{--</div>--}}
     {{--</div>--}}
 
-    <!-- Team Block
-================================================== -->
-
-    <div class="section padding-top-bottom background-white over-hide">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="main-title text-center">
-                        <div class="main-subtitle-top mb-4">our team</div>
-                        <h3>team of creatives.</h3>
-                        <div class="main-subtitle-bottom mt-3">We're a close team of creatives, designers & developers who work together to create beautiful, engaging digital experiences.</div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <div class="col-md-4">
-                    <div class="team-box-2 rounded-circle text-center over-hide">
-                        <img  src="img/t4.jpg" alt="" />
-                        <div class="team-mask-1 rounded-circle"></div>
-                        <h6>Marco Kulis</h6>
-                        <p>app & media</p>
-                        <ul class="team-social">
-                            <li class="twitter">
-                                <a href="#">Tw</a>
-                            </li>
-                            <li class="google">
-                                <a href="#">G+</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="team-box-2 rounded-circle text-center over-hide">
-                        <img  src="img/t1.jpg" alt="" />
-                        <div class="team-mask-1 rounded-circle"></div>
-                        <h6>Anna Furius</h6>
-                        <p>identity building</p>
-                        <ul class="team-social">
-                            <li class="facebook">
-                                <a href="#">Fb</a>
-                            </li>
-                            <li class="google">
-                                <a href="#">G+</a>
-                            </li>
-                            <li class="vimeo">
-                                <a href="#">Vm</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="team-box-2 rounded-circle text-center over-hide">
-                        <img  src="img/t2.jpg" alt="" />
-                        <div class="team-mask-1 rounded-circle"></div>
-                        <h6>Alex Andrews</h6>
-                        <p>design process</p>
-                        <ul class="team-social">
-                            <li class="twitter">
-                                <a href="#">Tw</a>
-                            </li>
-                            <li class="vimeo">
-                                <a href="#">Vm</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- Counter Block
@@ -205,26 +137,26 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="counter-wrap ver-2 dark">
-                        <p><span class="counter-numb small-2">819</span></p>
-                        <h6>awards</h6>
+                        <p><span class="counter-numb small-2">151.28</span></p>
+                        <h6>conversions</h6>
                     </div>
                 </div>
                 <div class="col-md-3 mt-4 mt-md-0">
                     <div class="counter-wrap ver-2 dark">
-                        <p><span class="counter-numb small-2">768</span></p>
+                        <p><span class="counter-numb small-2">61</span></p>
                         <h6>projects</h6>
                     </div>
                 </div>
                 <div class="col-md-3 mt-4 mt-md-0">
                     <div class="counter-wrap ver-2 dark">
-                        <p><span class="counter-numb small-2">307</span></p>
+                        <p><span class="counter-numb small-2">1246</span></p>
                         <h6>coffees</h6>
                     </div>
                 </div>
                 <div class="col-md-3 mt-4 mt-md-0">
                     <div class="counter-wrap ver-2 dark">
-                        <p><span class="counter-numb small-2">921</span></p>
-                        <h6>hours</h6>
+                        <p><span class="counter-numb small-2">42</span></p>
+                        <h6>campaigns</h6>
                     </div>
                 </div>
             </div>

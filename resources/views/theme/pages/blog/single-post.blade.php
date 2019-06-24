@@ -39,7 +39,7 @@
                 <div class="col-lg-8">
                     <div class="section drop-shadow rounded">
                         <div class="blog-box-1 blog-home background-white over-hide">
-                            {{--<img src="{{ get_cl_img($post->featured_img) }}" alt="" class="blog-home-img"/>--}}
+                            <img src="{{ get_cl_img($post->featured_img) }}" alt="" class="blog-home-img"/>
                             <div class="padding-in">
                                 <div class="main_post_content">
                                     {!! $post->content !!}
@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="clear"></div>
                                 @foreach($post->tags as $tag)
-                                    <a href="{{ route('blog.tags',$tag->slug) }}" class="btn btn-primary btn-sm ml-0 mr-1 mb-1">{{ $tag->title }}</a>
+                                    <a href="{{ route('theme.blog.tags',$tag->slug) }}" class="btn btn-primary btn-sm ml-0 mr-1 mb-1">{{ $tag->title }}</a>
                                 @endforeach
                                 <div class="clear"></div>
                                 <div class="separator-wrap pt-4 pb-4">
@@ -107,7 +107,7 @@
                         <ul class="list-style circle pl-4 pb-0">
                             @foreach($categories as $category)
                             <li>
-                                <a href="{{ route('blog.categories',$category->slug) }}" class="btn-link btn-primary pl-0">{{ $category->title }}</a>
+                                <a href="{{ route('theme.blog.categories',$category->slug) }}" class="btn-link btn-primary pl-0">{{ $category->title }}</a>
                             </li>
                             @endforeach
                         </ul>
@@ -127,7 +127,7 @@
                         <ul class="list-style circle-o pl-4 pb-0">
                             @foreach($latest_posts as $latest_post)
                             <li>
-                                <a href="{{ route('blog.post',$latest_post->slug) }}" class="btn-link btn-primary pl-0">{{ $latest_post->title }}</a>
+                                <a href="{{ route('theme.blog.post',$latest_post->slug) }}" class="btn-link btn-primary pl-0">{{ $latest_post->title }}</a>
                             </li>
                             @endforeach()
                         </ul>
@@ -138,7 +138,7 @@
                         <div class="clear"></div>
                         <h6 class="mb-3">Tags</h6>
                         @foreach($tags as $tag)
-                        <a href="{{ route('blog.tags',$tag->slug) }}" class="btn btn-primary btn-sm ml-0 mr-1 mb-1">{{$tag->title}}</a>
+                        <a href="{{ route('theme.blog.tags',$tag->slug) }}" class="btn btn-primary btn-sm ml-0 mr-1 mb-1">{{$tag->title}}</a>
                         @endforeach
                         <div class="clear"></div>
                     </div>

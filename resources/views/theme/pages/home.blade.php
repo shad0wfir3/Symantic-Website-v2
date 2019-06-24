@@ -1,5 +1,12 @@
 @extends('theme.layouts.site')
 @section('title','Full Service Digital Agency')
+@section('open_graph')
+    <meta property="og:title" content="Symantic Creative Design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="{{ asset('img/about-us-header.jpg') }}" />
+    <meta property="og:description" content="Professional, quality, dedicated and expert services to grow your business" />
+@endsection
 @section('slider')
     <div class="section full-height over-hide">
         <div class="hero-slider-wrap">
@@ -128,7 +135,7 @@
                     </a>
                 </div>
                 <div class="col-md-4 mt-4 mb-4">
-                    <a href="{{ route('theme.services.strategic_brand_marketing') }}" class="original">
+                    <a href="{{ route('theme.services.search_engine_optimisation') }}" class="original">
                         <div class="services-box-1 border-on-light text-center">
                             <i class="funky-ui-icon icon-Search-onCloud fa-4x"></i>
                             <h5 class="mt-3">Search Engine Optimisation</h5>
@@ -138,11 +145,22 @@
                 </div>
 
                 <div class="col-md-4 mt-4 mb-4">
+                    <a href="{{ route('theme.services.graphic_design') }}" class="original">
+                        <div class="services-box-1 border-on-light text-center">
+                            <i class="funky-ui-icon icon-Digital-Drawing fa-4x"></i>
+                            <h5 class="mt-3">Graphic Design, UX & Printing</h5>
+                            <p class="mt-3 mb-4">A core component in any business is the design elements that builds your image. From logo design to websites, newsletter and digital assets, our graphic design services builds recognisable business and brands.</p>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 mt-4 mb-4">
                     <a href="{{ route('theme.services.website_development') }}" class="original">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Laptop-Tablet fa-4x"></i>
                         <h5 class="mt-3">Website Design & Development</h5>
-                        <p class="mt-3 mb-4">Our comprehensive website development cater to your specific needs, from SPA pages to E-commerce and Custom solutions, we provide you with a product that excells.</p>
+                        <p class="mt-3 mb-4">Our comprehensive website design and development services cater to your specific needs, from SPA pages to E-commerce and Custom solutions, we provide you with a product that excels.</p>
                     </div>
                     </a>
                 </div>
@@ -151,28 +169,19 @@
                     <a href="{{ route('theme.services.social_media_marketing') }}" class="original">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Plastic-CupPhone fa-4x"></i>
-                        <h5 class="mt-3">Social Media Marketing</h5>
-                        <p class="mt-3 mb-4">Targeted campaigns and managed social profiles provide you with the ultimate solutions to increase your customers while you focus on running your business.</p>
+                        <h5 class="mt-3">Social Media Marketing (SMM)</h5>
+                        <p class="mt-3 mb-4">Targeted campaigns and managed social profiles provide you with the ultimate solution to interconnected marketing, increasing your conversion and gaining customers, while you focus on running your business.</p>
                     </div>
                     </a>
                 </div>
 
-                <div class="col-md-4 mt-4 mb-4">
-                    <a href="{{ route('theme.services.graphic_design') }}" class="original">
-                        <div class="services-box-1 border-on-light text-center">
-                            <i class="funky-ui-icon icon-Digital-Drawing fa-4x"></i>
-                            <h5 class="mt-3">Graphic Design & Printing</h5>
-                            <p class="mt-3 mb-4">A core component in any business is the design elements that builds your image. From logo design to websites, newsletter and digital assets, our services build your business.</p>
 
-                        </div>
-                    </a>
-                </div>
                 <div class="col-md-4 mt-4 mb-4">
-                    <a href="{{ route('theme.services.strategic_brand_marketing') }}" class="original">
+                    <a href="{{ route('theme.services.business_development') }}" class="original">
                     <div class="services-box-1 border-on-light text-center">
                         <i class="funky-ui-icon icon-Business-ManWoman fa-4x"></i>
-                        <h5 class="mt-3">Business Development</h5>
-                        <p class="mt-3 mb-4">We provide a variety of expertly crafted well established managment and automation solutions that will help you manage the day to day operations of your business. </p>
+                        <h5 class="mt-3">Business & Operations Development</h5>
+                        <p class="mt-3 mb-4">We provide a variety of expertly crafted well established management, operations and automation solutions that will help you setup and manage the daily operations of your business or startup. </p>
                     </div>
                     </a>
                 </div>
@@ -184,15 +193,15 @@
    ================================================== -->
 
     <div class="section padding-top-bottom over-hide">
-        <div class="parallax-1" style="background-image: url('img/slide3.jpg')"></div>
+        <div class="parallax-1" style="background-image: url({{ asset('img/slide3.jpg') }})"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="main-title on-dark text-center">
                         <div class="main-subtitle-top mb-4">time to get started</div>
-                        <h3>Give your business a boost!</h3>
-                        <div class="main-subtitle-bottom mt-3">Discover the possibilities of marketing done right, and see what we can do for your business.</div>
+                        <h3>Invest in your business!</h3>
+                        <div class="main-subtitle-bottom mt-3">Discover the possibilities of professional marketing, and see what how we can help you.</div>
                     </div>
                 </div>
             </div>
@@ -209,7 +218,7 @@
                     <div class="call-box-3 p-5 dark text-center background-dark rounded-2 drop-shadow">
                         <i class="funky-ui-icon icon-Add-UserStar"></i>
                         <h5 class="mt-4 mb-3 color-white">Ready to get started, request a quote today!</h5>
-                        <p class="mb-5">From graphic design to application development, contact us today and let us help you grow!</p>
+                        <p class="mb-5">Complete our quick and easy guided quotation process for an obligation free quote.</p>
                         <a href="#" class="btn btn-primary btn-simple btn-round btn-long" >request a quote</a>
                     </div>
                 </div>
@@ -228,8 +237,8 @@
                 <div class="col-md-8">
                     <div class="main-title text-center">
                         <div class="main-subtitle-top mb-4">latest news</div>
-                        <h3>Innovative and Informative</h3>
-                        <div class="main-subtitle-bottom mt-3">informative. inspirational. funny</div>
+                        <h3>Latest Articles from our Blog</h3>
+                        <div class="main-subtitle-bottom mt-3">informative. inspirational. professional.</div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -262,7 +271,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4 mt-5 mg-auto" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <a href="{{ route('blog.index') }}" class="btn btn-primary btn-simple btn-round btn-long">visit our blog</a>
+                    <a href="{{ route('theme.blog.index') }}" class="btn btn-primary btn-simple btn-round btn-long">visit our blog</a>
                 </div>
             </div>
         </div>
