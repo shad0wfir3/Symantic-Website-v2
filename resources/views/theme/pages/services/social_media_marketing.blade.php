@@ -1,16 +1,15 @@
 @extends('theme.layouts.site')
 
 @section('open_graph')
-    <meta property="og:title" content="Symantic Creative - Strategic Marketing Consulting" />
+    <meta property="og:title" content="Social Media Marketing | Symantic Creative" />
     <meta property="og:type" content="page" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:image" content="" />
     <meta property="og:description" content="Description here" />
 @endsection
 
-@section('title')
-    Strategic Branding & Marketing
-    @endsection
+@section('title','Social Media Marketing')
+
 
 @section('slider')
     <!-- Hero Block
@@ -22,7 +21,7 @@
             <div class="row">
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
-                        <h2>Strategic Branding & Marketing</h2>
+                        <h2>Social Media Marketing</h2>
                         <div class="main-subtitle-bottom mt-2">Strategic impact analyses, brand awareness and road-mapping through qualified research.</div>
                     </div>
                 </div>
@@ -39,7 +38,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-md-4">
-                    <h3 class="">Define your brand!</h3>
+                    <h3 class="">Quantify your brand and increase conversion.</h3>
                     <p class="mt-3 mb-0">
                         Strategic market placement, research, and analyses.
                     </p>
@@ -125,25 +124,57 @@
         </div>
     </div>
 
-    <!-- Parallax Block
-  ================================================== -->
-
-    <div class="section padding-top-bottom over-hide">
-        <div class="parallax-1" style="background-image: url({{ asset('img/slide3.jpg') }})"></div>
+    <!-- Skills Parallax Block
+       ================================================== -->
+    <div class="section padding-top-small padding-bottom-1st over-hide">
+        <div class="parallax-1" style="background-image: url({{ asset('img/services/graphic-design/cta_1.jpg') }})"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="main-title on-dark text-center">
-                        <div class="main-subtitle-top mb-4">time to get started</div>
-                        <h3>Get in touch today</h3>
-                        <div class="main-subtitle-bottom mt-3">Discover the possibilities of marketing done right.</div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="main-title on-dark text-left">
+                        <div class="main-subtitle-top mb-4">Graphic Design</div>
+                        <h4>Professional and affordable graphic design suited for any project and business.</h4>
+                        <div class="main-subtitle-bottom smaller mt-3">a unique approach to design.</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-4" id="progress">
+                    <div class="progress-container">
+                        <span class="progress-badge dark">Research</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 87%;">
+                                <span class="progress-value"><span class="counter">94</span>%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-container mt-4">
+                        <span class="progress-badge dark">Prototype</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                <span class="progress-value"><span class="counter">100</span>%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-container mt-4">
+                        <span class="progress-badge dark">Design</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 93%;">
+                                <span class="progress-value"><span class="counter">100</span>%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-container mt-4">
+                        <span class="progress-badge dark">Release</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 93%;">
+                                <span class="progress-value"><span class="counter">98</span>%</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Call To Action Block
     ================================================== -->
 

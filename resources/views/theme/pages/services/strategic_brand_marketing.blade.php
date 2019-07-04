@@ -61,7 +61,7 @@
         <div class="container">
             <div class="row">
                 <div class="clear"></div>
-                <div class="col-lg-8 mt-lg-5 mt-xl-0">
+                <div class="col-lg-8 mt-xl-0">
                     <div class="video-section">
                         <figure class="youtube rounded-2 img-raised over-hide">
                             <a href="https://www.youtube.com/embed/7HpULxbZ874">
@@ -70,15 +70,12 @@
                         </figure>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-4 mt-lg-0 mt-xl-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <div class="call-box-5 dark">
+                <div class="col-lg-4 mt-4 mt-lg-0  hidden-sm-down" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="call-box-5 dark text-center">
                         <h1 class="color-white">
-                            EFFECTIVE.
-                            <hr class="separator-line">
-                            BRAND.
-                            <hr class="separator-line">
-                            MARKETING.
-                            <hr></h1>
+                            WATCH OUR
+                            VIDEO
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -145,14 +142,14 @@
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="main-title on-dark text-left">
                         <div class="main-subtitle-top mb-4">Digital Marketing</div>
                         <h4>Industry leading experts in <br> strategic marketing</h4>
                             <div class="main-subtitle-bottom smaller mt-3">strategic initiatives in<br>brand marketing and thought analyses</div>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-5 mt-lg-4" id="progress">
+                <div class="col-md-6 mt-5 mt-lg-4 hidden-sm-down" id="progress">
                     <div class="progress-container">
                         <span class="progress-badge dark">Research</span>
                         <div class="progress">
@@ -199,7 +196,9 @@
                         <i class="funky-ui-icon icon-Computer-Secure"></i>
                         <h5 class="mt-4 mb-3 color-white">Request a quote!</h5>
                         <p class="mb-5">Our strategic branding and marketing services are the perfect starting point for your next project</p>
-                        <a href="{{route('theme.pages.request_quote')}}" class="btn btn-primary btn-simple btn-round btn-long" >request a quote</a>
+                        <p><a href="mailto:hello@symanticreative.com" class="color-primary">Email us directly</a></p>
+                        <p>OR</p>
+                        <a href="{{route('theme.pages.request_quote')}}" class="btn btn-primary btn-simple btn-round btn-long" >Request a quote</a>
                     </div>
                 </div>
             </div>

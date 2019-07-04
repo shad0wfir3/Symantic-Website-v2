@@ -3,34 +3,20 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Service extends Model
 {
-    use SoftDeletes;
+
+    /**
+     * @var  string
+     */
+    protected $table = 'services';
 
     protected $casts = [
-      'breakdown_services' => 'array'
+        'published_date' => 'datetime',
+        'deleted_at' => 'datetime',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
     ];
 
-    protected $fillable = [
-        'name',
-        'icon',
-        'short_description',
-        'content',
-        'featured_img',
-        'page_img',
-        'request_type',
-        'breakdown_services'
-    ];
-
-    public function scopePublished($query)
-    {
-        return $query->where('status','published');
-    }
-
-    public function scopeDraft($query)
-    {
-        return !$this->scopePublished($query);
-    }
 }

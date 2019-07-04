@@ -185,13 +185,37 @@
 
 		  }
 
-		  //Typed Logo running text
+		$(function() {
+			var $meters = $(".progress > .progress-bar");
+			var $section = $('#progress');
+			var $queue = $({});
+
+			function loadDaBars() {
+				$(".progress > .progress-bar").each(function() {
+					$(this)
+						.data("origWidth", $(this).width())
+						.width(0)
+						.animate({
+							width: $(this).data("origWidth")
+						}, 2000);
+				});
+			}
+			$(document).bind('scroll.myScroll', function(ev) {
+				var scrollOffset = $(document).scrollTop();
+				var containerOffset = $section.offset().top - window.innerHeight;
+				if (scrollOffset > containerOffset) {
+					loadDaBars();
+					// unbind event not to load scroll again
+					$(document).unbind('.myScroll');
+				}
+			});
+		});
 
 
 
 
 
-        /* Testimonials Carousel */
+		/* Testimonials Carousel */
 
 		$("#owl-testimonials").owlCarousel({
 			items : 2,
@@ -282,7 +306,7 @@
 			var PlaceV = $(this).parent();
 			if ($(this).parent().hasClass('youtube')) {
 				$(this).parent().wrapAll('<div class="video-wrapper">');
-				$(PlaceV).html('<iframe frameborder="0" height="333" src="' + videoLink + '?autoplay=1&showinfo=0" title="YouTube video player" width="547"></iframe>');
+				$(PlaceV).html('<iframe frameborder="0" height="333" src="' + videoLink + '?autoplay=1&showinfo=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube video player" width="547"></iframe>');
 			} else {
 				$(this).parent().wrapAll('<div class="video-wrapper">');
 				$(PlaceV).html('<iframe src="' + videoLink + '?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;color=6dc234" width="500" height="281" frameborder="0"></iframe>');

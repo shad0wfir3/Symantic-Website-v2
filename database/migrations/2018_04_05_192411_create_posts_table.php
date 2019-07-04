@@ -24,7 +24,6 @@ class CreatePostsTable extends Migration
             $table->longText('content');
             $table->string('featured_img');
             $table->dateTime('published_date')->nullable();
-            $table->enum('status',['draft','published','archived','unpublished']);
             $table->softDeletes();
             $table->timestamps();
         });

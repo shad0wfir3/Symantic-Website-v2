@@ -64,19 +64,6 @@ class ServicesController extends Controller
         return view('theme.pages.services.business_development');
     }
 
-
-
-//    __________________________________________________
-
-
-
-    public function brand_analyses(){
-            return view('theme.pages.services.brand_analyses');
-    }
-
-
-
-
     public function saas_enterprise_development(){
             return view('theme.pages.services.saas_enterprise_development');
     }
@@ -85,10 +72,8 @@ class ServicesController extends Controller
             return view('theme.pages.services.e_commerce_development');
     }
 
-
-
     public function sbds(){
-        return view('pages.sbds');
+        return view('theme.pages.sbds');
     }
 
     public function launch_it(){

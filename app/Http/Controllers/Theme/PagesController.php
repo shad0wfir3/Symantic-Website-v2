@@ -11,10 +11,9 @@ use App\Http\Controllers\Controller;
 class PagesController extends Controller
 {
     public function index(){
-        $services = Service::where('status','published')->get();
         $featured_posts = Post::featured()->with('author','tags')->get();
-        $quotes = InspirationalQuotes::get()->random(7);
-        return view('theme.pages.home',compact('services','featured_posts','quotes'));
+//        $quotes = InspirationalQuotes::get()->random(7);
+        return view('theme.pages.home',compact('featured_posts'));
     }
 
     public function about(){

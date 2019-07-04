@@ -40,8 +40,8 @@ Route::namespace('Theme')->group(function(){
 
 
         //Package Pages (Looks Different)
-        Route::get('business-development-solutions','ServiceController@sbds')->name('theme.services.sbds');
-        Route::get('launch-it','ServiceController@launch_it')->name('theme.services.launch_it');
+        Route::get('business-development-solutions','ServicesController@sbds')->name('theme.services.sbds');
+        Route::get('launch-it','ServicesController@launch_it')->name('theme.services.launch_it');
 
     });
 
@@ -60,14 +60,5 @@ Route::namespace('Theme')->group(function(){
 
 
 Auth::routes();
-
-
-Route::prefix('admin')->middleware('auth')->namespace('Admin')->group(function(){
-    Route::get('', 'DashboardController@index')->name('admin.index');
-    Route::resource('blog','BlogController');
-    Route::resource('services',"ServiceController");
-    Route::post('services/{service}/edit/change_status','ServiceController@status_change')->name('service.status');
-//    Route::post('upload_image','HomeController@uploadImg')->name('cloudinary.upload');
-});
 
 Route::model('services', '\App\Services');

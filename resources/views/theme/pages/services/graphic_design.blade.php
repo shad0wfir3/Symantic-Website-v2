@@ -5,12 +5,12 @@
     <meta property="og:type" content="page" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:image" content="{{ asset('img/services/graphic-design/header_2.jpg') }}" />
-    <meta property="og:description" content="Description here" />
+    <meta property="og:description" content="Branding, marketing and advertisement rely heavily on design elements that influence prospective consumers and customers
+                        in a positive manner. Our design process is expertly crafted and professionally executed to provide you with the ultimate products. If you need
+                        a new logo, corporate branding or just want to consolidate or revamp your company image, look no further than Symantic Creative for your digital needs." />
 @endsection
 
-@section('title')
-    Graphic Design
-    @endsection
+@section('title','Graphic Design, UX and Print')
 
 @section('slider')
     <!-- Hero Block
@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-md-7 parallax-fade-top">
                     <div class="main-title on-dark text-left mb-0">
-                        <h2>Graphic Design, UX and Print</h2>
+                        <h2>Graphic Design, UX <br> and Print Assets</h2>
                         <div class="main-subtitle-bottom mt-2">Professional and affordable design, user experience and printing services for any project.</div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
 @section('content')
     <!-- Text Block
     ================================================= -->
-    <div class="section padding-top-bottom-small  over-hide on-dark" id="scroll-top">
+    <div class="section padding-top-bottom over-hide on-dark background-grey-2" id="scroll-top">
         <div class="container ">
             <div class="row">
                 <div class="col-md-4">
@@ -55,19 +55,32 @@
         </div>
     </div>
 
-    <!-- Separator Line
+    <!-- Video & Call To Action Block
     ================================================== -->
 
-    <div class="section padding-top-bottom-1 background-white">
+    <div class="section padding-top-bottom background-dark-2 over-hide">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="separator-wrap">
-                        <div class="separator-wrap">
-                            <span class="separator"><span class="separator-line primary-color med dashed"></span></span>
-                            <p>&nbsp;</p><h4 class="text-center text-uppercase">Offers</h4><p>&nbsp;</p>
-                            <span class="separator"><span class="separator-line primary-color med dashed"></span></span>
-                        </div>
+                <div class="clear"></div>
+                <div class="col-lg-8 mt-lg-5 mt-xl-0">
+                    <div class="video-section">
+                        <figure class="youtube rounded-2 img-raised over-hide">
+                            <a href="https://www.youtube.com/embed/7HpULxbZ874">
+                                <img src="{{ asset('img/services/strategic-marketing/video_placeholder.jpg') }}" alt="image"  class="rounded-2 over-hide"/>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0 mt-xl-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                    <div class="call-box-5 dark">
+                        <h1 class="color-white">
+                            <span class="funky-ui-icon icon-Arrow-Left"></span>
+                            <span class="funky-ui-icon icon-Arrow-Left"></span>
+                            <span class="funky-ui-icon icon-Arrow-Left"></span>
+                            <span class="funky-ui-icon icon-Arrow-Left"></span>
+                            WATCH OUR
+                            VIDEO
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -81,42 +94,42 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="services-box-1 border-on-light text-center mb-4">
+                    <div class="services-box-1 border-on-light text-center mb-4" data-scroll-reveal="enter left move 40px over 0.8s after 0.1s">
                         <div class="big-text-in color-primary">CI.</div>
                         <h5 class="mt-3">Corporate Identity</h5>
                         <p class="mt-3 mb-4">Logos, business cards, stationary, folders, brand books, etc. for a professional company identity profile. </p>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="services-box-1 border-on-light text-center mb-4">
+                    <div class="services-box-1 border-on-light text-center mb-4" data-scroll-reveal="enter top move 40px over 0.8s after 0.1s">
                         <div class="big-text-in color-primary">UX.</div>
                         <h5 class="mt-3">User Experience</h5>
                         <p class="mt-3 mb-4">Driven design for Websites, CI, Onboarding, Campaigns, etc. through guided outcomes.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="services-box-1 border-on-light text-center mb-4">
+                    <div class="services-box-1 border-on-light text-center mb-4" data-scroll-reveal="enter right move 40px over 0.8s after 0.1s">
                         <div class="big-text-in color-primary">ES.</div>
                         <h5 class="mt-3">Email Signatures</h5>
                         <p class="mt-3 mb-4">Email signature design that contributes to professionalism and increases your trust factor </p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="services-box-1 border-on-light text-center mb-4">
+                    <div class="services-box-1 border-on-light text-center mb-4" data-scroll-reveal="enter left move 40px over 0.8s after 0.1s">
                         <div class="big-text-in color-primary">SM.</div>
                         <h5 class="mt-3">Social Media Design</h5>
                         <p class="mt-3 mb-4">Banners, Profile imagery, Posts and engagement design elements that gives an authentic digital presence.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="services-box-1 border-on-light text-center mb-4">
+                    <div class="services-box-1 border-on-light text-center mb-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.1s">
                         <div class="big-text-in color-primary">PM.</div>
                         <h5 class="mt-3">Printed Media</h5>
                         <p class="mt-3 mb-4">Brochures, Flyer, Banners, Posters, etc. designed print ready for all your adevertising needs.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4 mt-md-0">
-                    <div class="services-box-1 border-on-light text-center mb-4">
+                    <div class="services-box-1 border-on-light text-center mb-4" data-scroll-reveal="enter right move 40px over 0.8s after 0.1s">
                         <div class="big-text-in color-primary">BD.</div>
                         <h5 class="mt-3">Brand Design</h5>
                         <p class="mt-3 mb-4">Clothing, Packaging, Bags, CD covers and Vinyl branding design for every day use.</p>
@@ -127,7 +140,8 @@
     </div>
 
     <!-- Skills Parallax Block
-      ================================================== -->
+    ================================================== -->
+
     <div class="section padding-top-small padding-bottom-1st over-hide">
         <div class="parallax-1" style="background-image: url({{ asset('img/services/graphic-design/cta_1.jpg') }})"></div>
         <div class="grey-fade-over"></div>
@@ -136,7 +150,7 @@
                 <div class="col-lg-6">
                     <div class="main-title on-dark text-left">
                         <div class="main-subtitle-top mb-4">Graphic Design</div>
-                        <h4>Printed, Digital, Social, UX.<br> Graphic design for any project.</h4>
+                        <h4>Professional and affordable graphic design suited for any project and business.</h4>
                         <div class="main-subtitle-bottom smaller mt-3">a unique approach to design.</div>
                     </div>
                 </div>
@@ -177,6 +191,7 @@
             </div>
         </div>
     </div>
+
     <!-- Call To Action Block
     ================================================== -->
     <div class="section background-white z-bigger-2">

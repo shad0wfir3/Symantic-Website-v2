@@ -148,7 +148,7 @@
                     <a href="{{ route('theme.services.graphic_design') }}" class="original">
                         <div class="services-box-1 border-on-light text-center">
                             <i class="funky-ui-icon icon-Digital-Drawing fa-4x"></i>
-                            <h5 class="mt-3">Graphic Design, UX & Printing</h5>
+                            <h5 class="mt-3">Graphic Design, UX & Print Assets</h5>
                             <p class="mt-3 mb-4">A core component in any business is the design elements that builds your image. From logo design to websites, newsletter and digital assets, our graphic design services builds recognisable business and brands.</p>
 
                         </div>

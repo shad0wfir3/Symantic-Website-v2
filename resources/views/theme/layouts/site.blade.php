@@ -88,8 +88,8 @@
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/custom/all.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/custom/custom-corporate.js') }}"></script>
 
-@stack('scripts')
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

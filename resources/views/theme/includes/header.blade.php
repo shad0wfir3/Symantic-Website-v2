@@ -53,6 +53,7 @@
                         </span>
                     </a>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavMenuMain">
+                        {!! menu_builder('test','navbar-nav','nav-item') !!}
                         <ul class="navbar-nav">
                             <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('theme.pages.index') }}">

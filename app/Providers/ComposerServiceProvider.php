@@ -13,10 +13,6 @@ class ComposerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer(
-            'theme.layouts.site',
-            'App\Http\ViewComposers\ServicesComposer'
-        );
 
         view()->composer(
             'layouts.app',
