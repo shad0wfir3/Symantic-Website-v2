@@ -63,8 +63,12 @@
                                 <div class="separator-wrap pt-4">
                                     <span class="separator"><span class="separator-line"></span></span>
                                 </div>
-                                <div class="author-wrap mt-5">
-                                    <p> by <a href="#">{{ $post->author->name }}</a></p>
+
+                                <div class="author-wrap mt-2">
+                                    @foreach($post->tags as $tag)
+                                        <a href="{{ route('theme.blog.tags',$tag->slug) }}" class="btn btn-primary btn-sm ml-0 mr-1 mb-1">{{ $tag->title }}</a>
+                                    @endforeach
+                                    <p style="display: block"> by <a href="#">{{ $post->user->name }}</a></p>
                                 </div>
                             </div>
                         </div>

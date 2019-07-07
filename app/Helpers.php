@@ -6,6 +6,8 @@
  */
 
 use JD\Cloudder\Facades\Cloudder;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Storage;
 
 if (!function_exists('get_cl_img')) {
     function get_cl_img($public_id, $options = [])
@@ -76,6 +78,13 @@ if(!function_exists('presentable_date')){
         $returned_date = date("d F Y",strtotime($date));
 
         return $returned_date;
+    }
+}
+
+if(!function_exists('storage_image')){
+    function storage_image($image){
+        $image_path = Storage::disk('spaces')->url($image);
+        return $image_path;
     }
 }
 

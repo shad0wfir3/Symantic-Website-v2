@@ -15,7 +15,7 @@
     ================================================== -->
 
     <div class="section padding-top-1st padding-bottom-1st over-hide">
-        <div class="parallax" style="background-image: url('{{ get_cl_img($post->featured_img) }}')"></div>
+        <div class="parallax" style="background-image: url('{{ storage_image($post->featured_img) }}')"></div>
         <div class="grey-fade-over"></div>
         <div class="container z-bigger">
             <div class="row justify-content-center">
@@ -39,10 +39,9 @@
                 <div class="col-lg-8">
                     <div class="section drop-shadow rounded">
                         <div class="blog-box-1 blog-home background-white over-hide">
-                            <img src="{{ get_cl_img($post->featured_img) }}" alt="" class="blog-home-img"/>
                             <div class="padding-in">
                                 <div class="main_post_content">
-                                    {!! $post->content !!}
+                                   @markdown($post->content)
                                 </div>
 
                                 <div class="clear"></div>
@@ -145,18 +144,18 @@
                 </div>
             </div>
             <div class="row mb-5 mt-5">
-                @foreach($related_posts as $related_post)
-                    <div class="col-md-3">
-                        <div class="blog-box-1 blog-home background-white over-hide rounded">
-                            <img src="{{ get_cl_img($related_post->featured_img) }}" alt="" class="blog-home-img"/>
-                            <div class="padding-in">
-                                <a href="{{ route('blog.post',$related_post->slug) }}"><h5 class="pt-4 mt-3">{{ $related_post->title }}</h5></a>
-                                <p class="mt-3">{{$related_post->excerpt}}</p>
-                                <a href="{{ route('blog.post',$related_post->slug) }}" class="btn-link btn-primary pl-0 mt-4">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
+                {{--@foreach($related_posts as $related_post)--}}
+                    {{--<div class="col-md-3">--}}
+                        {{--<div class="blog-box-1 blog-home background-white over-hide rounded">--}}
+                            {{--<img src="{{ get_cl_img($related_post->featured_img) }}" alt="" class="blog-home-img"/>--}}
+                            {{--<div class="padding-in">--}}
+                                {{--<a href="{{ route('blog.post',$related_post->slug) }}"><h5 class="pt-4 mt-3">{{ $related_post->title }}</h5></a>--}}
+                                {{--<p class="mt-3">{{$related_post->excerpt}}</p>--}}
+                                {{--<a href="{{ route('blog.post',$related_post->slug) }}" class="btn-link btn-primary pl-0 mt-4">read more</a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--@endforeach--}}
             </div>
         </div>
     </div>

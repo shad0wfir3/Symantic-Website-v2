@@ -41,29 +41,30 @@
                         $count = 0;
                     ?>
                     @foreach($posts as $post)
-                        @php($count++)
-                        @if($posts->count() % $count)
-                            <div class="grid-box float-inline quarter with-margin drop-shadow rounded">
-                                <div class="blog-box-1 blog-home background-dark over-hide">
-                                    <div class="blog-quote-wrap">
-                                        <p class="mb-5">"Good buildings come from good people, and all problems are solved by good design."</p>
-                                        <h5>Stephen Gardiner</h5>
+                            @php($count++)
+                            @if($posts->count() % $count)
+                                @php($quote = $quotes->random(1)->first() )
+                                <div class="grid-box float-inline quarter with-margin drop-shadow rounded">
+                                    <div class="blog-box-1 blog-home background-dark over-hide">
+                                        <div class="blog-quote-wrap">
+                                            <p class="mb-5">"{{ $quote->quote }}"</p>
+                                            <h5>{{ $quote->author }}</h5>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        @endif
+                            @endif
                     <div class="grid-box float-inline quarter with-margin drop-shadow rounded">
                         <div class="blog-box-1 blog-home background-white over-hide">
                             <img src="{{ get_cl_img($post->featured_img) }}" alt="" class="blog-home-img"/>
                             <div class="padding-in">
-                                <a href="{{ route('blog.post',$post->slug) }}"><h5 class="pt-4 mt-3">{{ $post->title }}</h5></a>
+                                <a href="{{ route('theme.blog.post',$post->slug) }}"><h5 class="pt-4 mt-3">{{ $post->title }}</h5></a>
                                 <p class="mt-3">{{$post->excerpt}}</p>
-                                <a href="{{ route('blog.post',$post->slug) }}" class="btn-link btn-primary pl-0 mt-4">read more</a>
+                                <a href="{{ route('theme.blog.post',$post->slug) }}" class="btn-link btn-primary pl-0 mt-4">read more</a>
                                 <div class="separator-wrap pt-4">
                                     <span class="separator"><span class="separator-line"></span></span>
                                 </div>
                                 <div class="author-wrap mt-5">
-                                    <p> by <a href="#">{{ $post->author->name }}</a></p>
+                                    <p> by <a href="#">{{ $post->user->name }}</a></p>
                                 </div>
                             </div>
                         </div>

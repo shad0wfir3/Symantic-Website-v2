@@ -11,7 +11,12 @@ use App\Http\Controllers\Controller;
 class PagesController extends Controller
 {
     public function index(){
-        $featured_posts = Post::featured()->with('author','tags')->get();
+        $featured_posts = Post::featured()->with('user','tags','categories')->get();
+//
+//        if($featured_posts->isEmpty()){
+//           $featured_posts = null;
+//        }
+
 //        $quotes = InspirationalQuotes::get()->random(7);
         return view('theme.pages.home',compact('featured_posts'));
     }

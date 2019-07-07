@@ -226,8 +226,8 @@
         </div>
     </div>
 
-    <!-- Seperator Line
-    ================================================== -->
+
+    @if($featured_posts)
 
     <!-- Blog Block
    ================================================== -->
@@ -259,8 +259,8 @@
                                 <div class="author-wrap mt-3">
                                     @foreach($post->tags as $tag)
                                         <a href="{{ route('theme.blog.tags',$tag->slug) }}" class="btn btn-primary btn-sm ml-0 mr-1 mb-1">{{ $tag->title }}</a>
-                                        @endforeach
-                                    <p class="mt-2"> by <a href="#">{{ $post->author->name }}</a></pmt-2>
+                                    @endforeach
+                                    <p class="mt-2" style="display: block"> by <a href="#">{{ $post->user->name }}</a></p>
                                 </div>
                             </div>
                         </div>
@@ -276,6 +276,8 @@
             </div>
         </div>
     </div>
+
+    @endif
 
     <!-- Subscribe Block
     ================================================== -->

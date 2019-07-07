@@ -6,36 +6,28 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    protected $dates = [
-        'published_date'
-    ];
+
+    /**
+     * @var  string
+     */
+    protected $table = 'posts';
 
     protected $casts = [
-        'tags' => 'array',
+        'published_date' => 'datetime',
+        'deleted_at' => 'datetime',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
         'featured' => 'boolean'
     ];
 
-    protected $fillable = [
-        'author_id',
-        'title',
-        'excerpt',
-        'content',
-        'tags',
-        'featured_img',
-        'published_date',
-        'status'
-    ];
-
-    public function author(){
-        return $this->belongsTo(User::class,'author_id');
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'author_id', 'id');
     }
 
     public function scopeFeatured(){
-        return $this->where('featured',1)->where('status','published');
-    }
 
-    public function scopePublished(){
-        return $this->where('status','published');
+        return $this->where('featured',true);
     }
 
     public function tags(){
@@ -45,5 +37,4 @@ class Post extends Model
     public function categories(){
         return $this->belongsToMany(Category::class,'categories_posts');
     }
-
 }

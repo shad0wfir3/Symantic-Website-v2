@@ -15,7 +15,7 @@ class BlogController extends Controller
 
     public function index(){
 
-        $posts = Post::published()->orderBy('published_date','DESC')->with('author','tags','categories')->simplePaginate(8);
+        $posts = Post::orderBy('published_date','DESC')->with('user','tags','categories')->simplePaginate(8);
 
         $quotes = InspirationalQuotes::get()->random(10);
 
@@ -28,18 +28,19 @@ class BlogController extends Controller
     public function getPost($slug)
     {
         $categories = Category::has('posts')->get();
+        $post = Post::with('user','tags','categories')->whereSlug($slug)->firstOrFail();
         $tags = Tag::all();
-        $post = Post::published()->with('author','tags','categories')->whereSlug($slug)->firstOrFail();
 
-        $latest_posts = Post::published()->orderBy('published_date','DESC')->where('id','!=',$post->id)->get()->take(5);
+        $latest_posts = Post::orderBy('published_date','DESC')->where('id','!=',$post->id)->get()->take(5);
 
         $post_cat_id = $post->categories()->first()->id;
 
-        $related_posts = Post::published()->wherehas('categories',function($query) use($post_cat_id){
-            $query->where('categories.id',$post_cat_id);
-        })->where('id','!=',$post->id)->orderBy('created_at','desc')->get()->take(4);
 
-        return view('theme.pages.blog.single-post',compact('post','categories','related_posts','tags','latest_posts'));
+//        $related_posts = Post::wherehas('categories',function($query) use($post_cat_id){
+//            $query->where()
+//        })->where('id','!=',$post->id)->orderBy('created_at','desc')->get()->take(4);
+
+        return view('theme.pages.blog.single-post',compact('post','categories','tags','latest_posts'));
 
     }
 
@@ -49,11 +50,13 @@ class BlogController extends Controller
 
         $cat_id = $category->id;
 
-        $posts = Post::published()->wherehas('categories',function($query) use ($cat_id){
+        $quotes = InspirationalQuotes::get()->random(10);
+
+        $posts = Post::wherehas('categories',function($query) use ($cat_id){
             $query->where('categories.id',$cat_id);
         })->with('categories')->simplepaginate(8);
 
-        return view('theme.pages.blog.categories',compact('category','posts'));
+        return view('theme.pages.blog.categories',compact('category','posts','quotes'));
     }
 
     public function getTag($slug){

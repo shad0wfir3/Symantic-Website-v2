@@ -17,6 +17,8 @@ class Service extends Model
         'deleted_at' => 'datetime',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
+        'sub_services' => 'array',
+        'cta_skills' => 'array'
     ];
 
 }

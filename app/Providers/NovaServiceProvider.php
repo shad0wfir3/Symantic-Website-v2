@@ -76,7 +76,6 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             NovaPermissionTool::make(),
             ResourceGenerator::make(),
             MenuBuilder::make(),
-            NovaPageTool::make()
         ];
     }
 

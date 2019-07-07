@@ -2,15 +2,20 @@
 
 namespace App\Nova;
 
+use Benjaminhirsch\NovaSlugField\Slug;
+use Benjaminhirsch\NovaSlugField\TextWithSlug;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\DateTime;
+use Illuminate\Support\Facades\Storage;
+
 
 
 class Category extends Resource
 {
+
     /**
      * The model the resource corresponds to.
      *
@@ -23,7 +28,7 @@ class Category extends Resource
      *
      * @var  string
      */
-    public static $title = 'id';
+    public static $title = 'title';
 
     /**
      * The columns that should be searched.
@@ -45,10 +50,10 @@ class Category extends Resource
     }
 
     /**
-    * Get the displayable singular label of the resource.
-    *
-    * @return  string
-    */
+     * Get the displayable singular label of the resource.
+     *
+     * @return  string
+     */
     public static function singularLabel()
     {
         return __('Category');
@@ -57,41 +62,47 @@ class Category extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param    \Illuminate\Http\Request  $request
+     * @param    \Illuminate\Http\Request $request
      * @return  array
      */
     public function fields(Request $request)
     {
         return [
-                                                ID::make( __('Id'),  'id')
-->rules('required')
-->sortable()
-,
-                                                                Text::make( __('Title'),  'title')
-->rules('required')
-->sortable()
-,
-                                                                Text::make( __('Slug'),  'slug')
-->rules('required')
-->sortable()
-,
-                                                                Image::make( __('Header Img'),  'header_img')
-->rules('required')
-->sortable()
-->disk('local')
-			->prunable()
-	 ,
-                                                                Text::make( __('Subtext'),  'subtext')
-->rules('required')
-->sortable()
-,
-                                                                                            ];
+            ID::make(__('Id'), 'id')
+                ->rules('required')
+                ->sortable()
+            ,
+            TextWithSlug::make(__('Title'), 'title')
+                ->rules('required')
+                ->slug('slug')
+                ->sortable()
+            ,
+            Slug::make(__('Slug'), 'slug')
+                ->rules('required')
+                ->sortable()
+            ,
+            Text::make(__('Subtext'), 'subtext')
+                ->rules('required')
+                ->sortable()
+            ,
+            Image::make(__('Header Img'), 'header_img')
+                ->rules('required')
+                ->sortable()
+                ->disk('spaces')
+                ->thumbnail(function ($value, $disk) {
+                    return $value
+                        ? Storage::disk($disk)->url($value)
+                        : null;
+                })
+            ,
+
+        ];
     }
 
     /**
      * Get the cards available for the request.
      *
-     * @param    \Illuminate\Http\Request  $request
+     * @param    \Illuminate\Http\Request $request
      * @return  array
      */
     public function cards(Request $request)
@@ -102,7 +113,7 @@ class Category extends Resource
     /**
      * Get the filters available for the resource.
      *
-     * @param    \Illuminate\Http\Request  $request
+     * @param    \Illuminate\Http\Request $request
      * @return  array
      */
     public function filters(Request $request)
@@ -113,7 +124,7 @@ class Category extends Resource
     /**
      * Get the lenses available for the resource.
      *
-     * @param    \Illuminate\Http\Request  $request
+     * @param    \Illuminate\Http\Request $request
      * @return  array
      */
     public function lenses(Request $request)
@@ -124,7 +135,7 @@ class Category extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param    \Illuminate\Http\Request  $request
+     * @param    \Illuminate\Http\Request $request
      * @return  array
      */
     public function actions(Request $request)
